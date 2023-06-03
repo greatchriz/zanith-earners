@@ -46,24 +46,77 @@
 
                         {include 
                             'navigation_item.tpl' 
-                            link='home'
+                            link='account'
                             icon='images/svg/home-icon.svg'
                             title='Dashboard'
                         }
 
                         {include 
                             'navigation_item.tpl' 
-                            link='login'
+                            link='deposit'
                             icon='images/svg/login-icon.svg'
-                            title='Login'
+                            title='Deposit'
                         }
 
                         {include 
                             'navigation_item.tpl' 
-                            link='signup'
+                            link='deposit_list'
                             icon='images/svg/signup-icon.svg'
-                            title='Signup'
+                            title='Deposit List'
                         }
+
+                        {include 
+                            'navigation_item.tpl' 
+                            link='deposit_history'
+                            icon='images/svg/signup-icon.svg'
+                            title='Deposit History'
+                        }
+
+
+                        {include 
+                            'navigation_item.tpl' 
+                            link='history&type=earning'
+                            icon='images/svg/signup-icon.svg'
+                            title='Earning History'
+                        }
+
+                        {include 
+                            'navigation_item.tpl' 
+                            link='history&type=commissions'
+                            icon='images/svg/signup-icon.svg'
+                            title='Referrals History'
+                        }
+
+                        {include 
+                            'navigation_item.tpl' 
+                            link='withdraw'
+                            icon='images/svg/signup-icon.svg'
+                            title='Withdraw'
+                        }
+
+                        {include 
+                            'navigation_item.tpl' 
+                            link='withdraw_history'
+                            icon='images/svg/signup-icon.svg'
+                            title='Withdraw History'
+                        }
+
+                        <!--edit_account-->
+                        {include 
+                            'navigation_item.tpl' 
+                            link='edit_account'
+                            icon='images/svg/signup-icon.svg'
+                            title='Edit Account'
+                        }
+                        
+                        <!--logout-->
+                        {include 
+                            'navigation_item.tpl' 
+                            link='logout'
+                            icon='images/svg/signup-icon.svg'
+                            title='Logout'
+                        }
+
                     </ul>
             </div>
         </div>
