@@ -1,6 +1,6 @@
 {extends file='header.tpl'}
 
-{block name=sidebar}
+{block name=menus}
   <div class="fixed top-0 hidden p-6 lg:block lg:px-12">
     <a href="#" class="flex items-center space-x-2">
       <img class="h-12 w-12" src="images/app-logo.svg" alt="logo" />
