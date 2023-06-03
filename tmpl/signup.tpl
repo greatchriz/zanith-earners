@@ -352,6 +352,5 @@
   </tr></table>
   </form>
   {/if}
-  </main>
-
+</div>
 {/block}
