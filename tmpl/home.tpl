@@ -1,4 +1,4 @@
-{extends file='header.tpl'}
+{extends file='layout.tpl'}
 
 {block name=content}
    <main class="main-content w-full px-[var(--margin-x)] pb-8">
