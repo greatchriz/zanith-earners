@@ -46,16 +46,16 @@
 
                         {include 
                             'navigation_item.tpl' 
-                            link='{"?a=home"|encurl}'
+                            link='home'
                             icon='images/svg/home-icon.svg'
                             title='Dashboard'
                         }
 
                         {include 
                             'navigation_item.tpl' 
-                            link='{"?a=login"|encurl}'
+                            link='login'
                             icon='images/svg/login-icon.svg'
-                            title='Login'
+                            title='Dashboard'
                         }
                     </ul>
             </div>
