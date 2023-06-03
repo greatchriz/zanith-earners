@@ -437,7 +437,7 @@
             </label>
 
             <!--Secret Question-->
-            {include file="textinput.tpl" placeholder="Secret Question" name="sq" value=$frm.sq}
+            {include file="textinput.tpl" placeholder="Secret Question" name="sq" value=$frm.sq icon="images/svg/form/sq.svg"}
 
           
             <!--Secret Answer-->
