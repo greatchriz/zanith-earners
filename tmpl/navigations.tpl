@@ -50,6 +50,13 @@
                             icon='images/svg/home-icon.svg'
                             title='Dashboard'
                         }
+
+                        {include 
+                            'navigation_item.tpl' 
+                            link='{"?a=login"|encurl}'
+                            icon='images/svg/login-icon.svg'
+                            title='Login'
+                        }
                     </ul>
             </div>
         </div>
