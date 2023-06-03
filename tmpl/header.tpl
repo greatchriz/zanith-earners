@@ -1,47 +1,71 @@
-<!DOCTYPE html>
+{literal}
+  <!DOCTYPE html>
   <html lang="en">
+
     <head>
       <!-- Meta tags  -->
       <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+      />
       <meta
         name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
       />
-  
+
       <title>Lineone - Cryptocurrency v2 Dashboard</title>
-      <link rel="icon" type="image/png" href="images/favicon.png" />
-  
+      <link
+        rel="icon"
+        type="image/png"
+        href="images/favicon.png"
+      />
+
       <!-- CSS Assets -->
-      <link rel="stylesheet" href="css/app.css" />
-  
+      <link
+        rel="stylesheet"
+        href="css/app.css"
+      />
+
       <!-- Javascript Assets -->
-      <script src="js/app.js" defer></script>
-  
+      <script
+        src="js/app.js"
+        defer
+      ></script>
+
       <!-- Fonts -->
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+      />
+      <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+      />
       <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet"
       />
       <script>
         /**
-         * THIS SCRIPT REQUIRED FOR PREVENT FLICKERING IN SOME BROWSERS
-         */
+       * THIS SCRIPT REQUIRED FOR PREVENT FLICKERING IN SOME BROWSERS
+       */
         localStorage.getItem("_x_darkMode_on") === "true" &&
           document.documentElement.classList.add("dark");
       </script>
     </head>
-  
-    <body x-data class="is-header-blur" x-bind="$store.global.documentBody">
+
+    <body
+      x-data
+      class="is-header-blur"
+      x-bind="$store.global.documentBody"
+    >
       <!-- App preloader-->
-      <div
-        class="app-preloader fixed z-50 grid h-full w-full place-content-center bg-slate-50 dark:bg-navy-900"
-      >
+      <div class="app-preloader fixed z-50 grid h-full w-full place-content-center bg-slate-50 dark:bg-navy-900">
         <div class="app-preloader-inner relative inline-block h-48 w-48"></div>
       </div>
-  
+
       <!-- Page Wrapper -->
       <div
         id="root"
@@ -65,11 +89,9 @@
                   />
                 </a>
               </div>
-  
+
               <!-- Main Sections Links -->
-              <div
-                class="is-scrollbar-hidden flex grow flex-col space-y-4 overflow-y-auto pt-6"
-              >
+              <div class="is-scrollbar-hidden flex grow flex-col space-y-4 overflow-y-auto pt-6">
                 <!-- Dashobards -->
                 <a
                   href="dashboards-crm-analytics.html"
@@ -101,7 +123,7 @@
                     />
                   </svg>
                 </a>
-  
+
                 <!-- Apps -->
                 <a
                   href="apps-list.html"
@@ -144,7 +166,7 @@
                     />
                   </svg>
                 </a>
-  
+
                 <!-- Pages And Layouts -->
                 <a
                   href="pages-card-user-1.html"
@@ -178,7 +200,7 @@
                     />
                   </svg>
                 </a>
-  
+
                 <!-- Forms -->
                 <a
                   href="form-input-text.html"
@@ -207,7 +229,7 @@
                     />
                   </svg>
                 </a>
-  
+
                 <!-- Components -->
                 <a
                   href="components-accordion.html"
@@ -236,7 +258,7 @@
                     />
                   </svg>
                 </a>
-  
+
                 <!-- Elements -->
                 <a
                   href="elements-avatar.html"
@@ -261,7 +283,7 @@
                   </svg>
                 </a>
               </div>
-  
+
               <!-- Bottom Links -->
               <div class="flex flex-col items-center space-y-3 py-3">
                 <!-- Settings -->
@@ -286,266 +308,258 @@
                     />
                   </svg>
                 </a>
-  
-                {literal}
-                  <!-- Profile -->
-                  <div
-                    x-data="usePopper({placement:'right-end',offset:12})"
-                    @click.outside="isShowPopper && (isShowPopper = false)"
-                    class="flex"
+
+                <!-- Profile -->
+                <div
+                  x-data="usePopper({placement:'right-end',offset:12})"
+                  @click.outside="isShowPopper && (isShowPopper = false)"
+                  class="flex"
+                >
+                  <button
+                    @click="isShowPopper = !isShowPopper"
+                    x-ref="popperRef"
+                    class="avatar h-12 w-12"
                   >
-                    <button
-                      @click="isShowPopper = !isShowPopper"
-                      x-ref="popperRef"
-                      class="avatar h-12 w-12"
-                    >
-                      <img
-                        class="rounded-full"
-                        src="images/avatar/avatar-12.jpg"
-                        alt="avatar"
-                      />
-                      <span
-                        class="absolute right-0 h-3.5 w-3.5 rounded-full border-2 border-white bg-success dark:border-navy-700"
-                      ></span>
-                    </button>
+                    <img
+                      class="rounded-full"
+                      src="images/avatar/avatar-12.jpg"
+                      alt="avatar"
+                    />
+                    <span
+                      class="absolute right-0 h-3.5 w-3.5 rounded-full border-2 border-white bg-success dark:border-navy-700"
+                    ></span>
+                  </button>
 
+                  <div
+                    :class="isShowPopper && 'show'"
+                    class="popper-root fixed"
+                    x-ref="popperRoot"
+                  >
                     <div
-                      :class="isShowPopper && 'show'"
-                      class="popper-root fixed"
-                      x-ref="popperRoot"
+                      class="popper-box w-64 rounded-lg border border-slate-150 bg-white shadow-soft dark:border-navy-600 dark:bg-navy-700"
                     >
-                      <div
-                        class="popper-box w-64 rounded-lg border border-slate-150 bg-white shadow-soft dark:border-navy-600 dark:bg-navy-700"
-                      >
-                        <div class="flex items-center space-x-4 rounded-t-lg bg-slate-100 py-5 px-4 dark:bg-navy-800">
-                          <div class="avatar h-14 w-14">
-                            <img
-                              class="rounded-full"
-                              src="images/avatar/avatar-12.jpg"
-                              alt="avatar"
-                            />
-                          </div>
-                          <div>
-                            <a
-                              href="#"
-                              class="text-base font-medium text-slate-700 hover:text-primary focus:text-primary dark:text-navy-100 dark:hover:text-accent-light dark:focus:text-accent-light"
-                            >
-                              Travis Fuller
-                            </a>
-                            <p class="text-xs text-slate-400 dark:text-navy-300">
-                              Product Designer
-                            </p>
-                          </div>
+                      <div class="flex items-center space-x-4 rounded-t-lg bg-slate-100 py-5 px-4 dark:bg-navy-800">
+                        <div class="avatar h-14 w-14">
+                          <img
+                            class="rounded-full"
+                            src="images/avatar/avatar-12.jpg"
+                            alt="avatar"
+                          />
                         </div>
-                        <div class="flex flex-col pt-2 pb-5">
+                        <div>
                           <a
                             href="#"
-                            class="group flex items-center space-x-3 py-2 px-4 tracking-wide outline-none transition-all hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+                            class="text-base font-medium text-slate-700 hover:text-primary focus:text-primary dark:text-navy-100 dark:hover:text-accent-light dark:focus:text-accent-light"
                           >
-                            <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-warning text-white">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="h-4.5 w-4.5"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                stroke-width="2"
-                              >
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                                />
-                              </svg>
-                            </div>
-
-                            <div>
-                              <h2
-                                class="font-medium text-slate-700 transition-colors group-hover:text-primary group-focus:text-primary dark:text-navy-100 dark:group-hover:text-accent-light dark:group-focus:text-accent-light"
-                              >
-                                Profile
-                              </h2>
-                              <div class="text-xs text-slate-400 line-clamp-1 dark:text-navy-300">
-                                Your profile setting
-                              </div>
-                            </div>
+                            Travis Fuller
                           </a>
-                          <a
-                            href="#"
-                            class="group flex items-center space-x-3 py-2 px-4 tracking-wide outline-none transition-all hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-                          >
-                            <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-info text-white">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="h-4.5 w-4.5"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                stroke-width="2"
-                              >
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-                                />
-                              </svg>
-                            </div>
-
-                            <div>
-                              <h2
-                                class="font-medium text-slate-700 transition-colors group-hover:text-primary group-focus:text-primary dark:text-navy-100 dark:group-hover:text-accent-light dark:group-focus:text-accent-light"
-                              >
-                                Messages
-                              </h2>
-                              <div class="text-xs text-slate-400 line-clamp-1 dark:text-navy-300">
-                                Your messages and tasks
-                              </div>
-                            </div>
-                          </a>
-                          <a
-                            href="#"
-                            class="group flex items-center space-x-3 py-2 px-4 tracking-wide outline-none transition-all hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-                          >
-                            <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-secondary text-white">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="h-4.5 w-4.5"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                stroke-width="2"
-                              >
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                                />
-                              </svg>
-                            </div>
-
-                            <div>
-                              <h2
-                                class="font-medium text-slate-700 transition-colors group-hover:text-primary group-focus:text-primary dark:text-navy-100 dark:group-hover:text-accent-light dark:group-focus:text-accent-light"
-                              >
-                                Team
-                              </h2>
-                              <div class="text-xs text-slate-400 line-clamp-1 dark:text-navy-300">
-                                Your team activity
-                              </div>
-                            </div>
-                          </a>
-                          <a
-                            href="#"
-                            class="group flex items-center space-x-3 py-2 px-4 tracking-wide outline-none transition-all hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-                          >
-                            <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-error text-white">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="h-4.5 w-4.5"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                stroke-width="2"
-                              >
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                                />
-                              </svg>
-                            </div>
-
-                            <div>
-                              <h2
-                                class="font-medium text-slate-700 transition-colors group-hover:text-primary group-focus:text-primary dark:text-navy-100 dark:group-hover:text-accent-light dark:group-focus:text-accent-light"
-                              >
-                                Activity
-                              </h2>
-                              <div class="text-xs text-slate-400 line-clamp-1 dark:text-navy-300">
-                                Your activity and events
-                              </div>
-                            </div>
-                          </a>
-                          <a
-                            href="#"
-                            class="group flex items-center space-x-3 py-2 px-4 tracking-wide outline-none transition-all hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-                          >
-                            <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-success text-white">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="h-4.5 w-4.5"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                stroke-width="2"
-                              >
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-                                />
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                                />
-                              </svg>
-                            </div>
-
-                            <div>
-                              <h2
-                                class="font-medium text-slate-700 transition-colors group-hover:text-primary group-focus:text-primary dark:text-navy-100 dark:group-hover:text-accent-light dark:group-focus:text-accent-light"
-                              >
-                                Settings
-                              </h2>
-                              <div class="text-xs text-slate-400 line-clamp-1 dark:text-navy-300">
-                                Webapp settings
-                              </div>
-                            </div>
-                          </a>
-                          <div class="mt-3 px-4">
-                            <button
-                              class="btn h-9 w-full space-x-2 bg-primary text-white hover:bg-primary-focus focus:bg-primary-focus active:bg-primary-focus/90 dark:bg-accent dark:hover:bg-accent-focus dark:focus:bg-accent-focus dark:active:bg-accent/90"
+                          <p class="text-xs text-slate-400 dark:text-navy-300">
+                            Product Designer
+                          </p>
+                        </div>
+                      </div>
+                      <div class="flex flex-col pt-2 pb-5">
+                        <a
+                          href="#"
+                          class="group flex items-center space-x-3 py-2 px-4 tracking-wide outline-none transition-all hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+                        >
+                          <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-warning text-white">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-4.5 w-4.5"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                              stroke-width="2"
                             >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                              >
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  stroke-width="1.5"
-                                  d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
-                                />
-                              </svg>
-                              <span>Logout</span>
-                            </button>
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                              />
+                            </svg>
                           </div>
+
+                          <div>
+                            <h2
+                              class="font-medium text-slate-700 transition-colors group-hover:text-primary group-focus:text-primary dark:text-navy-100 dark:group-hover:text-accent-light dark:group-focus:text-accent-light"
+                            >
+                              Profile
+                            </h2>
+                            <div class="text-xs text-slate-400 line-clamp-1 dark:text-navy-300">
+                              Your profile setting
+                            </div>
+                          </div>
+                        </a>
+                        <a
+                          href="#"
+                          class="group flex items-center space-x-3 py-2 px-4 tracking-wide outline-none transition-all hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+                        >
+                          <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-info text-white">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-4.5 w-4.5"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                              stroke-width="2"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                              />
+                            </svg>
+                          </div>
+
+                          <div>
+                            <h2
+                              class="font-medium text-slate-700 transition-colors group-hover:text-primary group-focus:text-primary dark:text-navy-100 dark:group-hover:text-accent-light dark:group-focus:text-accent-light"
+                            >
+                              Messages
+                            </h2>
+                            <div class="text-xs text-slate-400 line-clamp-1 dark:text-navy-300">
+                              Your messages and tasks
+                            </div>
+                          </div>
+                        </a>
+                        <a
+                          href="#"
+                          class="group flex items-center space-x-3 py-2 px-4 tracking-wide outline-none transition-all hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+                        >
+                          <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-secondary text-white">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-4.5 w-4.5"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                              stroke-width="2"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                              />
+                            </svg>
+                          </div>
+
+                          <div>
+                            <h2
+                              class="font-medium text-slate-700 transition-colors group-hover:text-primary group-focus:text-primary dark:text-navy-100 dark:group-hover:text-accent-light dark:group-focus:text-accent-light"
+                            >
+                              Team
+                            </h2>
+                            <div class="text-xs text-slate-400 line-clamp-1 dark:text-navy-300">
+                              Your team activity
+                            </div>
+                          </div>
+                        </a>
+                        <a
+                          href="#"
+                          class="group flex items-center space-x-3 py-2 px-4 tracking-wide outline-none transition-all hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+                        >
+                          <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-error text-white">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-4.5 w-4.5"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                              stroke-width="2"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                              />
+                            </svg>
+                          </div>
+
+                          <div>
+                            <h2
+                              class="font-medium text-slate-700 transition-colors group-hover:text-primary group-focus:text-primary dark:text-navy-100 dark:group-hover:text-accent-light dark:group-focus:text-accent-light"
+                            >
+                              Activity
+                            </h2>
+                            <div class="text-xs text-slate-400 line-clamp-1 dark:text-navy-300">
+                              Your activity and events
+                            </div>
+                          </div>
+                        </a>
+                        <a
+                          href="#"
+                          class="group flex items-center space-x-3 py-2 px-4 tracking-wide outline-none transition-all hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+                        >
+                          <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-success text-white">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-4.5 w-4.5"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                              stroke-width="2"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                              />
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                              />
+                            </svg>
+                          </div>
+
+                          <div>
+                            <h2
+                              class="font-medium text-slate-700 transition-colors group-hover:text-primary group-focus:text-primary dark:text-navy-100 dark:group-hover:text-accent-light dark:group-focus:text-accent-light"
+                            >
+                              Settings
+                            </h2>
+                            <div class="text-xs text-slate-400 line-clamp-1 dark:text-navy-300">
+                              Webapp settings
+                            </div>
+                          </div>
+                        </a>
+                        <div class="mt-3 px-4">
+                          <button
+                            class="btn h-9 w-full space-x-2 bg-primary text-white hover:bg-primary-focus focus:bg-primary-focus active:bg-primary-focus/90 dark:bg-accent dark:hover:bg-accent-focus dark:focus:bg-accent-focus dark:active:bg-accent/90"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-5 w-5"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="1.5"
+                                d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
+                              />
+                            </svg>
+                            <span>Logout</span>
+                          </button>
                         </div>
                       </div>
                     </div>
                   </div>
-                {/literal}
-                
+                </div>
+
               </div>
             </div>
           </div>
-  
+
           <!-- Sidebar Panel -->
           <div class="sidebar-panel">
-            <div
-              class="flex h-full grow flex-col bg-white pl-[var(--main-sidebar-width)] dark:bg-navy-750"
-            >
+            <div class="flex h-full grow flex-col bg-white pl-[var(--main-sidebar-width)] dark:bg-navy-750">
               <!-- Sidebar Panel Header -->
-              <div
-                class="flex h-18 w-full items-center justify-between pl-4 pr-1"
-              >
-                <p
-                  class="text-base tracking-wider text-slate-800 dark:text-navy-100"
-                >
+              <div class="flex h-18 w-full items-center justify-between pl-4 pr-1">
+                <p class="text-base tracking-wider text-slate-800 dark:text-navy-100">
                   Dashboards
                 </p>
                 <button
@@ -568,7 +582,7 @@
                   </svg>
                 </button>
               </div>
-  
+
               <!-- Sidebar Panel Body -->
               <div
                 x-data="{expandedItem:null}"
@@ -623,7 +637,10 @@
                         />
                       </svg>
                     </a>
-                    <ul x-collapse x-show="expanded">
+                    <ul
+                      x-collapse
+                      x-show="expanded"
+                    >
                       <li>
                         <a
                           x-data="navLink"
@@ -632,9 +649,7 @@
                           class="flex items-center justify-between p-2 text-xs+ tracking-wide outline-none transition-[color,padding-left] duration-300 ease-in-out hover:pl-4"
                         >
                           <div class="flex items-center space-x-2">
-                            <div
-                              class="h-1.5 w-1.5 rounded-full border border-current opacity-40"
-                            ></div>
+                            <div class="h-1.5 w-1.5 rounded-full border border-current opacity-40"></div>
                             <span>Cryptocurrency v1</span>
                           </div>
                         </a>
@@ -647,9 +662,7 @@
                           class="flex items-center justify-between p-2 text-xs+ tracking-wide outline-none transition-[color,padding-left] duration-300 ease-in-out hover:pl-4"
                         >
                           <div class="flex items-center space-x-2">
-                            <div
-                              class="h-1.5 w-1.5 rounded-full border border-current opacity-40"
-                            ></div>
+                            <div class="h-1.5 w-1.5 rounded-full border border-current opacity-40"></div>
                             <span>Cryptocurrency v2</span>
                           </div>
                         </a>
@@ -680,7 +693,10 @@
                         />
                       </svg>
                     </a>
-                    <ul x-collapse x-show="expanded">
+                    <ul
+                      x-collapse
+                      x-show="expanded"
+                    >
                       <li>
                         <a
                           x-data="navLink"
@@ -689,9 +705,7 @@
                           class="flex items-center justify-between p-2 text-xs+ tracking-wide outline-none transition-[color,padding-left] duration-300 ease-in-out hover:pl-4"
                         >
                           <div class="flex items-center space-x-2">
-                            <div
-                              class="h-1.5 w-1.5 rounded-full border border-current opacity-40"
-                            ></div>
+                            <div class="h-1.5 w-1.5 rounded-full border border-current opacity-40"></div>
                             <span>Banking v1</span>
                           </div>
                         </a>
@@ -704,9 +718,7 @@
                           class="flex items-center justify-between p-2 text-xs+ tracking-wide outline-none transition-[color,padding-left] duration-300 ease-in-out hover:pl-4"
                         >
                           <div class="flex items-center space-x-2">
-                            <div
-                              class="h-1.5 w-1.5 rounded-full border border-current opacity-40"
-                            ></div>
+                            <div class="h-1.5 w-1.5 rounded-full border border-current opacity-40"></div>
                             <span>Banking v2</span>
                           </div>
                         </a>
@@ -861,13 +873,11 @@
             </div>
           </div>
         </div>
-  
+
         <!-- App Header Wrapper-->
         <nav class="header before:bg-white dark:before:bg-navy-750 print:hidden">
           <!-- App Header  -->
-          <div
-            class="header-container relative flex w-full bg-white dark:bg-navy-750 print:hidden"
-          >
+          <div class="header-container relative flex w-full bg-white dark:bg-navy-750 print:hidden">
             <!-- Header Items -->
             <div class="flex w-full items-center justify-between">
               <!-- Left: Sidebar Toggle Button -->
@@ -882,7 +892,7 @@
                   <span></span>
                 </button>
               </div>
-  
+
               <!-- Right: Header buttons -->
               <div class="-mr-1.5 flex items-center space-x-2">
                 <!-- Mobile Search Toggle -->
@@ -905,7 +915,7 @@
                     />
                   </svg>
                 </button>
-  
+
                 <!-- Main Searchbar -->
                 <template x-if="$store.breakpoints.smAndUp">
                   <div
@@ -992,18 +1002,15 @@
                             Tasks
                           </button>
                         </div>
-  
-                        <div
-                          class="is-scrollbar-hidden overflow-y-auto overscroll-contain pb-2"
-                        >
-                          <div
-                            class="is-scrollbar-hidden mt-3 flex space-x-4 overflow-x-auto px-3"
-                          >
-                            <a href="apps-kanban.html" class="w-14 text-center">
+
+                        <div class="is-scrollbar-hidden overflow-y-auto overscroll-contain pb-2">
+                          <div class="is-scrollbar-hidden mt-3 flex space-x-4 overflow-x-auto px-3">
+                            <a
+                              href="apps-kanban.html"
+                              class="w-14 text-center"
+                            >
                               <div class="avatar h-12 w-12">
-                                <div
-                                  class="is-initial rounded-full bg-success text-white"
-                                >
+                                <div class="is-initial rounded-full bg-success text-white">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     class="h-5 w-5"
@@ -1021,8 +1028,7 @@
                                 </div>
                               </div>
                               <p
-                                class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100"
-                              >
+                                class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100">
                                 Kanban
                               </p>
                             </a>
@@ -1031,9 +1037,7 @@
                               class="w-14 text-center"
                             >
                               <div class="avatar h-12 w-12">
-                                <div
-                                  class="is-initial rounded-full bg-secondary text-white"
-                                >
+                                <div class="is-initial rounded-full bg-secondary text-white">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     class="h-5 w-5"
@@ -1051,16 +1055,16 @@
                                 </div>
                               </div>
                               <p
-                                class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100"
-                              >
+                                class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100">
                                 Analytics
                               </p>
                             </a>
-                            <a href="apps-chat.html" class="w-14 text-center">
+                            <a
+                              href="apps-chat.html"
+                              class="w-14 text-center"
+                            >
                               <div class="avatar h-12 w-12">
-                                <div
-                                  class="is-initial rounded-full bg-info text-white"
-                                >
+                                <div class="is-initial rounded-full bg-info text-white">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     class="h-5 w-5"
@@ -1078,8 +1082,7 @@
                                 </div>
                               </div>
                               <p
-                                class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100"
-                              >
+                                class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100">
                                 Chat
                               </p>
                             </a>
@@ -1088,9 +1091,7 @@
                               class="w-14 text-center"
                             >
                               <div class="avatar h-12 w-12">
-                                <div
-                                  class="is-initial rounded-full bg-error text-white"
-                                >
+                                <div class="is-initial rounded-full bg-error text-white">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     class="h-5 w-5"
@@ -1109,8 +1110,7 @@
                                 </div>
                               </div>
                               <p
-                                class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100"
-                              >
+                                class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100">
                                 Files
                               </p>
                             </a>
@@ -1119,9 +1119,7 @@
                               class="w-14 text-center"
                             >
                               <div class="avatar h-12 w-12">
-                                <div
-                                  class="is-initial rounded-full bg-secondary text-white"
-                                >
+                                <div class="is-initial rounded-full bg-secondary text-white">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     class="h-5 w-5"
@@ -1139,8 +1137,7 @@
                                 </div>
                               </div>
                               <p
-                                class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100"
-                              >
+                                class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100">
                                 Crypto
                               </p>
                             </a>
@@ -1149,9 +1146,7 @@
                               class="w-14 text-center"
                             >
                               <div class="avatar h-12 w-12">
-                                <div
-                                  class="is-initial rounded-full bg-primary text-white dark:bg-accent"
-                                >
+                                <div class="is-initial rounded-full bg-primary text-white dark:bg-accent">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     class="h-5 w-5"
@@ -1169,16 +1164,16 @@
                                 </div>
                               </div>
                               <p
-                                class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100"
-                              >
+                                class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100">
                                 Banking
                               </p>
                             </a>
-                            <a href="apps-todo.html" class="w-14 text-center">
+                            <a
+                              href="apps-todo.html"
+                              class="w-14 text-center"
+                            >
                               <div class="avatar h-12 w-12">
-                                <div
-                                  class="is-initial rounded-full bg-info text-white"
-                                >
+                                <div class="is-initial rounded-full bg-info text-white">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     class="h-5 w-5"
@@ -1201,8 +1196,7 @@
                                 </div>
                               </div>
                               <p
-                                class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100"
-                              >
+                                class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100">
                                 Todo
                               </p>
                             </a>
@@ -1211,9 +1205,7 @@
                               class="w-14 text-center"
                             >
                               <div class="avatar h-12 w-12">
-                                <div
-                                  class="is-initial rounded-full bg-secondary text-white"
-                                >
+                                <div class="is-initial rounded-full bg-secondary text-white">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     class="h-5 w-5"
@@ -1231,8 +1223,7 @@
                                 </div>
                               </div>
                               <p
-                                class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100"
-                              >
+                                class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100">
                                 Analytics
                               </p>
                             </a>
@@ -1241,9 +1232,7 @@
                               class="w-14 text-center"
                             >
                               <div class="avatar h-12 w-12">
-                                <div
-                                  class="is-initial rounded-full bg-warning text-white"
-                                >
+                                <div class="is-initial rounded-full bg-warning text-white">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     class="h-5 w-5"
@@ -1261,19 +1250,14 @@
                                 </div>
                               </div>
                               <p
-                                class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100"
-                              >
+                                class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100">
                                 Orders
                               </p>
                             </a>
                           </div>
-  
-                          <div
-                            class="mt-3 flex items-center justify-between bg-slate-100 py-1.5 px-3 dark:bg-navy-800"
-                          >
-                            <p
-                              class="text-xs uppercase text-slate-400 dark:text-navy-300"
-                            >
+
+                          <div class="mt-3 flex items-center justify-between bg-slate-100 py-1.5 px-3 dark:bg-navy-800">
+                            <p class="text-xs uppercase text-slate-400 dark:text-navy-300">
                               Recent
                             </p>
                             <a
@@ -1283,7 +1267,7 @@
                               View All
                             </a>
                           </div>
-  
+
                           <div class="mt-1 font-inter font-medium">
                             <a
                               class="group flex items-center space-x-2 px-2.5 py-2 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
@@ -1408,7 +1392,7 @@
                                   d="M15 9a2 2 0 10-4 0v5a2 2 0 01-2 2h6m-6-4h4m8 0a9 9 0 11-18 0 9 9 0 0118 0z"
                                 />
                               </svg>
-  
+
                               <span>Crypto Dashboard</span>
                             </a>
                             <a
@@ -1429,7 +1413,7 @@
                                   d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"
                                 />
                               </svg>
-  
+
                               <span>Banking Dashboard</span>
                             </a>
                             <a
@@ -1450,7 +1434,7 @@
                                   d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
                                 />
                               </svg>
-  
+
                               <span>Analytics Dashboard</span>
                             </a>
                             <a
@@ -1471,7 +1455,7 @@
                                   d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
                                 />
                               </svg>
-  
+
                               <span>Influencer Dashboard</span>
                             </a>
                           </div>
@@ -1480,7 +1464,7 @@
                     </div>
                   </div>
                 </template>
-  
+
                 <!-- Dark Mode Toggle -->
                 <button
                   @click="$store.global.isDarkModeEnabled = !$store.global.isDarkModeEnabled"
@@ -1522,10 +1506,9 @@
                   class="btn h-8 w-8 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
                 >
                   <i
-                    class="fa-solid fa-palette bg-gradient-to-r from-sky-400 to-blue-600 bg-clip-text text-lg font-semibold text-transparent"
-                  ></i>
+                    class="fa-solid fa-palette bg-gradient-to-r from-sky-400 to-blue-600 bg-clip-text text-lg font-semibold text-transparent"></i>
                 </button>
-  
+
                 <!-- Notification-->
                 <div
                   x-effect="if($store.global.isSearchbarActive) isShowPopper = false"
@@ -1552,16 +1535,11 @@
                         d="M15.375 17.556h-6.75m6.75 0H21l-1.58-1.562a2.254 2.254 0 01-.67-1.596v-3.51a6.612 6.612 0 00-1.238-3.85 6.744 6.744 0 00-3.262-2.437v-.379c0-.59-.237-1.154-.659-1.571A2.265 2.265 0 0012 2c-.597 0-1.169.234-1.591.65a2.208 2.208 0 00-.659 1.572v.38c-2.621.915-4.5 3.385-4.5 6.287v3.51c0 .598-.24 1.172-.67 1.595L3 17.556h12.375zm0 0v1.11c0 .885-.356 1.733-.989 2.358A3.397 3.397 0 0112 22a3.397 3.397 0 01-2.386-.976 3.313 3.313 0 01-.989-2.357v-1.111h6.75z"
                       />
                     </svg>
-  
-                    <span
-                      class="absolute -top-px -right-px flex h-3 w-3 items-center justify-center"
-                    >
+
+                    <span class="absolute -top-px -right-px flex h-3 w-3 items-center justify-center">
                       <span
-                        class="absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary opacity-80"
-                      ></span>
-                      <span
-                        class="inline-flex h-2 w-2 rounded-full bg-secondary"
-                      ></span>
+                        class="absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary opacity-80"></span>
+                      <span class="inline-flex h-2 w-2 rounded-full bg-secondary"></span>
                     </span>
                   </button>
                   <div
@@ -1573,14 +1551,10 @@
                       x-data="{activeTab:'tabAll'}"
                       class="popper-box mx-4 mt-1 flex max-h-[calc(100vh-6rem)] w-[calc(100vw-2rem)] flex-col rounded-lg border border-slate-150 bg-white shadow-soft dark:border-navy-800 dark:bg-navy-700 dark:shadow-soft-dark sm:m-0 sm:w-80"
                     >
-                      <div
-                        class="rounded-t-lg bg-slate-100 text-slate-600 dark:bg-navy-800 dark:text-navy-200"
-                      >
+                      <div class="rounded-t-lg bg-slate-100 text-slate-600 dark:bg-navy-800 dark:text-navy-200">
                         <div class="flex items-center justify-between px-4 pt-2">
                           <div class="flex items-center space-x-2">
-                            <h3
-                              class="font-medium text-slate-700 dark:text-navy-100"
-                            >
+                            <h3 class="font-medium text-slate-700 dark:text-navy-100">
                               Notifications
                             </h3>
                             <div
@@ -1589,7 +1563,7 @@
                               26
                             </div>
                           </div>
-  
+
                           <button
                             class="btn -mr-1.5 h-7 w-7 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
                           >
@@ -1614,10 +1588,8 @@
                             </svg>
                           </button>
                         </div>
-  
-                        <div
-                          class="is-scrollbar-hidden flex shrink-0 overflow-x-auto px-3"
-                        >
+
+                        <div class="is-scrollbar-hidden flex shrink-0 overflow-x-auto px-3">
                           <button
                             @click="activeTab = 'tabAll'"
                             :class="activeTab === 'tabAll' ? 'border-primary dark:border-accent text-primary dark:text-accent-light' : 'border-transparent hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100'"
@@ -1648,7 +1620,7 @@
                           </button>
                         </div>
                       </div>
-  
+
                       <div class="tab-content flex flex-col overflow-hidden">
                         <div
                           x-show="activeTab === 'tabAll'"
@@ -1661,19 +1633,13 @@
                             <div
                               class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-secondary/10 dark:bg-secondary-light/15"
                             >
-                              <i
-                                class="fa fa-user-edit text-secondary dark:text-secondary-light"
-                              ></i>
+                              <i class="fa fa-user-edit text-secondary dark:text-secondary-light"></i>
                             </div>
                             <div>
-                              <p
-                                class="font-medium text-slate-600 dark:text-navy-100"
-                              >
+                              <p class="font-medium text-slate-600 dark:text-navy-100">
                                 User Photo Changed
                               </p>
-                              <div
-                                class="mt-1 text-xs text-slate-400 line-clamp-1 dark:text-navy-300"
-                              >
+                              <div class="mt-1 text-xs text-slate-400 line-clamp-1 dark:text-navy-300">
                                 John Doe changed his avatar photo
                               </div>
                             </div>
@@ -1698,19 +1664,13 @@
                               </svg>
                             </div>
                             <div>
-                              <p
-                                class="font-medium text-slate-600 dark:text-navy-100"
-                              >
+                              <p class="font-medium text-slate-600 dark:text-navy-100">
                                 Mon, June 14, 2021
                               </p>
-                              <div
-                                class="mt-1 flex text-xs text-slate-400 dark:text-navy-300"
-                              >
+                              <div class="mt-1 flex text-xs text-slate-400 dark:text-navy-300">
                                 <span class="shrink-0">08:00 - 09:00</span>
-                                <div
-                                  class="mx-2 my-1 w-px bg-slate-200 dark:bg-navy-500"
-                                ></div>
-  
+                                <div class="mx-2 my-1 w-px bg-slate-200 dark:bg-navy-500"></div>
+
                                 <span class="line-clamp-1">Frontend Conf</span>
                               </div>
                             </div>
@@ -1719,19 +1679,13 @@
                             <div
                               class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 dark:bg-accent-light/15"
                             >
-                              <i
-                                class="fa-solid fa-image text-primary dark:text-accent-light"
-                              ></i>
+                              <i class="fa-solid fa-image text-primary dark:text-accent-light"></i>
                             </div>
                             <div>
-                              <p
-                                class="font-medium text-slate-600 dark:text-navy-100"
-                              >
+                              <p class="font-medium text-slate-600 dark:text-navy-100">
                                 Images Added
                               </p>
-                              <div
-                                class="mt-1 text-xs text-slate-400 line-clamp-1 dark:text-navy-300"
-                              >
+                              <div class="mt-1 text-xs text-slate-400 line-clamp-1 dark:text-navy-300">
                                 Mores Clarke added new image gallery
                               </div>
                             </div>
@@ -1743,14 +1697,10 @@
                               <i class="fa fa-leaf text-success"></i>
                             </div>
                             <div>
-                              <p
-                                class="font-medium text-slate-600 dark:text-navy-100"
-                              >
+                              <p class="font-medium text-slate-600 dark:text-navy-100">
                                 Design Completed
                               </p>
-                              <div
-                                class="mt-1 text-xs text-slate-400 line-clamp-1 dark:text-navy-300"
-                              >
+                              <div class="mt-1 text-xs text-slate-400 line-clamp-1 dark:text-navy-300">
                                 Robert Nolan completed the design of the CRM
                                 application
                               </div>
@@ -1776,19 +1726,13 @@
                               </svg>
                             </div>
                             <div>
-                              <p
-                                class="font-medium text-slate-600 dark:text-navy-100"
-                              >
+                              <p class="font-medium text-slate-600 dark:text-navy-100">
                                 Wed, June 21, 2021
                               </p>
-                              <div
-                                class="mt-1 flex text-xs text-slate-400 dark:text-navy-300"
-                              >
+                              <div class="mt-1 flex text-xs text-slate-400 dark:text-navy-300">
                                 <span class="shrink-0">16:00 - 20:00</span>
-                                <div
-                                  class="mx-2 my-1 w-px bg-slate-200 dark:bg-navy-500"
-                                ></div>
-  
+                                <div class="mx-2 my-1 w-px bg-slate-200 dark:bg-navy-500"></div>
+
                                 <span class="line-clamp-1">UI/UX Conf</span>
                               </div>
                             </div>
@@ -1800,14 +1744,10 @@
                               <i class="fa fa-project-diagram text-warning"></i>
                             </div>
                             <div>
-                              <p
-                                class="font-medium text-slate-600 dark:text-navy-100"
-                              >
+                              <p class="font-medium text-slate-600 dark:text-navy-100">
                                 ER Diagram
                               </p>
-                              <div
-                                class="mt-1 text-xs text-slate-400 line-clamp-1 dark:text-navy-300"
-                              >
+                              <div class="mt-1 text-xs text-slate-400 line-clamp-1 dark:text-navy-300">
                                 Team completed the ER diagram app
                               </div>
                             </div>
@@ -1832,20 +1772,13 @@
                               </svg>
                             </div>
                             <div>
-                              <p
-                                class="font-medium text-slate-600 dark:text-navy-100"
-                              >
+                              <p class="font-medium text-slate-600 dark:text-navy-100">
                                 THU, May 11, 2021
                               </p>
-                              <div
-                                class="mt-1 flex text-xs text-slate-400 dark:text-navy-300"
-                              >
+                              <div class="mt-1 flex text-xs text-slate-400 dark:text-navy-300">
                                 <span class="shrink-0">10:00 - 11:30</span>
-                                <div
-                                  class="mx-2 my-1 w-px bg-slate-200 dark:bg-navy-500"
-                                ></div>
-                                <span class="line-clamp-1"
-                                  >Interview, Konnor Guzman
+                                <div class="mx-2 my-1 w-px bg-slate-200 dark:bg-navy-500"></div>
+                                <span class="line-clamp-1">Interview, Konnor Guzman
                                 </span>
                               </div>
                             </div>
@@ -1857,14 +1790,10 @@
                               <i class="fa fa-history text-error"></i>
                             </div>
                             <div>
-                              <p
-                                class="font-medium text-slate-600 dark:text-navy-100"
-                              >
+                              <p class="font-medium text-slate-600 dark:text-navy-100">
                                 Weekly Report
                               </p>
-                              <div
-                                class="mt-1 text-xs text-slate-400 line-clamp-1 dark:text-navy-300"
-                              >
+                              <div class="mt-1 text-xs text-slate-400 line-clamp-1 dark:text-navy-300">
                                 The weekly report was uploaded
                               </div>
                             </div>
@@ -1881,19 +1810,13 @@
                             <div
                               class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-secondary/10 dark:bg-secondary-light/15"
                             >
-                              <i
-                                class="fa fa-user-edit text-secondary dark:text-secondary-light"
-                              ></i>
+                              <i class="fa fa-user-edit text-secondary dark:text-secondary-light"></i>
                             </div>
                             <div>
-                              <p
-                                class="font-medium text-slate-600 dark:text-navy-100"
-                              >
+                              <p class="font-medium text-slate-600 dark:text-navy-100">
                                 User Photo Changed
                               </p>
-                              <div
-                                class="mt-1 text-xs text-slate-400 line-clamp-1 dark:text-navy-300"
-                              >
+                              <div class="mt-1 text-xs text-slate-400 line-clamp-1 dark:text-navy-300">
                                 John Doe changed his avatar photo
                               </div>
                             </div>
@@ -1902,19 +1825,13 @@
                             <div
                               class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 dark:bg-accent-light/15"
                             >
-                              <i
-                                class="fa-solid fa-image text-primary dark:text-accent-light"
-                              ></i>
+                              <i class="fa-solid fa-image text-primary dark:text-accent-light"></i>
                             </div>
                             <div>
-                              <p
-                                class="font-medium text-slate-600 dark:text-navy-100"
-                              >
+                              <p class="font-medium text-slate-600 dark:text-navy-100">
                                 Images Added
                               </p>
-                              <div
-                                class="mt-1 text-xs text-slate-400 line-clamp-1 dark:text-navy-300"
-                              >
+                              <div class="mt-1 text-xs text-slate-400 line-clamp-1 dark:text-navy-300">
                                 Mores Clarke added new image gallery
                               </div>
                             </div>
@@ -1926,14 +1843,10 @@
                               <i class="fa fa-leaf text-success"></i>
                             </div>
                             <div>
-                              <p
-                                class="font-medium text-slate-600 dark:text-navy-100"
-                              >
+                              <p class="font-medium text-slate-600 dark:text-navy-100">
                                 Design Completed
                               </p>
-                              <div
-                                class="mt-1 text-xs text-slate-400 line-clamp-1 dark:text-navy-300"
-                              >
+                              <div class="mt-1 text-xs text-slate-400 line-clamp-1 dark:text-navy-300">
                                 Robert Nolan completed the design of the CRM
                                 application
                               </div>
@@ -1946,14 +1859,10 @@
                               <i class="fa fa-project-diagram text-warning"></i>
                             </div>
                             <div>
-                              <p
-                                class="font-medium text-slate-600 dark:text-navy-100"
-                              >
+                              <p class="font-medium text-slate-600 dark:text-navy-100">
                                 ER Diagram
                               </p>
-                              <div
-                                class="mt-1 text-xs text-slate-400 line-clamp-1 dark:text-navy-300"
-                              >
+                              <div class="mt-1 text-xs text-slate-400 line-clamp-1 dark:text-navy-300">
                                 Team completed the ER diagram app
                               </div>
                             </div>
@@ -1965,14 +1874,10 @@
                               <i class="fa fa-history text-error"></i>
                             </div>
                             <div>
-                              <p
-                                class="font-medium text-slate-600 dark:text-navy-100"
-                              >
+                              <p class="font-medium text-slate-600 dark:text-navy-100">
                                 Weekly Report
                               </p>
-                              <div
-                                class="mt-1 text-xs text-slate-400 line-clamp-1 dark:text-navy-300"
-                              >
+                              <div class="mt-1 text-xs text-slate-400 line-clamp-1 dark:text-navy-300">
                                 The weekly report was uploaded
                               </div>
                             </div>
@@ -2005,19 +1910,13 @@
                               </svg>
                             </div>
                             <div>
-                              <p
-                                class="font-medium text-slate-600 dark:text-navy-100"
-                              >
+                              <p class="font-medium text-slate-600 dark:text-navy-100">
                                 Mon, June 14, 2021
                               </p>
-                              <div
-                                class="mt-1 flex text-xs text-slate-400 dark:text-navy-300"
-                              >
+                              <div class="mt-1 flex text-xs text-slate-400 dark:text-navy-300">
                                 <span class="shrink-0">08:00 - 09:00</span>
-                                <div
-                                  class="mx-2 my-1 w-px bg-slate-200 dark:bg-navy-500"
-                                ></div>
-  
+                                <div class="mx-2 my-1 w-px bg-slate-200 dark:bg-navy-500"></div>
+
                                 <span class="line-clamp-1">Frontend Conf</span>
                               </div>
                             </div>
@@ -2042,19 +1941,13 @@
                               </svg>
                             </div>
                             <div>
-                              <p
-                                class="font-medium text-slate-600 dark:text-navy-100"
-                              >
+                              <p class="font-medium text-slate-600 dark:text-navy-100">
                                 Wed, June 21, 2021
                               </p>
-                              <div
-                                class="mt-1 flex text-xs text-slate-400 dark:text-navy-300"
-                              >
+                              <div class="mt-1 flex text-xs text-slate-400 dark:text-navy-300">
                                 <span class="shrink-0">16:00 - 20:00</span>
-                                <div
-                                  class="mx-2 my-1 w-px bg-slate-200 dark:bg-navy-500"
-                                ></div>
-  
+                                <div class="mx-2 my-1 w-px bg-slate-200 dark:bg-navy-500"></div>
+
                                 <span class="line-clamp-1">UI/UX Conf</span>
                               </div>
                             </div>
@@ -2079,20 +1972,13 @@
                               </svg>
                             </div>
                             <div>
-                              <p
-                                class="font-medium text-slate-600 dark:text-navy-100"
-                              >
+                              <p class="font-medium text-slate-600 dark:text-navy-100">
                                 THU, May 11, 2021
                               </p>
-                              <div
-                                class="mt-1 flex text-xs text-slate-400 dark:text-navy-300"
-                              >
+                              <div class="mt-1 flex text-xs text-slate-400 dark:text-navy-300">
                                 <span class="shrink-0">10:00 - 11:30</span>
-                                <div
-                                  class="mx-2 my-1 w-px bg-slate-200 dark:bg-navy-500"
-                                ></div>
-                                <span class="line-clamp-1"
-                                  >Interview, Konnor Guzman
+                                <div class="mx-2 my-1 w-px bg-slate-200 dark:bg-navy-500"></div>
+                                <span class="line-clamp-1">Interview, Konnor Guzman
                                 </span>
                               </div>
                             </div>
@@ -2117,19 +2003,13 @@
                               </svg>
                             </div>
                             <div>
-                              <p
-                                class="font-medium text-slate-600 dark:text-navy-100"
-                              >
+                              <p class="font-medium text-slate-600 dark:text-navy-100">
                                 Mon, Jul 16, 2021
                               </p>
-                              <div
-                                class="mt-1 flex text-xs text-slate-400 dark:text-navy-300"
-                              >
+                              <div class="mt-1 flex text-xs text-slate-400 dark:text-navy-300">
                                 <span class="shrink-0">06:00 - 16:00</span>
-                                <div
-                                  class="mx-2 my-1 w-px bg-slate-200 dark:bg-navy-500"
-                                ></div>
-  
+                                <div class="mx-2 my-1 w-px bg-slate-200 dark:bg-navy-500"></div>
+
                                 <span class="line-clamp-1">Laravel Conf</span>
                               </div>
                             </div>
@@ -2154,20 +2034,13 @@
                               </svg>
                             </div>
                             <div>
-                              <p
-                                class="font-medium text-slate-600 dark:text-navy-100"
-                              >
+                              <p class="font-medium text-slate-600 dark:text-navy-100">
                                 Wed, Jun 16, 2021
                               </p>
-                              <div
-                                class="mt-1 flex text-xs text-slate-400 dark:text-navy-300"
-                              >
+                              <div class="mt-1 flex text-xs text-slate-400 dark:text-navy-300">
                                 <span class="shrink-0">15:30 - 11:30</span>
-                                <div
-                                  class="mx-2 my-1 w-px bg-slate-200 dark:bg-navy-500"
-                                ></div>
-                                <span class="line-clamp-1"
-                                  >Interview, Jonh Doe
+                                <div class="mx-2 my-1 w-px bg-slate-200 dark:bg-navy-500"></div>
+                                <span class="line-clamp-1">Interview, Jonh Doe
                                 </span>
                               </div>
                             </div>
@@ -2187,9 +2060,7 @@
                               alt="image"
                             />
                             <div class="mt-5">
-                              <p
-                                class="text-base font-semibold text-slate-700 dark:text-navy-100"
-                              >
+                              <p class="text-base font-semibold text-slate-700 dark:text-navy-100">
                                 No any logs
                               </p>
                               <p class="text-slate-400 dark:text-navy-300">
@@ -2202,7 +2073,7 @@
                     </div>
                   </div>
                 </div>
-  
+
                 <!-- Right Sidebar Toggle -->
                 <button
                   @click="$store.global.isRightSidebarExpanded = true"
@@ -2227,7 +2098,7 @@
             </div>
           </div>
         </nav>
-  
+
         <!-- Mobile Searchbar -->
         <div
           x-show="$store.breakpoints.isXs && $store.global.isSearchbarActive"
@@ -2239,9 +2110,7 @@
           x-transition:leave-end="opacity-0 scale-95"
           class="fixed inset-0 z-[100] flex flex-col bg-white dark:bg-navy-700 sm:hidden"
         >
-          <div
-            class="flex items-center space-x-2 bg-slate-100 px-3 pt-2 dark:bg-navy-800"
-          >
+          <div class="flex items-center space-x-2 bg-slate-100 px-3 pt-2 dark:bg-navy-800">
             <button
               class="btn -ml-1.5 h-7 w-7 shrink-0 rounded-full p-0 text-slate-600 hover:bg-slate-300/20 active:bg-slate-300/25 dark:text-navy-100 dark:hover:bg-navy-300/20 dark:active:bg-navy-300/25"
               @click="$store.global.isSearchbarActive = false"
@@ -2268,7 +2137,7 @@
               placeholder="Search here..."
             />
           </div>
-  
+
           <div
             x-data="{activeTab:'tabAll'}"
             class="is-scrollbar-hidden flex shrink-0 overflow-x-auto bg-slate-100 px-2 text-slate-600 dark:bg-navy-800 dark:text-navy-200"
@@ -2316,14 +2185,13 @@
               Tasks
             </button>
           </div>
-  
-          <div
-            class="is-scrollbar-hidden overflow-y-auto overscroll-contain pb-2"
-          >
-            <div
-              class="is-scrollbar-hidden mt-3 flex space-x-4 overflow-x-auto px-3"
-            >
-              <a href="apps-kanban.html" class="w-14 text-center">
+
+          <div class="is-scrollbar-hidden overflow-y-auto overscroll-contain pb-2">
+            <div class="is-scrollbar-hidden mt-3 flex space-x-4 overflow-x-auto px-3">
+              <a
+                href="apps-kanban.html"
+                class="w-14 text-center"
+              >
                 <div class="avatar h-12 w-12">
                   <div class="is-initial rounded-full bg-success text-white">
                     <svg
@@ -2343,12 +2211,14 @@
                   </div>
                 </div>
                 <p
-                  class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100"
-                >
+                  class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100">
                   Kanban
                 </p>
               </a>
-              <a href="dashboards-crm-analytics.html" class="w-14 text-center">
+              <a
+                href="dashboards-crm-analytics.html"
+                class="w-14 text-center"
+              >
                 <div class="avatar h-12 w-12">
                   <div class="is-initial rounded-full bg-secondary text-white">
                     <svg
@@ -2368,12 +2238,14 @@
                   </div>
                 </div>
                 <p
-                  class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100"
-                >
+                  class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100">
                   Analytics
                 </p>
               </a>
-              <a href="apps-chat.html" class="w-14 text-center">
+              <a
+                href="apps-chat.html"
+                class="w-14 text-center"
+              >
                 <div class="avatar h-12 w-12">
                   <div class="is-initial rounded-full bg-info text-white">
                     <svg
@@ -2393,12 +2265,14 @@
                   </div>
                 </div>
                 <p
-                  class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100"
-                >
+                  class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100">
                   Chat
                 </p>
               </a>
-              <a href="apps-filemanager.html" class="w-14 text-center">
+              <a
+                href="apps-filemanager.html"
+                class="w-14 text-center"
+              >
                 <div class="avatar h-12 w-12">
                   <div class="is-initial rounded-full bg-error text-white">
                     <svg
@@ -2419,12 +2293,14 @@
                   </div>
                 </div>
                 <p
-                  class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100"
-                >
+                  class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100">
                   Files
                 </p>
               </a>
-              <a href="dashboards-crypto-1.html" class="w-14 text-center">
+              <a
+                href="dashboards-crypto-1.html"
+                class="w-14 text-center"
+              >
                 <div class="avatar h-12 w-12">
                   <div class="is-initial rounded-full bg-secondary text-white">
                     <svg
@@ -2444,16 +2320,16 @@
                   </div>
                 </div>
                 <p
-                  class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100"
-                >
+                  class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100">
                   Crypto
                 </p>
               </a>
-              <a href="dashboards-banking-1.html" class="w-14 text-center">
+              <a
+                href="dashboards-banking-1.html"
+                class="w-14 text-center"
+              >
                 <div class="avatar h-12 w-12">
-                  <div
-                    class="is-initial rounded-full bg-primary text-white dark:bg-accent"
-                  >
+                  <div class="is-initial rounded-full bg-primary text-white dark:bg-accent">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="h-5 w-5"
@@ -2471,12 +2347,14 @@
                   </div>
                 </div>
                 <p
-                  class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100"
-                >
+                  class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100">
                   Banking
                 </p>
               </a>
-              <a href="apps-todo.html" class="w-14 text-center">
+              <a
+                href="apps-todo.html"
+                class="w-14 text-center"
+              >
                 <div class="avatar h-12 w-12">
                   <div class="is-initial rounded-full bg-info text-white">
                     <svg
@@ -2501,13 +2379,15 @@
                   </div>
                 </div>
                 <p
-                  class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100"
-                >
+                  class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100">
                   Todo
                 </p>
               </a>
-  
-              <a href="dashboards-orders.html" class="w-14 text-center">
+
+              <a
+                href="dashboards-orders.html"
+                class="w-14 text-center"
+              >
                 <div class="avatar h-12 w-12">
                   <div class="is-initial rounded-full bg-warning text-white">
                     <svg
@@ -2527,16 +2407,13 @@
                   </div>
                 </div>
                 <p
-                  class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100"
-                >
+                  class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100">
                   Orders
                 </p>
               </a>
             </div>
-  
-            <div
-              class="mt-3 flex items-center justify-between bg-slate-100 py-1.5 px-3 dark:bg-navy-800"
-            >
+
+            <div class="mt-3 flex items-center justify-between bg-slate-100 py-1.5 px-3 dark:bg-navy-800">
               <p class="text-xs uppercase text-slate-400 dark:text-navy-300">
                 Recent
               </p>
@@ -2547,7 +2424,7 @@
                 View All
               </a>
             </div>
-  
+
             <div class="mt-1 font-inter font-medium">
               <a
                 class="group flex items-center space-x-2 px-2.5 py-2 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
@@ -2672,7 +2549,7 @@
                     d="M15 9a2 2 0 10-4 0v5a2 2 0 01-2 2h6m-6-4h4m8 0a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-  
+
                 <span>Crypto Dashboard</span>
               </a>
               <a
@@ -2693,7 +2570,7 @@
                     d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"
                   />
                 </svg>
-  
+
                 <span>Banking Dashboard</span>
               </a>
               <a
@@ -2714,7 +2591,7 @@
                     d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
                   />
                 </svg>
-  
+
                 <span>Analytics Dashboard</span>
               </a>
               <a
@@ -2735,13 +2612,13 @@
                     d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
                   />
                 </svg>
-  
+
                 <span>Influencer Dashboard</span>
               </a>
             </div>
           </div>
         </div>
-  
+
         <!-- Right Sidebar -->
         <div
           x-show="$store.global.isRightSidebarExpanded"
@@ -2831,7 +2708,7 @@
                   </svg>
                   <span class="text-xs">Activity</span>
                 </p>
-  
+
                 <button
                   @click="$store.global.isRightSidebarExpanded=false"
                   class="btn -mr-1 h-6 w-6 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
@@ -2852,7 +2729,7 @@
                   </svg>
                 </button>
               </div>
-  
+
               <div
                 x-show="activeTab === 'tabHome'"
                 x-transition:enter="transition-all duration-500 easy-in-out"
@@ -2882,9 +2759,7 @@
                   </span>
                 </label>
                 <div class="mt-3">
-                  <h2
-                    class="px-3 text-xs+ font-medium tracking-wide text-slate-700 line-clamp-1 dark:text-navy-100"
-                  >
+                  <h2 class="px-3 text-xs+ font-medium tracking-wide text-slate-700 line-clamp-1 dark:text-navy-100">
                     Banking cards
                   </h2>
                   <div
@@ -2910,9 +2785,7 @@
                             **** **** **** 8945
                           </p>
                         </div>
-                        <div
-                          class="mask is-reuleaux-triangle absolute top-0 right-0 -m-3 h-16 w-16 bg-white/20"
-                        ></div>
+                        <div class="mask is-reuleaux-triangle absolute top-0 right-0 -m-3 h-16 w-16 bg-white/20"></div>
                       </div>
                       <div
                         class="swiper-slide relative flex h-28 w-48 flex-col overflow-hidden rounded-xl bg-gradient-to-br from-pink-500 to-rose-500 p-3"
@@ -2932,9 +2805,7 @@
                             **** **** **** 8945
                           </p>
                         </div>
-                        <div
-                          class="mask is-diamond absolute bottom-0 right-0 -m-3 h-16 w-16 bg-white/20"
-                        ></div>
+                        <div class="mask is-diamond absolute bottom-0 right-0 -m-3 h-16 w-16 bg-white/20"></div>
                       </div>
                       <div
                         class="swiper-slide relative flex h-28 w-48 flex-col overflow-hidden rounded-xl bg-gradient-to-br from-info to-info-focus p-3"
@@ -2954,26 +2825,23 @@
                             **** **** **** 8945
                           </p>
                         </div>
-                        <div
-                          class="mask is-hexagon-2 absolute top-0 right-0 -m-3 h-16 w-16 bg-white/20"
-                        ></div>
+                        <div class="mask is-hexagon-2 absolute top-0 right-0 -m-3 h-16 w-16 bg-white/20"></div>
                       </div>
                     </div>
                   </div>
                 </div>
-  
+
                 <div class="mt-4 px-3">
-                  <h2
-                    class="text-xs+ font-medium tracking-wide text-slate-700 line-clamp-1 dark:text-navy-100"
-                  >
+                  <h2 class="text-xs+ font-medium tracking-wide text-slate-700 line-clamp-1 dark:text-navy-100">
                     Pinned Apps
                   </h2>
                   <div class="mt-3 flex space-x-3">
-                    <a href="apps-kanban.html" class="w-12 text-center">
+                    <a
+                      href="apps-kanban.html"
+                      class="w-12 text-center"
+                    >
                       <div class="avatar h-10 w-10">
-                        <div
-                          class="is-initial mask is-squircle bg-success text-white"
-                        >
+                        <div class="is-initial mask is-squircle bg-success text-white">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             class="h-5 w-5"
@@ -2991,8 +2859,7 @@
                         </div>
                       </div>
                       <p
-                        class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100"
-                      >
+                        class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100">
                         Kanban
                       </p>
                     </a>
@@ -3001,9 +2868,7 @@
                       class="w-12 text-center"
                     >
                       <div class="avatar h-10 w-10">
-                        <div
-                          class="is-initial mask is-squircle bg-warning text-white"
-                        >
+                        <div class="is-initial mask is-squircle bg-warning text-white">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             class="h-5 w-5"
@@ -3021,16 +2886,16 @@
                         </div>
                       </div>
                       <p
-                        class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100"
-                      >
+                        class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100">
                         Analytics
                       </p>
                     </a>
-                    <a href="apps-chat.html" class="w-12 text-center">
+                    <a
+                      href="apps-chat.html"
+                      class="w-12 text-center"
+                    >
                       <div class="avatar h-10 w-10">
-                        <div
-                          class="is-initial mask is-squircle bg-info text-white"
-                        >
+                        <div class="is-initial mask is-squircle bg-info text-white">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             class="h-5 w-5"
@@ -3048,16 +2913,16 @@
                         </div>
                       </div>
                       <p
-                        class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100"
-                      >
+                        class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100">
                         Chat
                       </p>
                     </a>
-                    <a href="apps-filemanager.html" class="w-12 text-center">
+                    <a
+                      href="apps-filemanager.html"
+                      class="w-12 text-center"
+                    >
                       <div class="avatar h-10 w-10">
-                        <div
-                          class="is-initial mask is-squircle bg-error text-white"
-                        >
+                        <div class="is-initial mask is-squircle bg-error text-white">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             class="h-5 w-5"
@@ -3076,16 +2941,16 @@
                         </div>
                       </div>
                       <p
-                        class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100"
-                      >
+                        class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100">
                         Files
                       </p>
                     </a>
-                    <a href="dashboards-banking-1.html" class="w-12 text-center">
+                    <a
+                      href="dashboards-banking-1.html"
+                      class="w-12 text-center"
+                    >
                       <div class="avatar h-10 w-10">
-                        <div
-                          class="is-initial mask is-squircle bg-secondary text-white"
-                        >
+                        <div class="is-initial mask is-squircle bg-secondary text-white">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             class="h-5 w-5"
@@ -3103,25 +2968,19 @@
                         </div>
                       </div>
                       <p
-                        class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100"
-                      >
+                        class="mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap text-xs text-slate-700 dark:text-navy-100">
                         Banking
                       </p>
                     </a>
                   </div>
                 </div>
-  
+
                 <div class="mt-4">
                   <div class="grid grid-cols-2 gap-3 px-3">
-                    <div
-                      class="rounded-lg bg-slate-150 px-2.5 py-2 dark:bg-navy-600"
-                    >
+                    <div class="rounded-lg bg-slate-150 px-2.5 py-2 dark:bg-navy-600">
                       <div class="flex items-center justify-between space-x-1">
                         <p>
-                          <span
-                            class="text-lg font-medium text-slate-700 dark:text-navy-100"
-                            >11.3</span
-                          >
+                          <span class="text-lg font-medium text-slate-700 dark:text-navy-100">11.3</span>
                           <span class="text-xs">hr</span>
                         </p>
                         <svg
@@ -3137,20 +2996,16 @@
                           />
                         </svg>
                       </div>
-  
+
                       <p class="mt-0.5 text-tiny+ uppercase">Working Hours</p>
-  
-                      <div
-                        class="progress mt-3 h-1.5 bg-secondary/15 dark:bg-secondary-light/25"
-                      >
+
+                      <div class="progress mt-3 h-1.5 bg-secondary/15 dark:bg-secondary-light/25">
                         <div
                           class="is-active relative w-8/12 overflow-hidden rounded-full bg-secondary dark:bg-secondary-light"
                         ></div>
                       </div>
-  
-                      <div
-                        class="mt-1.5 flex items-center justify-between text-xs text-slate-400 dark:text-navy-300"
-                      >
+
+                      <div class="mt-1.5 flex items-center justify-between text-xs text-slate-400 dark:text-navy-300">
                         <button
                           class="btn -ml-1 h-6 w-6 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
                         >
@@ -3177,15 +3032,10 @@
                         <span> 71%</span>
                       </div>
                     </div>
-                    <div
-                      class="rounded-lg bg-slate-150 px-2.5 py-2 dark:bg-navy-600"
-                    >
+                    <div class="rounded-lg bg-slate-150 px-2.5 py-2 dark:bg-navy-600">
                       <div class="flex items-center justify-between space-x-1">
                         <p>
-                          <span
-                            class="text-lg font-medium text-slate-700 dark:text-navy-100"
-                            >13</span
-                          >
+                          <span class="text-lg font-medium text-slate-700 dark:text-navy-100">13</span>
                           <span class="text-xs">/22</span>
                         </p>
                         <svg
@@ -3201,20 +3051,14 @@
                           />
                         </svg>
                       </div>
-  
+
                       <p class="mt-0.5 text-tiny+ uppercase">Completed tasks</p>
-  
-                      <div
-                        class="progress mt-3 h-1.5 bg-success/15 dark:bg-success/25"
-                      >
-                        <div
-                          class="relative w-6/12 overflow-hidden rounded-full bg-success"
-                        ></div>
+
+                      <div class="progress mt-3 h-1.5 bg-success/15 dark:bg-success/25">
+                        <div class="relative w-6/12 overflow-hidden rounded-full bg-success"></div>
                       </div>
-  
-                      <div
-                        class="mt-1.5 flex items-center justify-between text-xs text-slate-400 dark:text-navy-300"
-                      >
+
+                      <div class="mt-1.5 flex items-center justify-between text-xs text-slate-400 dark:text-navy-300">
                         <button
                           class="btn -ml-1 h-6 w-6 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
                         >
@@ -3243,11 +3087,9 @@
                     </div>
                   </div>
                 </div>
-  
+
                 <div class="mt-4">
-                  <h2
-                    class="px-3 text-xs+ font-medium tracking-wide text-slate-700 line-clamp-1 dark:text-navy-100"
-                  >
+                  <h2 class="px-3 text-xs+ font-medium tracking-wide text-slate-700 line-clamp-1 dark:text-navy-100">
                     Stock Market
                   </h2>
                   <div class="mt-3 grid grid-cols-2 gap-3 px-3">
@@ -3259,25 +3101,21 @@
                           alt="image"
                         />
                         <div>
-                          <h2
-                            class="font-medium tracking-wide text-slate-700 dark:text-navy-100"
-                          >
+                          <h2 class="font-medium tracking-wide text-slate-700 dark:text-navy-100">
                             BTC
                           </h2>
                           <p class="text-xs">Bitcoin</p>
                         </div>
                       </div>
-  
+
                       <div class="ax-transparent-gridline">
                         <div
                           x-init="$nextTick(() => { $el._x_chart = new ApexCharts($el,pages.charts.stockMarket1); $el._x_chart.render() });"
                         ></div>
                       </div>
-  
+
                       <div class="mt-2 flex items-center justify-between">
-                        <p
-                          class="font-medium tracking-wide text-slate-700 dark:text-navy-100"
-                        >
+                        <p class="font-medium tracking-wide text-slate-700 dark:text-navy-100">
                           60.33$
                         </p>
                         <p class="text-xs font-medium tracking-wide text-success">
@@ -3285,7 +3123,7 @@
                         </p>
                       </div>
                     </div>
-  
+
                     <div class="rounded-lg bg-slate-100 p-2.5 dark:bg-navy-600">
                       <div class="flex items-center space-x-2">
                         <img
@@ -3294,25 +3132,21 @@
                           alt="image"
                         />
                         <div>
-                          <h2
-                            class="font-medium tracking-wide text-slate-700 dark:text-navy-100"
-                          >
+                          <h2 class="font-medium tracking-wide text-slate-700 dark:text-navy-100">
                             SOL
                           </h2>
                           <p class="text-xs">Solana</p>
                         </div>
                       </div>
-  
+
                       <div class="ax-transparent-gridline">
                         <div
                           x-init="$nextTick(() => { $el._x_chart = new ApexCharts($el,pages.charts.stockMarket2); $el._x_chart.render() });"
                         ></div>
                       </div>
-  
+
                       <div class="mt-2 flex items-center justify-between">
-                        <p
-                          class="font-medium tracking-wide text-slate-700 dark:text-navy-100"
-                        >
+                        <p class="font-medium tracking-wide text-slate-700 dark:text-navy-100">
                           20.56$
                         </p>
                         <p class="text-xs font-medium tracking-wide text-success">
@@ -3322,24 +3156,19 @@
                     </div>
                   </div>
                 </div>
-  
+
                 <div class="mt-4">
-                  <h2
-                    class="px-3 text-xs+ font-medium tracking-wide text-slate-700 line-clamp-1 dark:text-navy-100"
-                  >
+                  <h2 class="px-3 text-xs+ font-medium tracking-wide text-slate-700 line-clamp-1 dark:text-navy-100">
                     Latest News
                   </h2>
                   <div class="mt-3 space-y-3 px-2">
-                    <div
-                      class="flex justify-between space-x-2 rounded-lg bg-slate-100 p-2.5 dark:bg-navy-700"
-                    >
+                    <div class="flex justify-between space-x-2 rounded-lg bg-slate-100 p-2.5 dark:bg-navy-700">
                       <div class="flex flex-1 flex-col justify-between">
                         <div class="line-clamp-2">
                           <a
                             href="#"
                             class="font-medium text-slate-700 hover:text-primary focus:text-primary dark:text-navy-100 dark:hover:text-accent-light dark:focus:text-accent-light"
-                            >What is Tailwind CSS?</a
-                          >
+                          >What is Tailwind CSS?</a>
                         </div>
                         <div class="flex items-center justify-between">
                           <div class="flex items-center space-x-2">
@@ -3354,9 +3183,7 @@
                               <p class="text-xs font-medium line-clamp-1">
                                 John D.
                               </p>
-                              <p
-                                class="text-tiny+ text-slate-400 line-clamp-1 dark:text-navy-300"
-                              >
+                              <p class="text-tiny+ text-slate-400 line-clamp-1 dark:text-navy-300">
                                 2 min read
                               </p>
                             </div>
@@ -3407,17 +3234,14 @@
                         alt="image"
                       />
                     </div>
-  
-                    <div
-                      class="flex justify-between space-x-2 rounded-lg bg-slate-100 p-2.5 dark:bg-navy-700"
-                    >
+
+                    <div class="flex justify-between space-x-2 rounded-lg bg-slate-100 p-2.5 dark:bg-navy-700">
                       <div class="flex flex-1 flex-col justify-between">
                         <div class="line-clamp-2">
                           <a
                             href="#"
                             class="font-medium text-slate-700 hover:text-primary focus:text-primary dark:text-navy-100 dark:hover:text-accent-light dark:focus:text-accent-light"
-                            >Tailwind CSS Card Example</a
-                          >
+                          >Tailwind CSS Card Example</a>
                         </div>
                         <div class="flex items-center justify-between">
                           <div class="flex items-center space-x-2">
@@ -3432,9 +3256,7 @@
                               <p class="text-xs font-medium line-clamp-1">
                                 Travis F.
                               </p>
-                              <p
-                                class="text-tiny+ text-slate-400 line-clamp-1 dark:text-navy-300"
-                              >
+                              <p class="text-tiny+ text-slate-400 line-clamp-1 dark:text-navy-300">
                                 5 min read
                               </p>
                             </div>
@@ -3485,17 +3307,14 @@
                         alt="image"
                       />
                     </div>
-  
-                    <div
-                      class="flex justify-between space-x-2 rounded-lg bg-slate-100 p-2.5 dark:bg-navy-700"
-                    >
+
+                    <div class="flex justify-between space-x-2 rounded-lg bg-slate-100 p-2.5 dark:bg-navy-700">
                       <div class="flex flex-1 flex-col justify-between">
                         <div class="line-clamp-2">
                           <a
                             href="#"
                             class="font-medium text-slate-700 hover:text-primary focus:text-primary dark:text-navy-100 dark:hover:text-accent-light dark:focus:text-accent-light"
-                            >10 Tips for Making a Good Camera Even Better</a
-                          >
+                          >10 Tips for Making a Good Camera Even Better</a>
                         </div>
                         <div class="flex items-center justify-between">
                           <div class="flex items-center space-x-2">
@@ -3510,9 +3329,7 @@
                               <p class="text-xs font-medium line-clamp-1">
                                 Alfredo E .
                               </p>
-                              <p
-                                class="text-tiny+ text-slate-400 line-clamp-1 dark:text-navy-300"
-                              >
+                              <p class="text-tiny+ text-slate-400 line-clamp-1 dark:text-navy-300">
                                 4 min read
                               </p>
                             </div>
@@ -3565,11 +3382,9 @@
                     </div>
                   </div>
                 </div>
-  
+
                 <div class="mt-3 px-3">
-                  <h2
-                    class="text-xs+ font-medium tracking-wide text-slate-700 line-clamp-1 dark:text-navy-100"
-                  >
+                  <h2 class="text-xs+ font-medium tracking-wide text-slate-700 line-clamp-1 dark:text-navy-100">
                     Settings
                   </h2>
                   <div class="mt-2 flex flex-col space-y-2">
@@ -3591,24 +3406,20 @@
                     </label>
                   </div>
                 </div>
-  
+
                 <div class="mt-3 px-3">
                   <div class="rounded-lg bg-slate-100 p-3 dark:bg-navy-600">
                     <div class="flex items-center justify-between">
                       <p>
-                        <span
-                          class="font-medium text-slate-600 dark:text-navy-100"
-                          >35GB</span
-                        >
+                        <span class="font-medium text-slate-600 dark:text-navy-100">35GB</span>
                         of 1TB
                       </p>
                       <a
                         href="#"
                         class="text-xs+ font-medium text-primary outline-none transition-colors duration-300 hover:text-primary/70 focus:text-primary/70 dark:text-accent-light dark:hover:text-accent-light/70 dark:focus:text-accent-light/70"
-                        >Upgrade</a
-                      >
+                      >Upgrade</a>
                     </div>
-  
+
                     <div class="progress mt-2 h-2 bg-slate-150 dark:bg-navy-500">
                       <div class="w-7/12 rounded-full bg-info"></div>
                     </div>
@@ -3616,7 +3427,7 @@
                 </div>
                 <div class="h-18"></div>
               </div>
-  
+
               <div
                 x-show="activeTab === 'tabProjects'"
                 x-transition:enter="transition-all duration-500 easy-in-out"
@@ -3627,9 +3438,7 @@
                 <div class="grid grid-cols-2 gap-3">
                   <div class="rounded-lg bg-slate-100 p-3 dark:bg-navy-600">
                     <div class="flex justify-between space-x-1">
-                      <p
-                        class="text-xl font-semibold text-slate-700 dark:text-navy-100"
-                      >
+                      <p class="text-xl font-semibold text-slate-700 dark:text-navy-100">
                         14
                       </p>
                       <svg
@@ -3651,9 +3460,7 @@
                   </div>
                   <div class="rounded-lg bg-slate-100 p-3 dark:bg-navy-600">
                     <div class="flex justify-between">
-                      <p
-                        class="text-xl font-semibold text-slate-700 dark:text-navy-100"
-                      >
+                      <p class="text-xl font-semibold text-slate-700 dark:text-navy-100">
                         36
                       </p>
                       <svg
@@ -3675,33 +3482,27 @@
                   </div>
                   <div class="rounded-lg bg-slate-100 p-3 dark:bg-navy-600">
                     <div class="flex justify-between">
-                      <p
-                        class="text-xl font-semibold text-slate-700 dark:text-navy-100"
-                      >
+                      <p class="text-xl font-semibold text-slate-700 dark:text-navy-100">
                         143
                       </p>
-  
+
                       <i class="fa fa-spinner text-base text-warning"></i>
                     </div>
                     <p class="mt-1 text-xs+">In Progress</p>
                   </div>
                   <div class="rounded-lg bg-slate-100 p-3 dark:bg-navy-600">
                     <div class="flex justify-between">
-                      <p
-                        class="text-xl font-semibold text-slate-700 dark:text-navy-100"
-                      >
+                      <p class="text-xl font-semibold text-slate-700 dark:text-navy-100">
                         279
                       </p>
-  
+
                       <i class="fa-solid fa-list-check text-base text-info"></i>
                     </div>
                     <p class="mt-1 text-xs+">Total</p>
                   </div>
                 </div>
-  
-                <div
-                  class="mt-4 rounded-lg border border-slate-150 p-3 dark:border-navy-600"
-                >
+
+                <div class="mt-4 rounded-lg border border-slate-150 p-3 dark:border-navy-600">
                   <div class="flex items-center space-x-3">
                     <img
                       class="h-10 w-10 rounded-lg object-cover object-center"
@@ -3709,9 +3510,7 @@
                       alt="image"
                     />
                     <div>
-                      <p
-                        class="font-medium leading-snug text-slate-700 dark:text-navy-100"
-                      >
+                      <p class="font-medium leading-snug text-slate-700 dark:text-navy-100">
                         LMS App Design
                       </p>
                       <p class="text-xs text-slate-400 dark:text-navy-300">
@@ -3719,20 +3518,16 @@
                       </p>
                     </div>
                   </div>
-  
+
                   <div class="mt-4">
                     <div class="progress h-1.5 bg-slate-150 dark:bg-navy-500">
-                      <div
-                        class="w-4/12 rounded-full bg-primary dark:bg-accent"
-                      ></div>
+                      <div class="w-4/12 rounded-full bg-primary dark:bg-accent"></div>
                     </div>
-                    <p
-                      class="mt-2 text-right text-xs+ font-medium text-primary dark:text-accent-light"
-                    >
+                    <p class="mt-2 text-right text-xs+ font-medium text-primary dark:text-accent-light">
                       25%
                     </p>
                   </div>
-  
+
                   <div class="mt-3 flex items-center justify-between space-x-2">
                     <div class="flex -space-x-3">
                       <div class="avatar h-7 w-7 hover:z-10">
@@ -3777,10 +3572,8 @@
                     </button>
                   </div>
                 </div>
-  
-                <div
-                  class="mt-4 rounded-lg border border-slate-150 p-3 dark:border-navy-600"
-                >
+
+                <div class="mt-4 rounded-lg border border-slate-150 p-3 dark:border-navy-600">
                   <div class="flex items-center space-x-3">
                     <img
                       class="h-10 w-10 rounded-lg object-cover object-center"
@@ -3788,9 +3581,7 @@
                       alt="image"
                     />
                     <div>
-                      <p
-                        class="font-medium leading-snug text-slate-700 dark:text-navy-100"
-                      >
+                      <p class="font-medium leading-snug text-slate-700 dark:text-navy-100">
                         Store Dashboard
                       </p>
                       <p class="text-xs text-slate-400 dark:text-navy-300">
@@ -3798,20 +3589,16 @@
                       </p>
                     </div>
                   </div>
-  
+
                   <div class="mt-4">
                     <div class="progress h-1.5 bg-slate-150 dark:bg-navy-500">
-                      <div
-                        class="w-6/12 rounded-full bg-primary dark:bg-accent"
-                      ></div>
+                      <div class="w-6/12 rounded-full bg-primary dark:bg-accent"></div>
                     </div>
-                    <p
-                      class="mt-2 text-right text-xs+ font-medium text-primary dark:text-accent-light"
-                    >
+                    <p class="mt-2 text-right text-xs+ font-medium text-primary dark:text-accent-light">
                       49%
                     </p>
                   </div>
-  
+
                   <div class="mt-3 flex items-center justify-between space-x-2">
                     <div class="flex -space-x-3">
                       <div class="avatar h-7 w-7 hover:z-10">
@@ -3856,10 +3643,8 @@
                     </button>
                   </div>
                 </div>
-  
-                <div
-                  class="mt-4 rounded-lg border border-slate-150 p-3 dark:border-navy-600"
-                >
+
+                <div class="mt-4 rounded-lg border border-slate-150 p-3 dark:border-navy-600">
                   <div class="flex items-center space-x-3">
                     <img
                       class="h-10 w-10 rounded-lg object-cover object-center"
@@ -3867,9 +3652,7 @@
                       alt="image"
                     />
                     <div>
-                      <p
-                        class="font-medium leading-snug text-slate-700 dark:text-navy-100"
-                      >
+                      <p class="font-medium leading-snug text-slate-700 dark:text-navy-100">
                         Chat Mobile App
                       </p>
                       <p class="text-xs text-slate-400 dark:text-navy-300">
@@ -3877,20 +3660,16 @@
                       </p>
                     </div>
                   </div>
-  
+
                   <div class="mt-4">
                     <div class="progress h-1.5 bg-slate-150 dark:bg-navy-500">
-                      <div
-                        class="w-2/12 rounded-full bg-primary dark:bg-accent"
-                      ></div>
+                      <div class="w-2/12 rounded-full bg-primary dark:bg-accent"></div>
                     </div>
-                    <p
-                      class="mt-2 text-right text-xs+ font-medium text-primary dark:text-accent-light"
-                    >
+                    <p class="mt-2 text-right text-xs+ font-medium text-primary dark:text-accent-light">
                       13%
                     </p>
                   </div>
-  
+
                   <div class="mt-3 flex items-center justify-between space-x-2">
                     <div class="flex -space-x-3">
                       <div class="avatar h-7 w-7 hover:z-10">
@@ -3935,10 +3714,8 @@
                     </button>
                   </div>
                 </div>
-  
-                <div
-                  class="mt-4 rounded-lg border border-slate-150 p-3 dark:border-navy-600"
-                >
+
+                <div class="mt-4 rounded-lg border border-slate-150 p-3 dark:border-navy-600">
                   <div class="flex items-center space-x-3">
                     <img
                       class="h-10 w-10 rounded-lg object-cover object-center"
@@ -3946,9 +3723,7 @@
                       alt="image"
                     />
                     <div>
-                      <p
-                        class="font-medium leading-snug text-slate-700 dark:text-navy-100"
-                      >
+                      <p class="font-medium leading-snug text-slate-700 dark:text-navy-100">
                         NFT Marketplace App
                       </p>
                       <p class="text-xs text-slate-400 dark:text-navy-300">
@@ -3956,20 +3731,16 @@
                       </p>
                     </div>
                   </div>
-  
+
                   <div class="mt-4">
                     <div class="progress h-1.5 bg-slate-150 dark:bg-navy-500">
-                      <div
-                        class="w-9/12 rounded-full bg-primary dark:bg-accent"
-                      ></div>
+                      <div class="w-9/12 rounded-full bg-primary dark:bg-accent"></div>
                     </div>
-                    <p
-                      class="mt-2 text-right text-xs+ font-medium text-primary dark:text-accent-light"
-                    >
+                    <p class="mt-2 text-right text-xs+ font-medium text-primary dark:text-accent-light">
                       78%
                     </p>
                   </div>
-  
+
                   <div class="mt-3 flex items-center justify-between space-x-2">
                     <div class="flex -space-x-3">
                       <div class="avatar h-7 w-7 hover:z-10">
@@ -4014,10 +3785,10 @@
                     </button>
                   </div>
                 </div>
-  
+
                 <div class="h-18"></div>
               </div>
-  
+
               <div
                 x-show="activeTab === 'tabActivity'"
                 x-transition:enter="transition-all duration-500 easy-in-out"
@@ -4025,9 +3796,7 @@
                 x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
                 class="is-scrollbar-hidden overflow-y-auto overscroll-contain pt-1"
               >
-                <div
-                  class="mx-3 flex flex-col items-center rounded-lg bg-slate-100 py-3 px-8 dark:bg-navy-600"
-                >
+                <div class="mx-3 flex flex-col items-center rounded-lg bg-slate-100 py-3 px-8 dark:bg-navy-600">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-8 w-8 text-secondary dark:text-secondary-light"
@@ -4042,23 +3811,19 @@
                       d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                     />
                   </svg>
-  
+
                   <p class="mt-2 text-xs">Today</p>
-  
-                  <p
-                    class="text-lg font-medium text-slate-700 dark:text-navy-100"
-                  >
+
+                  <p class="text-lg font-medium text-slate-700 dark:text-navy-100">
                     6hr 22m
                   </p>
-  
-                  <div
-                    class="progress mt-3 h-2 bg-secondary/15 dark:bg-secondary-light/25"
-                  >
+
+                  <div class="progress mt-3 h-2 bg-secondary/15 dark:bg-secondary-light/25">
                     <div
                       class="is-active relative w-8/12 overflow-hidden rounded-full bg-secondary dark:bg-secondary-light"
                     ></div>
                   </div>
-  
+
                   <button
                     class="btn mt-5 space-x-2 rounded-full border border-slate-300 px-3 text-xs+ font-medium text-slate-700 hover:bg-slate-150 focus:bg-slate-150 active:bg-slate-150/80 dark:border-navy-450 dark:text-navy-100 dark:hover:bg-navy-500 dark:focus:bg-navy-500 dark:active:bg-navy-500/90"
                   >
@@ -4079,7 +3844,7 @@
                     <span> Download Report</span>
                   </button>
                 </div>
-  
+
                 <ol class="timeline line-space mt-5 px-4 [--size:1.5rem]">
                   <li class="timeline-item">
                     <div
@@ -4088,17 +3853,11 @@
                       <i class="fa fa-user-edit text-tiny"></i>
                     </div>
                     <div class="timeline-item-content flex-1 pl-4">
-                      <div
-                        class="flex flex-col justify-between pb-2 sm:flex-row sm:pb-0"
-                      >
-                        <p
-                          class="pb-2 font-medium leading-none text-slate-600 dark:text-navy-100 sm:pb-0"
-                        >
+                      <div class="flex flex-col justify-between pb-2 sm:flex-row sm:pb-0">
+                        <p class="pb-2 font-medium leading-none text-slate-600 dark:text-navy-100 sm:pb-0">
                           User Photo Changed
                         </p>
-                        <span class="text-xs text-slate-400 dark:text-navy-300"
-                          >12 minute ago</span
-                        >
+                        <span class="text-xs text-slate-400 dark:text-navy-300">12 minute ago</span>
                       </div>
                       <p class="py-1">John Doe changed his avatar photo</p>
                       <div class="avatar mt-2 h-20 w-20">
@@ -4117,17 +3876,11 @@
                       <i class="fa-solid fa-image text-tiny"></i>
                     </div>
                     <div class="timeline-item-content flex-1 pl-4">
-                      <div
-                        class="flex flex-col justify-between pb-2 sm:flex-row sm:pb-0"
-                      >
-                        <p
-                          class="pb-2 font-medium leading-none text-slate-600 dark:text-navy-100 sm:pb-0"
-                        >
+                      <div class="flex flex-col justify-between pb-2 sm:flex-row sm:pb-0">
+                        <p class="pb-2 font-medium leading-none text-slate-600 dark:text-navy-100 sm:pb-0">
                           Images Added
                         </p>
-                        <span class="text-xs text-slate-400 dark:text-navy-300"
-                          >1 hour ago</span
-                        >
+                        <span class="text-xs text-slate-400 dark:text-navy-300">1 hour ago</span>
                       </div>
                       <p class="py-1">Mores Clarke added new image gallery</p>
                       <div class="mt-4 grid grid-cols-3 gap-3">
@@ -4163,19 +3916,17 @@
                         />
                       </div>
                       <div class="mt-4">
-                        <span
-                          class="font-medium text-slate-600 dark:text-navy-100"
-                        >
+                        <span class="font-medium text-slate-600 dark:text-navy-100">
                           Category:
                         </span>
-  
+
                         <a
                           href="#"
                           class="text-xs text-primary hover:text-primary-focus dark:text-accent-light dark:hover:text-accent"
                         >
                           #Tag
                         </a>
-  
+
                         <a
                           href="#"
                           class="text-xs text-primary hover:text-primary-focus dark:text-accent-light dark:hover:text-accent"
@@ -4192,17 +3943,11 @@
                       <i class="fa fa-leaf text-tiny"></i>
                     </div>
                     <div class="timeline-item-content flex-1 pl-4">
-                      <div
-                        class="flex flex-col justify-between pb-2 sm:flex-row sm:pb-0"
-                      >
-                        <p
-                          class="pb-2 font-medium leading-none text-slate-600 dark:text-navy-100 sm:pb-0"
-                        >
+                      <div class="flex flex-col justify-between pb-2 sm:flex-row sm:pb-0">
+                        <p class="pb-2 font-medium leading-none text-slate-600 dark:text-navy-100 sm:pb-0">
                           Design Completed
                         </p>
-                        <span class="text-xs text-slate-400 dark:text-navy-300"
-                          >3 hours ago</span
-                        >
+                        <span class="text-xs text-slate-400 dark:text-navy-300">3 hours ago</span>
                       </div>
                       <p class="py-1">
                         Robert Nolan completed the design of the CRM application
@@ -4234,14 +3979,14 @@
                         >
                           UI/UX
                         </a>
-  
+
                         <a
                           href="#"
                           class="tag rounded-full border border-info/30 bg-info/10 text-info hover:bg-info/20 focus:bg-info/20 active:bg-info/25"
                         >
                           CRM
                         </a>
-  
+
                         <a
                           href="#"
                           class="tag rounded-full border border-success/30 bg-success/10 text-success hover:bg-success/20 focus:bg-success/20 active:bg-success/25"
@@ -4258,17 +4003,11 @@
                       <i class="fa fa-project-diagram text-tiny"></i>
                     </div>
                     <div class="timeline-item-content flex-1 pl-4">
-                      <div
-                        class="flex flex-col justify-between pb-2 sm:flex-row sm:pb-0"
-                      >
-                        <p
-                          class="pb-2 font-medium leading-none text-slate-600 dark:text-navy-100 sm:pb-0"
-                        >
+                      <div class="flex flex-col justify-between pb-2 sm:flex-row sm:pb-0">
+                        <p class="pb-2 font-medium leading-none text-slate-600 dark:text-navy-100 sm:pb-0">
                           ER Diagram
                         </p>
-                        <span class="text-xs text-slate-400 dark:text-navy-300"
-                          >a day ago</span
-                        >
+                        <span class="text-xs text-slate-400 dark:text-navy-300">a day ago</span>
                       </div>
                       <p class="py-1">Team completed the ER diagram app</p>
                       <div>
@@ -4284,7 +4023,7 @@
                                 alt="avatar"
                               />
                             </div>
-  
+
                             <div class="avatar h-7 w-7 hover:z-10">
                               <div
                                 class="is-initial rounded-full bg-info text-xs+ uppercase text-white ring ring-white dark:ring-navy-700"
@@ -4292,7 +4031,7 @@
                                 jd
                               </div>
                             </div>
-  
+
                             <div class="avatar h-7 w-7 hover:z-10">
                               <img
                                 class="rounded-full ring ring-white dark:ring-navy-700"
@@ -4300,7 +4039,7 @@
                                 alt="avatar"
                               />
                             </div>
-  
+
                             <div class="avatar h-7 w-7 hover:z-10">
                               <img
                                 class="rounded-full ring ring-white dark:ring-navy-700"
@@ -4308,7 +4047,7 @@
                                 alt="avatar"
                               />
                             </div>
-  
+
                             <div class="avatar h-7 w-7 hover:z-10">
                               <img
                                 class="rounded-full ring ring-white dark:ring-navy-700"
@@ -4346,17 +4085,11 @@
                       <i class="fa fa-history text-tiny"></i>
                     </div>
                     <div class="timeline-item-content flex-1 pl-4">
-                      <div
-                        class="flex flex-col justify-between pb-2 sm:flex-row sm:pb-0"
-                      >
-                        <p
-                          class="pb-2 font-medium leading-none text-slate-600 dark:text-navy-100 sm:pb-0"
-                        >
+                      <div class="flex flex-col justify-between pb-2 sm:flex-row sm:pb-0">
+                        <p class="pb-2 font-medium leading-none text-slate-600 dark:text-navy-100 sm:pb-0">
                           Weekly Report
                         </p>
-                        <span class="text-xs text-slate-400 dark:text-navy-300"
-                          >a day ago</span
-                        >
+                        <span class="text-xs text-slate-400 dark:text-navy-300">a day ago</span>
                       </div>
                       <p class="py-1">The weekly report was uploaded</p>
                     </div>
@@ -4364,10 +4097,8 @@
                 </ol>
                 <div class="h-18"></div>
               </div>
-  
-              <div
-                class="pointer-events-none absolute bottom-4 flex w-full justify-center"
-              >
+
+              <div class="pointer-events-none absolute bottom-4 flex w-full justify-center">
                 <div
                   class="pointer-events-auto mx-auto flex space-x-1 rounded-full border border-slate-150 bg-white px-4 py-0.5 shadow-lg dark:border-navy-700 dark:bg-navy-900"
                 >
@@ -4421,7 +4152,7 @@
                         clip-rule="evenodd"
                       />
                     </svg>
-  
+
                     <svg
                       x-show="activeTab !== 'tabProjects'"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4487,10 +4218,11 @@
           @see https://alpinejs.dev/directives/teleport
         -->
       <div id="x-teleport-target"></div>
-      
+
       <script>
         window.addEventListener("DOMContentLoaded", () => Alpine.start());
       </script>
     </body>
+
   </html>
-  
+{/literal}
