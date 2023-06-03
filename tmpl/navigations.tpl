@@ -37,6 +37,7 @@
             {literal}
                 <div
                     x-data="{expandedItem:'menu-item-3'}"
+                    x-data="{ clickHandler: function(event) { event.target.querySelector('a').click(); } }"
                     class="mt-5 h-[calc(100%-4.5rem)] overflow-x-hidden pb-6"
                     x-init="$el._x_simplebar = new SimpleBar($el);"
                 >
