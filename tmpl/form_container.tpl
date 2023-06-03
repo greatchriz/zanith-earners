@@ -75,6 +75,18 @@
       icon='images/svg/form/question.svg'
     }
 
+    {foreach item=p from=$mpay_accounts}
+      {foreach item=ps from=$p.accounts}
+        {include 
+        file="textinput.tpl" 
+        placeholder="Your {$p.name} {$ps.name}" 
+        name="pay_account[{$p.id}][{$ps.name|escape:html}]" 
+        value=$ps.value
+        icon='images/svg/form/wallet.svg'
+      }
+      {/foreach}
+    {/foreach}
+
   <div class="mt-4 flex items-center space-x-2">
     <input
       class="form-checkbox is-basic h-5 w-5 rounded border-slate-400/70 checked:border-primary checked:bg-primary hover:border-primary focus:border-primary dark:border-navy-400 dark:checked:border-accent dark:checked:bg-accent dark:hover:border-accent dark:focus:border-accent"
@@ -111,20 +123,7 @@
         ></div>
     </div>
   {/foreach} *}
-  {foreach item=p from=$mpay_accounts}
-    {foreach item=ps from=$p.accounts}
-      <div>
-        <div>Your {$p.name} {$ps.name}:</div>
-        <div><input
-            type=text
-            class=inpts
-            size=30
-            name="pay_account[{$p.id}][{$ps.name|escape:html}]"
-            value="{$ps.value|escape:html}"
-          ></div>
-      </div>
-    {/foreach}
-  {/foreach}
+  
 
   {if $settings.use_referal_program}
     {if $referer}
