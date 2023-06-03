@@ -119,6 +119,20 @@
               </svg>
             </span>
           </label>
+          <div class="mt-4 flex items-center justify-between space-x-2">
+            <label class="inline-flex items-center space-x-2">
+              <input
+                class="form-checkbox is-outline h-5 w-5 rounded border-slate-400/70 bg-slate-100 before:bg-primary checked:border-primary hover:border-primary focus:border-primary dark:border-navy-500 dark:bg-navy-900 dark:before:bg-accent dark:checked:border-accent dark:hover:border-accent dark:focus:border-accent"
+                type="checkbox"
+              />
+              <span class="line-clamp-1">Remember me</span>
+            </label>
+            <a
+              href="{"?a=forgot_password"|encurl}"
+              class="text-xs text-slate-400 transition-colors line-clamp-1 hover:text-slate-800 focus:text-slate-800 dark:text-navy-300 dark:hover:text-navy-100 dark:focus:text-navy-100"
+              >Forgot Password?</a
+            >
+          </div>
 
           <button
               class="btn mt-10 h-10 w-full bg-primary font-medium text-white hover:bg-primary-focus focus:bg-primary-focus active:bg-primary-focus/90 dark:bg-accent dark:hover:bg-accent-focus dark:focus:bg-accent-focus dark:active:bg-accent/90"
@@ -128,8 +142,17 @@
             </button>
 
         </form>
-        <br><br>
-        or <a href="{"?a=forgot_password"|encurl}">remember your login information</a>.
+        <div class="mt-4 text-center text-xs+">
+          <p class="line-clamp-1">
+            <span>Dont have Account?</span>
+
+            <a
+              class="text-primary transition-colors hover:text-primary-focus dark:text-accent-light dark:hover:text-accent"
+              href="{"?a=signup"|encurl}"
+              >Create account</a
+            >
+          </p>
+        </div>
       </div>
     </div>
     <div class="my-5 flex justify-center text-xs text-slate-400 dark:text-navy-300">
