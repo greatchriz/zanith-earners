@@ -1,7 +1,6 @@
 {extends file='header.tpl'}
 
-{block name=sidebar}
-   {literal}
+{block name=menus}
       <!-- Sidebar -->
       <div class="sidebar print:hidden">
          <!-- Main Sidebar -->
@@ -1884,7 +1883,6 @@
            </div>
          </div>
        </div>
-   {/literal}
 {/block}
 
 {block name=content}

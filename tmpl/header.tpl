@@ -75,7 +75,7 @@
       >
        
         <!-- create a section for the sidebar -->
-        {block name=sidebar}{/block}
+        {block name=menus}{/block}
 
         <!-- create a section for the main page -->
         {block name=content}{/block}
