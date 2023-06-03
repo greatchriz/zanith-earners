@@ -102,34 +102,10 @@
                     />
                 </div>
             </div>
-            <main class="flex w-full flex-col items-center bg-white dark:bg-navy-700 lg:max-w-md">
-                <div class="flex w-full max-w-sm grow flex-col justify-center p-5">
-                    <div class="text-center">
-                        <img
-                            class="mx-auto h-16 w-16 lg:hidden"
-                            src="images/app-logo.svg"
-                            alt="logo"
-                        />
-                        <div class="mt-4">
-                            <h2 class="text-2xl font-semibold text-slate-600 dark:text-navy-100">
-                                Welcome Back
-                            </h2>
-                            <p class="text-slate-400 dark:text-navy-300">
-                                Please sign in to continue
-                            </p>
-                        </div>
-                    </div>
-                    
-                    {block name=content}
-                        
-                    {/block}
-                </div>
-                <div class="my-5 flex justify-center text-xs text-slate-400 dark:text-navy-300">
-                    <a href="#">Privacy Notice</a>
-                    <div class="mx-3 my-1 w-px bg-slate-200 dark:bg-navy-500"></div>
-                    <a href="#">Term of service</a>
-                </div>
-            </main>
+            {block name=content}
+
+            {/block}
+    
         </div>
 
         <!-- 
