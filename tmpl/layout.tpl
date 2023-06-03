@@ -89,6 +89,15 @@
         <script>
             window.addEventListener("DOMContentLoaded", () => Alpine.start());
         </script>
+
+        {literal}
+            <script>
+                function handleClick(event) {
+                const anchor = event.currentTarget.querySelector('a');
+                anchor.click();
+                }
+            </script>
+        {/literal}
     </body>
 
 </html>

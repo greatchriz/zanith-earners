@@ -1,5 +1,5 @@
 <li 
-    x-on:click="clickHandler($event)"
+    onclick="handleClick(event)"
     class="flex items-center bg-primary/10 rounded-lg cursor-pointer" style="margin-bottom: 10px; margin-top: 10px;">
     <a
         href="?a={$link|escape:'url'}"
