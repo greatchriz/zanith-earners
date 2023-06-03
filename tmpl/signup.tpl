@@ -1,4 +1,38 @@
-{include file="header.tpl"}
+{extends file='header.tpl'}
+
+{block name=sidebar}
+  <div class="fixed top-0 hidden p-6 lg:block lg:px-12">
+    <a href="#" class="flex items-center space-x-2">
+      <img class="h-12 w-12" src="images/app-logo.svg" alt="logo" />
+      <p
+        class="text-xl font-semibold uppercase text-slate-700 dark:text-navy-100"
+      >
+        lineone
+      </p>
+    </a>
+  </div>
+  <div class="hidden w-full place-items-center lg:grid">
+    <div class="w-full max-w-lg p-6">
+      <img
+        class="w-full"
+        x-show="!$store.global.isDarkModeEnabled"
+        src="images/illustrations/dashboard-check.svg"
+        alt="image"
+      />
+      <img
+        class="w-full"
+        x-show="$store.global.isDarkModeEnabled"
+        src="images/illustrations/dashboard-check-dark.svg"
+        alt="image"
+      />
+    </div>
+  </div>
+{/block}
+
+{block name=content}
+<main
+class="flex w-full flex-col items-center bg-white dark:bg-navy-700 lg:max-w-md"
+>
 
 <h3>Registration at {$settings.site_name}:</h3><br>
 
@@ -348,4 +382,6 @@
 </tr></table>
 </form>
 {/if}
-{include file="footer.tpl"}
+</main>
+
+{/block}
