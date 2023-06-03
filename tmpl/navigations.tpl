@@ -98,7 +98,7 @@
                     </button>
 
                     <!-- Main Searchbar -->
-                    <template x-if="$store.breakpoints.smAndUp">
+                    {* <template x-if="$store.breakpoints.smAndUp">
                         <div
                             class="flex"
                             x-data="usePopper({placement:'bottom-end',offset:12})"
@@ -646,7 +646,7 @@
                                 </div>
                             </div>
                         </div>
-                    </template>
+                    </template> *}
 
                     <!-- Dark Mode Toggle -->
                     <button
@@ -693,7 +693,7 @@
                     </button>
 
                     <!-- Notification-->
-                    <div
+                    {* <div
                         x-effect="if($store.global.isSearchbarActive) isShowPopper = false"
                         x-data="usePopper({placement:'bottom-end',offset:12})"
                         @click.outside="isShowPopper && (isShowPopper = false)"
@@ -1269,7 +1269,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> *}
 
                     <!-- Right Sidebar Toggle -->
                     <button
@@ -1297,7 +1297,7 @@
     </nav>
 
     <!-- Mobile Searchbar -->
-    <div
+    {* <div
         x-show="$store.breakpoints.isXs && $store.global.isSearchbarActive"
         x-transition:enter="easy-out transition-all"
         x-transition:enter-start="opacity-0 scale-105"
@@ -1812,10 +1812,10 @@
                 </a>
             </div>
         </div>
-    </div>
+    </div> *}
 
     <!-- Right Sidebar -->
-    <div
+    {* <div
         x-show="$store.global.isRightSidebarExpanded"
         @keydown.window.escape="$store.global.isRightSidebarExpanded = false"
     >
@@ -3415,4 +3415,4 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> *}
