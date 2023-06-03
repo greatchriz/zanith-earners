@@ -55,7 +55,14 @@
                             'navigation_item.tpl' 
                             link='login'
                             icon='images/svg/login-icon.svg'
-                            title='Dashboard'
+                            title='Login'
+                        }
+
+                        {include 
+                            'navigation_item.tpl' 
+                            link='signup'
+                            icon='images/svg/signup-icon.svg'
+                            title='Signup'
                         }
                     </ul>
             </div>
