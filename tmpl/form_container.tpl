@@ -127,10 +127,11 @@
 
   {if $settings.use_referal_program}
     {if $referer}
-      <div>
-        <div>Your Upline:</div>
-        <div>{*<a href="mailto:{$referer.email}">*}{$referer.name}{*</a>*} ({$referer.username|escape:html})</div>
-      </div>
+      {include 
+        file="disabled_input.tpl" 
+        placeholder={$referer.username|escape:html}
+        icon='images/svg/form/name.svg'
+      }
     {else}
       {if $settings.force_upline}
         {if $settings.get_rand_ref}
