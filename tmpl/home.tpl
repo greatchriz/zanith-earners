@@ -87,9 +87,12 @@
                    <div id="navigation">
                        <!-- Navigation Menu-->   
                        <ul class="navigation-menu nav-light">
-                           <li><a href="index.html" class="sub-menu-item">Home</a></li>
+                           <li><a href="?a=home" class="sub-menu-item">Home</a></li>
+                           <li><a href="?a=support" class="sub-menu-item">Contact Us</a></li>
+                           <li><a href="?a=login" class="sub-menu-item">Login</a></li>
+                           <li><a href="?a=signup" class="sub-menu-item">Register</a></li>
                    
-                           <li class="has-submenu parent-parent-menu-item">
+                           {* <li class="has-submenu parent-parent-menu-item">
                                <a href="javascript:void(0)">Landings</a><span class="menu-arrow"></span>
    
                                <ul class="submenu megamenu">
@@ -384,9 +387,9 @@
                                    <li><a href="changelog.html" class="sub-menu-item">Changelog</a></li>
                                    <li><a href="widget.html" class="sub-menu-item">Widget</a></li>
                                </ul>
-                           </li>
+                           </li> *}
                    
-                           <li><a href="contact-one.html" class="sub-menu-item">Contact</a></li>
+                           
                        </ul><!--end navigation menu-->
                    </div><!--end navigation-->
                </div><!--end container-->
