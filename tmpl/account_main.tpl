@@ -1,5 +1,4 @@
 {include file="header.tpl"}
-<main class="main-content w-full px-[var(--margin-x)] pb-8">
 
    {loaddata name="user_notices" var=notices}
 
@@ -134,5 +133,5 @@
    {$currency_sign}{$ps[p].pending_amount} total pending<br>{/if}
    {/section}
 
-</main>
+
 {include file="footer.tpl"}
