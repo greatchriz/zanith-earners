@@ -1,3 +1,4 @@
+{literal}
 <div class="col-span-12 grid grid-cols-1 gap-4 sm:gap-5 lg:col-span-4 lg:gap-6">
     <div class="card pb-4">
         <div class="flex items-center justify-between px-4 py-3 sm:px-5">
@@ -456,3 +457,5 @@
         </div>
     </div>
 </div>
+{/literal}
+

@@ -1,6 +1,8 @@
 <div class="col-span-12 lg:col-span-8">
     {include file="cards/balance.tpl"}
 
+    {literal}
+        
     <div class="card mt-4 pb-1 sm:mt-5 lg:mt-6">
         <div class="my-3 flex items-center justify-between px-4 sm:px-5">
             <h2 class="font-medium tracking-wide text-slate-700 dark:text-navy-100">
@@ -259,6 +261,8 @@
             </div>
         </div>
     </div>
+    {/literal}
+
 
     {* <div class="mt-4 sm:mt-5 lg:mt-6">
         <div class="flex items-center justify-between">
