@@ -1,6 +1,6 @@
 {include file="header.tpl"}
 
-   {loaddata name="user_notices" var=notices}
+   {* {loaddata name="user_notices" var=notices}
 
    {if $notices}
       <ul style="color:red">
@@ -46,7 +46,7 @@
       <b>Security Note: please, activate <a href="{"?a=security"|encurl}">Two Factor Authentication</a> to keep your
          account
          safe.</b>
-   {/if}
+   {/if} *}
 
    {* <table
       cellspacing=0
