@@ -9,6 +9,10 @@
 
       {include file="cards/accounts.tpl" ps=$ps}
 
+      {include file="cards/user_details.tpl"
+         userinfo=$userinfo
+      }
+
       {include file="cards/watchlist.tpl"}
 
       {include file="cards/chart.tpl"}
