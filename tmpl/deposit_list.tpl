@@ -1,4 +1,4 @@
-{* {include file="header.tpl"} *}
+{include file="header.tpl"}
 
 <h3>Your deposits:</h3><br>
 
@@ -156,4 +156,4 @@
     <br>
 {/foreach}
 
-{* {include file="footer.tpl"} *}
+{include file="footer.tpl"}
