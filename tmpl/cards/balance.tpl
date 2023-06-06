@@ -32,11 +32,11 @@
                     <p class="text-base font-medium text-white">{$total_deposits}</p>
                 </div>
 
-                <button
+                <a href="?a=deposit"
                     class="btn mt-3 w-full border border-white/10 bg-white/20 text-white hover:bg-white/30 focus:bg-white/30"
                 >
-                    Receive
-                </button>
+                    Deposit
+            </a>
             </div>
             <div>
                 <p class="text-indigo-100">Total Withdrawals</p>
@@ -59,10 +59,10 @@
                     </div>
                     <p class="text-base font-medium text-white">{$total_withdrawals}</p>
                 </div>
-                <button
+                <a href="?a=withdraw"
                     class="btn mt-3 w-full border border-white/10 bg-white/20 text-white hover:bg-white/30 focus:bg-white/30"
                 >
-                    Send
+                    Withdraw
                 </button>
             </div>
         </div>
