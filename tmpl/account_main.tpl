@@ -10,7 +10,7 @@
       {include file="cards/accounts.tpl" ps=$ps}
 
       {include file="cards/user_details.tpl"
-         userinfo=$userinfo
+         username=$userinfo.username
       }
 
       {include file="cards/watchlist.tpl"}

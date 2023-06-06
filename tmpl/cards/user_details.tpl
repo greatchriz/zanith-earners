@@ -95,7 +95,7 @@
                 </div>
                 <div>
                     <p class="font-medium text-slate-700 dark:text-navy-100">
-                        {$userinfo.username}
+                        {$username}
                     </p>
                     <p class="mt-0.5 text-xs text-success line-clamp-1">
                       User Name
