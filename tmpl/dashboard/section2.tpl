@@ -1,4 +1,3 @@
-{literal}
 <div class="col-span-12 grid grid-cols-1 gap-4 sm:gap-5 lg:col-span-4 lg:gap-6">
     <div class="card pb-4">
         <div class="flex items-center justify-between px-4 py-3 sm:px-5">
@@ -75,6 +74,8 @@
         </div>
 
         <div class="mx-4 my-3 h-px bg-slate-200 dark:bg-navy-500 sm:mx-5"></div>
+
+        {literal}
 
         <div class="px-4 sm:px-5">
             <div class="flex items-center justify-between">
@@ -259,7 +260,10 @@
                 Buy BTC
             </button>
         </div>
+        {/literal}
     </div>
+
+    {literal}
 
     <div class="card">
         <div class="mt-3 flex items-center justify-between px-4 sm:px-5">
@@ -339,6 +343,7 @@
             </div>
         </div>
     </div>
+    {/literal}
+
 </div>
-{/literal}
 
