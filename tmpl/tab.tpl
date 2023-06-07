@@ -1,7 +1,10 @@
+{literal}
 <div
     x-data="{activeTab:'tabHome'}"
     class="tabs flex flex-col"
 >
+{/literal}
+
     <div
         class="is-scrollbar-hidden overflow-x-auto rounded-lg bg-slate-200 text-slate-600 dark:bg-navy-800 dark:text-navy-200">
         <div class="tabs-list flex px-1.5 py-1">
