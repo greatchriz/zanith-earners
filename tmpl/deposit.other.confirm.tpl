@@ -1,5 +1,6 @@
 {include file="header.tpl" pagetitle="Deposit Confirm" pageurl="deposit"}
 
+<div class="flex items-center space-x-4 py-5 lg:py-6">
 
         {if $ok == 1}
         <h3>Please confirm your deposit:</h3><br><br>
@@ -109,5 +110,5 @@
 
 
         {/if}
-
+</div>
 {include file="footer.tpl"}
