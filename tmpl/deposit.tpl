@@ -141,7 +141,7 @@
         Add Amount and Select Payment Method
       </h2>
 
-      <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-2">
+      <div class="grid grid-cols-1 gap-4 sm:gap-5 lg:grid-cols-3 lg:gap-6">
           <div>
             <span>How Much are you Investing ?</span>
             <label class="mt-1 flex -space-x-px">
