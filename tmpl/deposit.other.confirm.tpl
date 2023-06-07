@@ -1,5 +1,4 @@
 {include file="header.tpl" pagetitle="Deposit Confirm" pageurl="deposit"}
-<div class="grid grid-cols-12 lg:gap-6">
 
 
         {if $ok == 1}
@@ -110,6 +109,5 @@
 
 
         {/if}
-</div>
 
 {include file="footer.tpl"}
