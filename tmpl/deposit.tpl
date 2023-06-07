@@ -126,9 +126,14 @@
 
         {include file="deposit_account_balance.tpl" title="Total Balance" balance=$ab_formated.total}
 
-        {foreach from=$ps item=p}
-          {include file="deposit_account_balance.tpl" title=$p.name balance=$p.balance}
-        {/foreach}        
+        
+        {* foreach ps as item p, then if p balance is greater than zero then include the deposit account balance and pass the neccessary variables *}
+
+        {section name=p loop=$ps}
+          {if $ps[p].balance > 0}
+            {include file="deposit_account_balance.tpl" title=$ps[p].name balance=$ps[p].balance}
+          {/if}
+        {/section}
 
       </div>
 
