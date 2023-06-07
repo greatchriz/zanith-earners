@@ -126,10 +126,9 @@
 
         {include file="deposit_account_balance.tpl" title="Total Balance" balance=$ab_formated.total}
 
-        {section name=ps loop=$ps}
-          {include file="deposit_account_balance.tpl" title=$ps[ps].name balance=$ps[ps].balance}
-        {/section}
-        
+        {foreach from=$ps item=p}
+          {include file="deposit_account_balance.tpl" title=$p.name balance=$p.balance}
+        {/foreach}        
 
       </div>
 
