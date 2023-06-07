@@ -9,23 +9,44 @@
         />
         <p>{$plans[plans].name}</p>
     </label>
+    <div class="mt-4 h-px  bg-slate-200 dark:bg-navy-500"></div>
 
-    <div class="pt-2">
+
+    <div class="pt-2 mt-2">
         {section name=options loop=$plans[plans].plans}
            {* i need two elements that will flex in between and align center, one will be the content title the other will be the value  for example: Plan Roi:   20% *}
-              <div class="flex justify-between items-center">
-                <p class="font-semibold text-slate-600">Plan </p>
+            <div class="flex justify-between items-center">
+                <p class="font-semibold text-slate-600">Rate </p>
                 <p>{$plans[plans].plans[options].name}</p>
             </div>
+
+            <div class="my-4 h-px  bg-slate-200 dark:bg-navy-500"></div>
+
 
             <div class="flex justify-between items-center">
                 <p class="font-semibold text-slate-600">Minimum -Maximum Inv. Amount</p>
                 <p>{$plans[plans].plans[options].deposit}</p>
             </div>
 
+            <div class="my-4 h-px  bg-slate-200 dark:bg-navy-500"></div>
+
+
             <div class="flex justify-between items-center">
                 <p class="font-semibold text-slate-600">R.O.I.</p>
                 <p>{$plans[plans].plans[options].percent}%</p>
+            </div>
+            <div class="my-4 h-px  bg-slate-200 dark:bg-navy-500"></div>
+
+            <div class="flex justify-between items-center">
+                <p class="font-semibold text-slate-600">Duration</p>
+                <p>{$plans[plans].plans[options].description}</p>
+            </div>
+
+            <div class="my-4 h-px  bg-slate-200 dark:bg-navy-500"></div>
+
+            <div class="flex justify-between items-center">
+                <p class="font-semibold text-slate-600">Referral Bonus</p>
+                <p>10% on First Deposit</p>
             </div>
 
         {/section}
