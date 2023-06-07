@@ -9,7 +9,7 @@ You can deposit once a month only.
 {else}
 
 {literal}
-<script language="javascript">
+<script language="javascript"><!--
 function openCalculator(id)
 {
 
@@ -65,7 +65,7 @@ function updateCompound() {
   }
 }
 var cps = {};
-</script>
+--></script>
 {/literal}
 
 {if $frm.say eq 'deposit_success'}
