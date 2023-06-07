@@ -1,4 +1,4 @@
-{include file="header.tpl"}
+{include file="header.tpl" pagetitle="Deposit Confirm" pageurl="deposit"}
 <div class="grid grid-cols-12 lg:gap-6">
 
 
