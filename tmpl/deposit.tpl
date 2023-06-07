@@ -170,7 +170,6 @@
           </label>
         </div>
 
-<<<<<<< HEAD
 
         {literal}
         <div
@@ -204,17 +203,13 @@
               x-transition:enter="transition-all duration-500 easy-in-out"
               x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
               x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
-=======
         <div>
           <label class="block">
             <span>Spend funds from the Account Balance</span>
             <select
               class="form-select mt-1.5 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:bg-navy-700 dark:hover:border-navy-400 dark:focus:border-accent"
               name=type
-<<<<<<< HEAD
->>>>>>> parent of 9912a54 (Update deposit.tpl)
-=======
->>>>>>> parent of 9912a54 (Update deposit.tpl)
+
             >
               <div>
                 <label class="block">
@@ -278,12 +273,6 @@
           </div>
         </div>
 
-<<<<<<< HEAD
-
-        
-
-
-=======
         <div>
           <label class="block">
             <span>Spend funds from External Wallet</span>
@@ -299,7 +288,6 @@
             </select>
           </label>
         </div>
->>>>>>> parent of 9912a54 (Update deposit.tpl)
 
       </div>
 
