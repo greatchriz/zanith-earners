@@ -108,7 +108,6 @@
         name=a
         value=deposit
       >
-      {if $qplans > 1} Select a plan:<br>{/if}
 
 
           {* the radio button and plan name *}
@@ -141,20 +140,7 @@
 
           <div class="grid grid-cols-1 gap-4 sm:gap-5 lg:grid-cols-3 lg:gap-6">
             {section name=plans loop=$plans}
-              {section name=options loop=$plans[plans].plans}
-                  {include file="a_plan.tpl"}
-                  {* <tr>
-                    <td class=item>{$plans[plans].plans[options].name|escape:html}</td>
-                    <td
-                      class=item
-                      align=right
-                    >{$plans[plans].plans[options].deposit}</td>
-                    <td
-                      class=item
-                      align=right
-                    >{$plans[plans].plans[options].percent}</td>
-                  </tr> *}
-              {/section}
+              {include file="a_plan.tpl" plans=$plans}
             {/section}
           </div>
 

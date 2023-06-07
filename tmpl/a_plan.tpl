@@ -1,14 +1,33 @@
-<div class="card rounded-2xl px-4 py-4 sm:px-5">
-    <div>
-        <h2 class="text-lg font-medium tracking-wide text-slate-700 line-clamp-1 dark:text-navy-100">
-            Rounded Card
-        </h2>
-    </div>
+<div class="card rounded-lg px-4 py-4 sm:px-5">
+    <label class="inline-flex items-center space-x-2">
+        <input
+          class="form-radio is-basic h-5 w-5 rounded-full border-slate-400/70 checked:border-primary checked:bg-primary hover:border-primary focus:border-primary dark:border-navy-400 dark:checked:border-accent dark:checked:bg-accent dark:hover:border-accent dark:focus:border-accent"
+          name="h_id"
+          type="radio"
+          value='{$plans[plans].id}'
+          {if (($smarty.section.plans.first == 1) && ($frm.h_id eq '')) || ($frm.h_id == $plans[plans].id)} checked {/if}
+        />
+        <p>{$plans[plans].name}</p>
+    </label>
+
     <div class="pt-2">
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
-            laboriosam praesentium adipisci iure doloribus accusamus animi
-            quos.
-        </p>
+        {section name=options loop=$plans[plans].plans}
+           {* i need two elements that will flex in between and align center, one will be the content title the other will be the value  for example: Plan Roi:   20% *}
+              <div class="flex justify-between items-center">
+                <p class="font-semibold text-slate-600">Plan </p>
+                <p>{$plans[plans].plans[options].name}</p>
+            </div>
+
+            <div class="flex justify-between items-center">
+                <p class="font-semibold text-slate-600">Minimum -Maximum Inv. Amount</p>
+                <p>{$plans[plans].plans[options].deposit}</p>
+            </div>
+
+            <div class="flex justify-between items-center">
+                <p class="font-semibold text-slate-600">R.O.I.</p>
+                <p>{$plans[plans].plans[options].percent}%</p>
+            </div>
+
+        {/section}
     </div>
 </div>
