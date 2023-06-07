@@ -199,14 +199,13 @@
 
       </div>
 
-        <tr>
-          <td colspan=2><input
-              type=submit
-              value="Spend"
-              class=sbmt
-            ></td>
-        </tr>
-      </table>
+
+        <button
+        type=submit
+      class="btn bg-gradient-to-br from-purple-500 to-indigo-600 font-medium text-white"
+    >
+      Spend
+    </button>
 
     </form>
     {literal}
