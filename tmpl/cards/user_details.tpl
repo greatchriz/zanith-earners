@@ -17,11 +17,11 @@
         }
 
         {include file="cards/account_detail.tpl"
-             info="?ref={$userinfo.username}"
+             info="https://zenith-earners.com/?ref={$userinfo.username}"
              title="Referral Link"
              icon="images/svg/userdetails/referral.svg"
         }
-        
+
 
         <div
             class="flex items-center justify-between space-x-2 rounded-lg border border-slate-200 p-3 dark:border-navy-600">
