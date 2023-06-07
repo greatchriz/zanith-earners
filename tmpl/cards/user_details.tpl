@@ -10,10 +10,18 @@
        
         {* include accoubnt_detail *}
 
-        {include file="cards/account_detail.tpl" info="{$userinfo.username}" title="Username"}
+        {include file="cards/account_detail.tpl"
+             info="{$userinfo.username}"
+             title="Username"
+             icon="images/svg/userdetails/username.svg"
+        }
 
-
-        {include file="cards/account_detail.tpl" info="{$userinfo.create_account_date}" title="Registration Date"}
+        {include file="cards/account_detail.tpl"
+             info="?ref={$userinfo.username}"
+             title="Referral Link"
+             icon="images/svg/userdetails/referral.svg"
+        }
+        
 
         <div
             class="flex items-center justify-between space-x-2 rounded-lg border border-slate-200 p-3 dark:border-navy-600">
