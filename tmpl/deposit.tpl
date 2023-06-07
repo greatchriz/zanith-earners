@@ -110,9 +110,6 @@
       >
       {if $qplans > 1} Select a plan:<br>{/if}
 
-      {section name=plans loop=$plans}
-
-        <div class="grid grid-cols-1 gap-4 sm:gap-5 lg:grid-cols-3 lg:gap-6">
 
           {* the radio button and plan name *}
           {* <tr>
@@ -140,44 +137,24 @@
             </td>
           </tr> *}
 
-          {* table header *}
-          {* <tr>
-            <td class=inheader>Plan</td>
-            <td
-              class=inheader
-              width=200
-            >Spent Amount ({$currency_sign})</td>
-            <td
-              class=inheader
-              width=100
-              nowrap
-            >
-              <nobr>{$plans[plans].period} Profit (%)</nobr>
-            </td>
-          </tr> *}
-
-          {section name=options loop=$plans[plans].plans}
-            {include file="a_plan.tpl"}
-            {* <tr>
-              <td class=item>{$plans[plans].plans[options].name|escape:html}</td>
-              <td
-                class=item
-                align=right
-              >{$plans[plans].plans[options].deposit}</td>
-              <td
-                class=item
-                align=right
-              >{$plans[plans].plans[options].percent}</td>
-            </tr> *}
-          {/section}
 
 
-        <script>
-          cps[{$plans[plans].id}] = {$plans[plans].compound_percents_json};
-        </script>
-
-        </div>
-      {/section}
+          <div class="grid grid-cols-1 gap-4 sm:gap-5 lg:grid-cols-3 lg:gap-6">
+            {section name=options loop=$plans[plans].plans}
+                {include file="a_plan.tpl"}
+                {* <tr>
+                  <td class=item>{$plans[plans].plans[options].name|escape:html}</td>
+                  <td
+                    class=item
+                    align=right
+                  >{$plans[plans].plans[options].deposit}</td>
+                  <td
+                    class=item
+                    align=right
+                  >{$plans[plans].plans[options].percent}</td>
+                </tr> *}
+              {/section}
+          </div>
 
       <table
         cellspacing=0
