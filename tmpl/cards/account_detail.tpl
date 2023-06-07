@@ -2,11 +2,11 @@
     <div
         class="alert flex items-center justify-between space-x-2 rounded-lg border border-slate-200 p-3 dark:border-navy-600">
         <div class="flex items-center space-x-3">
-            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-warning">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-slate-300">
                 <img
-                src="{$icon}"
-                alt="{$title}"
-            />
+                    src="{$icon}"
+                    alt="{$title}"
+                />
             </div>
             <div>
                 <p
@@ -15,7 +15,7 @@
                 >
                 {$info}
                 </p>
-                <p class="mt-0.5 text-xs text-warning line-clamp-1">
+                <p class="mt-0.5 text-xs text-success line-clamp-1">
                     {$title}
                 </p>
             </div>
