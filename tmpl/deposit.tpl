@@ -170,38 +170,39 @@
           </label>
         </div>
 
+        <optgroup label="Swedish Cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+        </optgroup>
+        <optgroup label="German Cars">
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </optgroup>
+
         <div>
           <label class="block">
-            <span>Spend funds from the Account Balance</span>
+            <span>Select Payment Method</span>
             <select
               class="form-select mt-1.5 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:bg-navy-700 dark:hover:border-navy-400 dark:focus:border-accent"
               name="type"
             >
+            <optgroup label="Spend funds from the Account Balance">
               {section name=p loop=$ps}
                 {if $ps[p].balance > 0 and $ps[p].status == 1}
                   <option value="account_{$ps[p].id}">{$ps[p].name}</option>
                 {/if}
               {/section}
-            </select>
-          </label>
-        </div>
-
-        <div>
-          <label class="block">
-            <span>Spend funds from External Wallet</span>
-            <select
-              class="form-select mt-1.5 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:bg-navy-700 dark:hover:border-navy-400 dark:focus:border-accent"
-              name="type"
-            >
+            </optgroup>
+            <optgroup label="Spend funds from External Wallet">
               {section name=p loop=$ps}
                 {if $ps[p].status}
-                  <option value="process_{$ps[p].id}" {if $smarty.section.p.index == 0}selected{/if}>{$ps[p].name}</option>
+                  <option value="process_{$ps[p].id}">{$ps[p].name}</option>
                 {/if}
               {/section}
+            </optgroup>
             </select>
           </label>
         </div>
-
       </div>
 
 
