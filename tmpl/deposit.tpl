@@ -127,7 +127,9 @@
         {include file="deposit_account_balance.tpl" title="Total Balance" balance=$ab_formated.total}
 
         {section name=ps loop=$ps}
-          {include file="deposit_account_balance.tpl" title=$ps[ps].name balance=$ps[ps].balance}
+          {if $ps[p].balance > 0}
+            {include file="deposit_account_balance.tpl" title=$ps[ps].name balance=$ps[ps].balance}
+          {/if}
         {/section}
         
 
