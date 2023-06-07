@@ -180,43 +180,25 @@
               </select>
             </label>
           </div>
-      </div>
 
-        <tr>
-          <td colspan=2>
-            <table
-              cellspacing=0
-              cellpadding=2
-              border=0
-            >
-              {section name=p loop=$ps}
-                {if $ps[p].balance > 0 and $ps[p].status == 1}
-                  <tr>
-                    <td><input
-                        type=radio
-                        name=type
-                        value="account_{$ps[p].id}"
-                      ></td>
-                    <td>Spend funds from the Account Balance {$ps[p].name}</td>
-                  </tr>
-                {/if}
-              {/section}
+          <div>
+            <label class="block">
+              <span>Spend funds from External Wallet</span>
+              <select
+                class="form-select mt-1.5 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:bg-navy-700 dark:hover:border-navy-400 dark:focus:border-accent"
+                name=type
+              >
               {section name=p loop=$ps}
                 {if $ps[p].status}
-                  <tr>
-                    <td><input
-                        type=radio
-                        name=type
-                        value="process_{$ps[p].id}"
-                        {if $smarty.section.p.index == 0}checked{/if}
-                      ></td>
-                    <td>Spend funds from {$ps[p].name}</td>
-                  </tr>
+                  <option value="process_{$ps[p].id}">{$ps[p].name}</option>
                 {/if}
               {/section}
-            </table>
-          </td>
-        </tr>
+              </select>
+            </label>
+          </div>
+
+      </div>
+
         <tr>
           <td colspan=2><input
               type=submit
