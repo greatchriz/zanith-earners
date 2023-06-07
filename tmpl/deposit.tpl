@@ -137,30 +137,50 @@
 
       </div>
 
-        <tr>
-          <td>Amount to Spend ({$currency_sign}):</td>
-          <td align=right><input
-              type=text
-              name=amount
-              value='{$min_deposit}'
-              class=inpts
-              size=15
-              style="text-align:right;"
-            ></td>
-        </tr>
-        <tr
-          id="coumpond_block"
-          style="display:none"
-        >
-          <td>Compounding(%):</td>
-          <td align=right>
-            <select
-              name="compound"
-              class=inpts
-              id="compound_percents"
-            ></select>
-          </td>
-        </tr>
+      <h2 class="my-3 text-lg font-medium text-slate-800 dark:text-navy-50 lg:text-xl">
+        Add Amount and Select Payment Method
+      </h2>
+
+      <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-2">
+          <div>
+            <span>How Much are you Investing ?</span>
+            <label class="mt-1 flex -space-x-px">
+              <div
+                class="flex items-center justify-center rounded-l-lg border border-slate-300 px-3.5 font-inter dark:border-navy-450"
+              >
+                <span>$</span>
+              </div>
+              <input
+                class="form-input w-full border border-slate-300 bg-transparent px-3 py-2 placeholder:text-slate-400/70 hover:z-10 hover:border-slate-400 focus:z-10 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
+                placeholder="Enter Price"
+                type="text"
+                name=amount
+                value='{$min_deposit}'
+              />
+              <div
+                class="flex items-center justify-center rounded-r-lg border border-slate-300 px-3.5 font-inter dark:border-navy-450"
+              >
+                <span>.00</span>
+              </div>
+            </label>
+          </div>
+
+          <div>
+            <label class="block">
+              <span>Spend funds from the Account Balance</span>
+              <select
+                class="form-select mt-1.5 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:bg-navy-700 dark:hover:border-navy-400 dark:focus:border-accent"
+                name=type
+              >
+              {section name=p loop=$ps}
+                {if $ps[p].balance > 0 and $ps[p].status == 1}
+                  <option value="account_{$ps[p].id}">{$ps[p].name}</option>
+                {/if}
+              {/section}
+              </select>
+            </label>
+          </div>
+      </div>
 
         <tr>
           <td colspan=2>
