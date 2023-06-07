@@ -1,11 +1,23 @@
 {include file="header.tpl" pagetitle="Deposit Confirm" pageurl="deposit"}
 
-<div class="flex items-center space-x-4 py-5 lg:py-6">
-
+<div class="grid grid-cols-1">
+    <div class="card px-5 py-12 sm:px-18">
         {if $ok == 1}
-        <h3>Please confirm your deposit:</h3><br><br>
 
-        {$description}<br><br>
+        <div class="flex flex-col justify-between sm:flex-row">
+            <div class="text-center sm:text-left">
+                <h2 class="text-2xl font-semibold uppercase text-slate-600 dark:text-navy-100">
+                Confirm Deposit
+                </h2>
+                <div class="space-y-1 pt-2">
+                <p>{$description}</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
 
         <table cellspacing=0 cellpadding=2 class="form deposit_confirm">
         {if $deposit.id > 0}
@@ -110,5 +122,6 @@
 
 
         {/if}
+    </div>
 </div>
 {include file="footer.tpl"}
