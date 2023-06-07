@@ -83,3 +83,5 @@
       {include file="navigations.tpl"}
       <main class="main-content w-full px-[var(--margin-x)] pb-8">
         <div class="mt-4 grid grid-cols-12 gap-4 sm:mt-5 sm:gap-5 lg:mt-6 lg:gap-6">
+          <div class="col-span-12">
+
