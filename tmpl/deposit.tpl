@@ -108,64 +108,31 @@
         name=a
         value=deposit
       >
+      <h2 class="my-3 text-xl font-medium text-slate-800 dark:text-navy-50 lg:text-2xl">
+        Select Plan
+      </h2>
 
+      <div class="grid grid-cols-1 gap-4 sm:gap-5 lg:grid-cols-3 lg:gap-6">
+        {section name=plans loop=$plans}
+          {include file="a_plan.tpl" plans=$plans}
+        {/section}
+      </div>
 
-          {* the radio button and plan name *}
-          {* <tr>
-            <td colspan=3>
-              {if $qplans > 1}
-                <input
-                  type=radio
-                  name=h_id
-                  value='{$plans[plans].id}'
-                  {if (($smarty.section.plans.first == 1) && ($frm.h_id eq '')) || ($frm.h_id == $plans[plans].id)}
-                    checked
-                  {/if}
-                  onclick="updateCompound()"
-                >
-                <!--	<input type=radio name=h_id value='{$plans[plans].id}' {if (($smarty.section.plans.first == 1) && ($frm.h_id eq '')) || ($frm.h_id == $plans[plans].id)} checked {/if} {if $compounding_available > 0}onclick="document.spendform.compound.disabled={if $plans[plans].use_compound == 1}false{else}true{/if};"{/if}> -->
-              {else}
-                <input
-                  type=hidden
-                  name=h_id
-                  value='{$plans[plans].id}'
-                >
-              {/if}
+      <h2 class="my-3 text-xl font-medium text-slate-800 dark:text-navy-50 lg:text-2xl">
+        Your Account Balance
+      </h2>
 
-              <b>{$plans[plans].name}</b>
-            </td>
-          </tr> *}
+      <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-2">
 
+        {include file="deposit_account_balance.tpl" title="Total Balance" balance=$ab_formated.total}
 
+        {section name=ps loop=$ps}
+          {include file="deposit_account_balance.tpl" title=$ps[ps].name balance=$ps[ps].balance}
+        {/section}
+        
 
-          <div class="grid grid-cols-1 gap-4 sm:gap-5 lg:grid-cols-3 lg:gap-6">
-            {section name=plans loop=$plans}
-              {include file="a_plan.tpl" plans=$plans}
-            {/section}
-          </div>
+      </div>
 
-      <table
-        cellspacing=0
-        cellpadding=2
-        border=0
-      >
-        <tr>
-          <td>Your account balance ({$currency_sign}):</td>
-          <td align=right>{$currency_sign}{$ab_formated.total}</td>
-        </tr>
-        <tr>
-          <td>&nbsp;</td>
-          <td align=right>
-            <small>
-              {section name=p loop=$ps}
-                {if $ps[p].balance > 0}{$currency_sign}{$ps[p].balance} of {$ps[p].name}
-                  {if $hold[p].amount > 0} /
-                  {$currency_sign}{$hold[p].amount} on hold{/if}<br>
-                {/if}
-              {/section}
-            </small>
-          </td>
-        </tr>
         <tr>
           <td>Amount to Spend ({$currency_sign}):</td>
           <td align=right><input
@@ -234,6 +201,7 @@
             ></td>
         </tr>
       </table>
+
     </form>
     {literal}
       <script language=javascript>
