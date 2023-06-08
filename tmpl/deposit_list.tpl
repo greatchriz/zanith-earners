@@ -77,17 +77,19 @@
                                 <p class="font-semibold text-slate-600">
                                     Amount
                                 </p>
-                                <p>
-                                    <b>{$currency_sign}{$d.deposit} 
-                                        <img
-                                            src="images/{$d.ec}.gif"
-                                            align=absmiddle
-                                            hspace=1
-                                            height=17
-                                        >
-                                    </b>
-                                </p>
+                                <div class="flex justify-between items-center">
+                                    <p class="font-semibold text-slate-600">
+                                        Amount
+                                    </p>
 
+                                    <div class="flex justify-between items-center">
+                                        <p class="font-bold mx-2">
+                                            $200.00 
+                                        </p>
+                                        <img src="images/1009.gif" class="h-5 w-5">
+                                    </div>
+    
+                                </div>
                             </div>
                         </div>
                     {/foreach}
