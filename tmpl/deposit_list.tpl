@@ -57,7 +57,7 @@
 
 
                     {foreach from=$p.deposits item=d}
-                        <div class="card border border-slate-150 px-2 py-4 shadow-none dark:border-navy-600 sm:px-5">                       
+                        <div class="card border border-slate-150 px-4 py-4 shadow-none dark:border-navy-600 sm:px-5 my-2">                       
                             <div class="flex justify-between items-center">
                                 <p class="font-semibold text-slate-600">
                                     Date
@@ -95,7 +95,7 @@
 
 
                     {if $p.total_deposit > 0 || $p.today_profit > 0 || $p.total_profit > 0}
-                        <div class="card border border-slate-150 px-2 py-4 shadow-none dark:border-navy-600 sm:px-5"> 
+                        <div class="card border border-slate-150 px-4 py-4 shadow-none dark:border-navy-600 sm:px-5"> 
 
                             <div class="my-4 h-px  bg-slate-200 dark:bg-navy-500"></div>
 
