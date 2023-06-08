@@ -39,106 +39,14 @@
                     <p class="font-semibold text-slate-600">{$p.period} Profit (%) </p>
                     <p>{$o.percent}</p>    
                 </div>
+                <div class="my-4 h-px  bg-slate-200 dark:bg-navy-500"></div>
 
             {/foreach}
 
 
+            <div class="card border border-slate-150 px-4 py-4 shadow-none dark:border-navy-600 sm:px-5">
 
-{* 
-
-
-            <table
-                        cellspacing=1
-                        cellpadding=2
-                        border=0
-                        width=100%
-                    >
-                        <tr>
-                            <td
-                                colspan=3
-                                align=center
-                            ><b>{$p.name}</b></td>
-                        </tr>
-                        <tr>
-                            <td class=inheader>Plan</td>
-                            <td
-                                class=inheader
-                                width=200
-                            >Deposit Amount</td>
-                            <td
-                                class=inheader
-                                width=100
-                                nowrap
-                            >
-                                <nobr>{$p.period} Profit (%)</nobr>
-                            </td>
-                        </tr>
-                        {foreach from=$p.plans item=o}
-                            <tr>
-                                <td class=item>{$o.name}</td>
-                                <td
-                                    class=item
-                                    align=right
-                                >{$currency_sign}{$o.min_deposit} {if $o.max_deposit>0}- {$currency_sign}{$o.max_deposit}
-                                    {else}and
-                                    more{/if}</td>
-                                <td
-                                    class=item
-                                    align=right
-                                >{$o.percent}</td>
-                            </tr>
-                        {/foreach}
-                    </table>
-
-
-
- *}
-
-            <tr>
-                <td class=item>
-                    <table
-                        cellspacing=1
-                        cellpadding=2
-                        border=0
-                        width=100%
-                    >
-                        <tr>
-                            <td
-                                colspan=3
-                                align=center
-                            ><b>{$p.name}</b></td>
-                        </tr>
-                        <tr>
-                            <td class=inheader>Plan</td>
-                            <td
-                                class=inheader
-                                width=200
-                            >Deposit Amount</td>
-                            <td
-                                class=inheader
-                                width=100
-                                nowrap
-                            >
-                                <nobr>{$p.period} Profit (%)</nobr>
-                            </td>
-                        </tr>
-                        {foreach from=$p.plans item=o}
-                            <tr>
-                                <td class=item>{$o.name}</td>
-                                <td
-                                    class=item
-                                    align=right
-                                >{$currency_sign}{$o.min_deposit} {if $o.max_deposit>0}- {$currency_sign}{$o.max_deposit}
-                                    {else}and
-                                    more{/if}</td>
-                                <td
-                                    class=item
-                                    align=right
-                                >{$o.percent}</td>
-                            </tr>
-                        {/foreach}
-                    </table>
-                    <br>
+            
                     <table
                         cellspacing=1
                         cellpadding=2
@@ -231,9 +139,7 @@
                             </tr>
                         </table>
                     {/if}
-                    <br>
-                </td>
-            </tr>
+            </div>
 
         </div>
     {/foreach}
