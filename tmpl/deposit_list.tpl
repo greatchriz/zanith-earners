@@ -1,4 +1,4 @@
-{include file="header.tpl"}
+{include file="header.tpl" pagetitle="Deposit List" pageurl="deposit_list"}
 
 <div class="grid grid-cols-1 gap-4 sm:gap-5 lg:grid-cols-3 lg:gap-6">
     <div class="card border border-slate-150 px-4 py-4 shadow-none dark:border-navy-600 sm:px-5 h-24">
