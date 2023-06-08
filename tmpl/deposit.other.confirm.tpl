@@ -1,23 +1,22 @@
 {include file="header.tpl" pagetitle="Deposit Confirm" pageurl="deposit"}
 
-<div class="grid grid-cols-1 gap-5 mt-5 sm:grid-cols-2 lg:grid-cols-3">
+<div class="grid grid-cols-1 gap-4 sm:gap-5 lg:grid-cols-3 lg:gap-6">
+
     {if $ok == 1}
 
-        <div class="card px-5 py-12 sm:px-18">
-            <div class="flex flex-col justify-between sm:flex-row">
-                <div class="text-center sm:text-left">
-                    <h2 class="text-2xl font-semibold uppercase text-slate-600 dark:text-navy-100">
-                        Confirm Deposit
-                    </h2>
-                    <div class="space-y-1 pt-2">
-                        <p>{$description}</p>
-                    </div>
-                </div>
+        <div class="card border border-slate-150 px-4 py-4 shadow-none dark:border-navy-600 sm:px-5">
+            <div>
+              <h2 class="text-lg font-medium tracking-wide text-slate-700 line-clamp-1 dark:text-navy-100">
+                Confirm Deposit
+              </h2>
+            </div>
+            <div class="pt-2">
+                <p>{$description}</p>
             </div>
         </div>
 
-        <div class="card px-5 py-12 sm:px-18 mt-5">
-            <div class="flex flex-col justify-between sm:flex-row">
+        <div class="card border border-slate-150 px-4 py-4 shadow-none dark:border-navy-600 sm:px-5">
+            <div>
 
             <table
                 cellspacing=0
@@ -98,8 +97,8 @@
             </div>
         </div>
 
-        <div class="card px-5 py-12 sm:px-18 mt-5">
-            <div class="flex flex-col justify-between sm:flex-row">
+        <div class="card border border-slate-150 px-4 py-4 shadow-none dark:border-navy-600 sm:px-5">
+            <div>
                 <form
                     name=spend
                     method=post
