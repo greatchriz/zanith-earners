@@ -16,7 +16,7 @@
             </div>
         </div>
 
-        <div class="card px-5 py-12 sm:px-18">
+        <div class="card px-5 py-12 sm:px-18 mt-5">
             <div class="flex flex-col justify-between sm:flex-row">
 
             <table
@@ -98,7 +98,7 @@
             </div>
         </div>
 
-        <div class="card px-5 py-12 sm:px-18">
+        <div class="card px-5 py-12 sm:px-18 mt-5">
             <div class="flex flex-col justify-between sm:flex-row">
                 <form
                     name=spend
@@ -174,7 +174,7 @@
 
     {else}
 
-        <div class="card px-5 py-12 sm:px-18">
+        <div class="card px-5 py-12 sm:px-18 mt-5">
             <div class="flex flex-col justify-between sm:flex-row">
 
                 {if $max_deposit_less == 1}
