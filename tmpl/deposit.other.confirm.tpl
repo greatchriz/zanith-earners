@@ -156,17 +156,21 @@
                         </table>
                     {/if}
 
-                    <br><input
-                        type=submit
-                        value="Save"
-                        class=sbmt
-                    > &nbsp;
-                    <input
-                        type=button
-                        class=sbmt
-                        value="Cancel"
+                    
+                    <button
+                        type="submit"
+                        class="btn bg-gradient-to-r from-amber-400 to-orange-600 font-medium text-white"
+                    >
+                        Save
+                    </button>
+
+                    <button
+                        type="button"
+                        class="btn bg-gradient-to-r from-sky-400 to-blue-600 font-medium text-white"
                         onclick="document.location='?a=deposit'"
                     >
+                        Cancel
+                    </button>
                 </form>
             </div>
         </div>
