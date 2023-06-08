@@ -1,10 +1,10 @@
 {include file="header.tpl" pagetitle="Deposit Confirm" pageurl="deposit"}
 
-<div class="grid grid-cols-1">
+<div class="grid grid-cols-1 gap-5 mt-5 sm:grid-cols-2 lg:grid-cols-3">
     {if $ok == 1}
 
         <div class="card px-5 py-12 sm:px-18">
-            <div class="flex flex-col justify-between sm:flex-row bg-primary">
+            <div class="flex flex-col justify-between sm:flex-row">
                 <div class="text-center sm:text-left">
                     <h2 class="text-2xl font-semibold uppercase text-slate-600 dark:text-navy-100">
                         Confirm Deposit
