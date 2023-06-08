@@ -1,9 +1,9 @@
 {include file="header.tpl" pagetitle="Deposit Confirm" pageurl="deposit"}
 
 <div class="grid grid-cols-1">
-    <div class="card px-5 py-12 sm:px-18">
-        {if $ok == 1}
+    {if $ok == 1}
 
+        <div class="card px-5 py-12 sm:px-18">
             <div class="flex flex-col justify-between sm:flex-row bg-primary">
                 <div class="text-center sm:text-left">
                     <h2 class="text-2xl font-semibold uppercase text-slate-600 dark:text-navy-100">
@@ -14,10 +14,9 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-
-
-
+        <div class="card px-5 py-12 sm:px-18">
             <div class="flex flex-col justify-between sm:flex-row">
 
             <table
@@ -97,97 +96,105 @@
                         {/if}
                     </table>
             </div>
+        </div>
 
-                    <br><br>
-                    <form
-                        name=spend
-                        method=post
+        <div class="card px-5 py-12 sm:px-18">
+            <div class="flex flex-col justify-between sm:flex-row">
+                <form
+                    name=spend
+                    method=post
+                >
+                    <input
+                        type=hidden
+                        name=a
+                        value=deposit
                     >
-                        <input
-                            type=hidden
-                            name=a
-                            value=deposit
+                    <input
+                        type=hidden
+                        name=action
+                        value=confirm
+                    >
+                    <input
+                        type=hidden
+                        name=type
+                        value={$type}
+                    >
+                    <input
+                        type=hidden
+                        name=h_id
+                        value={$h_id}
+                    >
+                    <input
+                        type=hidden
+                        name=compound
+                        value={$compound}
+                    >
+                    <INPUT
+                        type=hidden
+                        name=amount
+                        value="{$famount}"
+                    >
+                    {if $fields}
+                        <table
+                            cellspacing=0
+                            cellpadding=2
+                            border=0
                         >
-                        <input
-                            type=hidden
-                            name=action
-                            value=confirm
-                        >
-                        <input
-                            type=hidden
-                            name=type
-                            value={$type}
-                        >
-                        <input
-                            type=hidden
-                            name=h_id
-                            value={$h_id}
-                        >
-                        <input
-                            type=hidden
-                            name=compound
-                            value={$compound}
-                        >
-                        <INPUT
-                            type=hidden
-                            name=amount
-                            value="{$famount}"
-                        >
-                        {if $fields}
-                            <table
-                                cellspacing=0
-                                cellpadding=2
-                                border=0
-                            >
+                            <tr>
+                                <td colspan=2><b>Required Information:</b></td>
+                            </tr>
+                            {section name=f loop=$fields}
                                 <tr>
-                                    <td colspan=2><b>Required Information:</b></td>
+                                    <td>{$fields[f].name}</td>
+                                    <td><input
+                                            type="text"
+                                            name="fields[{$fields[f].id}]"
+                                            value=""
+                                            class=inpts
+                                        ></td>
                                 </tr>
-                                {section name=f loop=$fields}
-                                    <tr>
-                                        <td>{$fields[f].name}</td>
-                                        <td><input
-                                                type="text"
-                                                name="fields[{$fields[f].id}]"
-                                                value=""
-                                                class=inpts
-                                            ></td>
-                                    </tr>
-                                {/section}
-                            </table>
-                        {/if}
-
-                        <br><input
-                            type=submit
-                            value="Save"
-                            class=sbmt
-                        > &nbsp;
-                        <input
-                            type=button
-                            class=sbmt
-                            value="Cancel"
-                            onclick="document.location='?a=deposit'"
-                        >
-                    </form>
-
-                {else}
-
-                    {if $max_deposit_less == 1}
-                        Sorry, the maximal deposit is {$max_deposit_format}.<br>
-                    {/if}
-                    {if $wrong_paln == 1} The Plan does not exist. {/if}
-                    {if $not_enough_funds == 1} You have not enough funds to complete the operation.<br>{/if}
-                    {if $less_than_min == 1}
-                        The minimal spend amount for '{$plan_name}' is {$currency_sign}{$min_amount}.<br>
-                    {/if}
-                    {if $zero_amount}
-                        You should enter amount grater than zero.<br>
+                            {/section}
+                        </table>
                     {/if}
 
-                    <br>
-                    Click <a href="?a=deposit">here</a> and try again.
-
-
-                {/if}
+                    <br><input
+                        type=submit
+                        value="Save"
+                        class=sbmt
+                    > &nbsp;
+                    <input
+                        type=button
+                        class=sbmt
+                        value="Cancel"
+                        onclick="document.location='?a=deposit'"
+                    >
+                </form>
             </div>
         </div>
-        {include file="footer.tpl"}
+
+    {else}
+
+        <div class="card px-5 py-12 sm:px-18">
+            <div class="flex flex-col justify-between sm:flex-row">
+
+                {if $max_deposit_less == 1}
+                    Sorry, the maximal deposit is {$max_deposit_format}.<br>
+                {/if}
+                {if $wrong_paln == 1} The Plan does not exist. {/if}
+                {if $not_enough_funds == 1} You have not enough funds to complete the operation.<br>{/if}
+                {if $less_than_min == 1}
+                    The minimal spend amount for '{$plan_name}' is {$currency_sign}{$min_amount}.<br>
+                {/if}
+                {if $zero_amount}
+                    You should enter amount grater than zero.<br>
+                {/if}
+
+                <br>
+                Click <a href="?a=deposit">here</a> and try again.
+            </div>
+        </div>
+
+
+    {/if}
+</div>
+{include file="footer.tpl"}
