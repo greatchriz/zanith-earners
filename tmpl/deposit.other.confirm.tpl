@@ -99,7 +99,7 @@
 
         <div class="card border border-slate-150 px-4 py-4 shadow-none dark:border-navy-600 sm:px-5">
             <h2 class="font-medium tracking-wide text-slate-700 line-clamp-1 dark:text-navy-100 lg:text-base">
-                Required
+                Required Information
             </h2>
             <div>
                 <form
@@ -140,7 +140,7 @@
                          
 
                             {section name=f loop=$fields}
-                                <label class="block">
+                                <label class="block my-3">
                                     <span>{$fields[f].name}</span>
                                     <input
                                       class="form-input mt-1.5 w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 placeholder:text-slate-400/70 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
