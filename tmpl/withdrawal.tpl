@@ -305,7 +305,7 @@
       </div>
 
       {if $have_available}
-        <div class="grid grid-cols-1 gap-4 sm:gap-5">
+        <div class="grid grid-cols-1 gap-4 sm:gap-5 mt-5">
           <div class="card rounded-sm shadow-lg px-4 py-4 sm:px-5">
 
             <label class="block">
@@ -331,7 +331,8 @@
             <div class="mt-6">
               <button
                 type=submit
-                class="btn btn--primary w-full"
+                class="btn bg-primary font-medium text-white hover:bg-primary-focus focus:bg-primary-focus active:bg-primary-focus/90 dark:bg-accent dark:hover:bg-accent-focus dark:focus:bg-accent-focus dark:active:bg-accent/90"
+
               >
                 Request
               </button>
