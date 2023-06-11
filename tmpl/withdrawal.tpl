@@ -74,103 +74,103 @@
       <input type=hidden name=ec value={$ec}>
       <input type=hidden name=comment value="{$comment|escape:html}">
 
-      <table cellspacing=0 cellpadding=2 border=0 class="form deposit_confirm">
-      <tr>
-      <th>Payment System:</th>
-      <td>{$currency}</td>
-      </tr>
-      <tr>
-      <th>Account:</th>
-      <td>{$account}</td>
-      </tr>
-      <tr>
-      <th>Debit Amount:</th>
-      <td>{$currency_sign}{$amount}</td>
-      </tr>
-      {* old
-      <tr>
-      <th>Withdrawal Fee:</th>
-      <td>
-      {if $settings.withdrawal_fee > 0 || $settings.withdrawal_fee_min > 0}
-        {if $settings.withdrawal_fee > 0}{$settings.withdrawal_fee}%{/if} 
-        {if $settings.withdrawal_fee_min > 0}min. {$currency_sign}{$settings.withdrawal_fee_min}{/if}
-      {else}
-      We have no fee for this operation.
-      {/if}
-      </td>
-      </tr>
-      *}
-      <tr>
-      <th>Withdrawal Fee:</th>
-      <td>
-      {if $fees.fee > 0}
-        {$fees.percent}% + {$currency_sign}{$fees.add_amount} (min. {$currency_sign}{$fees.fee_min} max. {if $fees.fee_max}{$currency_sign}{$fees.fee_max}{else}no{/if})
-      {else}
-      We have no fee for this operation.
-      {/if}
-      </td>
-      </tr>
+      <div class="grid grid-cols-1 gap-4 sm:gap-5">
+        <div class="flex items-center space-x-4 py-5 lg:py-6">
+          <h2
+            class="text-xl font-medium text-slate-800 dark:text-navy-50 lg:text-2xl"
+          >
+            Withdrawal Preview
+          </h2>
+        </div>
 
-      {if $converted}
-      <tr>
-      <th>Credit Amount:</th>
-      <td>{$currency_sign}{$converted.amount}</td>
-      </tr>
-      <tr>
-      <th>{$converted.fiat} Amount:</th>
-      <td>{$to_withdraw}</td>
-      </tr>
-      {else}
-      <tr>
-      <th>Credit Amount:</th>
-      <td>{$currency_sign}{$to_withdraw}</td>
-      </tr>
-      {/if}
+        <div class="card rounded-sm shadow-sm px-4 py-4 sm:px-5 mt-4">
 
-      {*
-      <tr>
-      <td colspan=2>You are withdrawing <b>{$currency_sign}{$amount}</b> of {$currency}. 
-      {if $settings.withdrawal_fee > 0 || $settings.withdrawal_fee_min > 0} Our fee is 
-      {if $settings.withdrawal_fee > 0}<b>{$settings.withdrawal_fee}%</b>{/if}
-      {if $settings.withdrawal_fee > 0 && $settings.withdrawal_fee_min > 0} or {/if}
-      {if $settings.withdrawal_fee_min > 0} <b>{$currency_sign}{$settings.withdrawal_fee_min}</b>{if $settings.withdrawal_fee > 0} as a minimum{/if}{/if}
-      .
-      {else}
-      We have no fee for this operation. 
-      {/if}
-      </td>
-      </tr>
-      <tr>
-      <td colspan=2>Actually you will acquire the total of <b>{$currency_sign}{$to_withdraw}</b> on your {$currency} account {if $account}{$account}{/if}.</td>
-      </tr>
-      *}
-      {if $comment}
-      <tr>
-      <th>Note:</th>
-      <td>{$comment|escape:html}</td>
-      </tr>
-      {/if}
-      {if $settings.use_transaction_code && $userinfo.transaction_code}
-      <tr>
-      <th>Transaction Code:</th>
-      <td><input type="password" name="transaction_code" class=inpts size=15></td>
-      </tr>
-      {/if}
-      {include file="captcha.tpl" action="withdrawal"}
-      {if $userinfo.tfa_settings.withdraw}
-      <tr>
-      <th>2FA Code:</th>
-      <td><input type="text" name="tfa_code" class=inpts size=15> <input type="hidden" name="tfa_time" id="tfa_time"></td>
-      </tr>
-      {literal}
-      <script language=javascript>
-      document.getElementById('tfa_time').value = (new Date()).getTime();
-      </script>
-      {/literal}
-      {/if}
-      <tr>
-      <td colspan=2><input type=submit value="Confirm" class=sbmt></td>
-      </tr></table>
+          <div class="flex items-center justify-between">
+            <p class="text-lg text-slate-800 dark:text-navy-50 px-4 py-4 sm:px-5 font-bold">
+              Payment System
+            </p>
+            <p class="text-sm text-slate-600 dark:text-navy-50 px-4 py-4 sm:px-5">
+              {$currency}
+            </p>
+          </div>
+          <div class="my-4 h-px  bg-slate-200 dark:bg-navy-500"></div>
+
+
+          {* Account *}
+
+          <div class="flex items-center justify-between">
+            <p class="text-lg text-slate-800 dark:text-navy-50 px-4 py-4 sm:px-5 font-bold">
+              Account
+            </p>
+            <p class="text-sm text-slate-600 dark:text-navy-50 px-4 py-4 sm:px-5">
+              {$account}
+            </p>
+          </div>
+          <div class="my-4 h-px  bg-slate-200 dark:bg-navy-500"></div>
+
+
+          {* Amount *}
+
+          <div class="flex items-center justify-between">
+            <p class="text-lg text-slate-800 dark:text-navy-50 px-4 py-4 sm:px-5 font-bold">
+              Amount
+            </p>
+            <p class="text-sm text-slate-600 dark:text-navy-50 px-4 py-4 sm:px-5">
+              {$currency_sign}{$amount}
+            </p>
+          </div>
+          <div class="my-4 h-px  bg-slate-200 dark:bg-navy-500"></div>
+
+
+          {* Withdrawal Fee *}
+
+          <div class="flex items-center justify-between">
+            <p class="text-lg text-slate-800 dark:text-navy-50 px-4 py-4 sm:px-5 font-bold">
+              Withdrawal Fee
+            </p>
+            <p class="text-sm text-slate-600 dark:text-navy-50 px-4 py-4 sm:px-5">
+              {if $settings.withdrawal_fee > 0}{$settings.withdrawal_fee}%{/if} 
+              {if $settings.withdrawal_fee_min > 0}min. {$currency_sign}{$settings.withdrawal_fee_min}{/if}
+            </p>
+          </div>
+          <div class="my-4 h-px  bg-slate-200 dark:bg-navy-500"></div>
+
+
+          {if $comment}
+          {* Comment *}
+
+          <div class="flex items-center justify-between">
+            <p class="text-lg text-slate-800 dark:text-navy-50 px-4 py-4 sm:px-5 font-bold">
+              Comment
+            </p>
+            <p class="text-sm text-slate-600 dark:text-navy-50 px-4 py-4 sm:px-5">
+              {$comment|escape:html}
+            </p>
+          </div>
+          <div class="my-4 h-px  bg-slate-200 dark:bg-navy-500"></div>
+
+          {/if}
+
+          {* Cinfirm Button *}
+
+          <div class="mt-4">
+          <button
+              type=submit
+              class="btn bg-primary font-medium text-white hover:bg-primary-focus focus:bg-primary-focus active:bg-primary-focus/90 dark:bg-accent dark:hover:bg-accent-focus dark:focus:bg-accent-focus dark:active:bg-accent/90"
+            >
+              Confirm
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      
+      
+
       </form>
     </div>
   {else}
@@ -314,7 +314,7 @@
                 class="form-input mt-1.5 w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 placeholder:text-slate-400/70 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
                 placeholder="Amount"
                 type="text"
-                name=amount value="{$frm.amount|amount_format|default:"10.00"}"
+                name=amount
               />
             </label>
 
