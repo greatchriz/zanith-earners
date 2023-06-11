@@ -233,7 +233,7 @@
       <div class="grid grid-cols-2 gap-4 sm:gap-5 lg:grid-cols-4 lg:gap-6">
 
         {foreach from=$ps item=p}
-        <div class="card space-y-9 rounded-sm shadow-lg p-4 sm:px-5">
+        <div class="card rounded-sm shadow-lg p-4 sm:px-5">
           {if $p.available > 0}
             {if $p.status > 0 || $p.available > 0}
               <div class="flex items-center justify-between space-x-2">
