@@ -290,7 +290,7 @@
               <p>{$p.account|escape:html}</p>
             {else}
               <a href="{"?a=edit_account"|encurl}"
-              class="btn h-8 rounded-md bg-primary px-4 text-xs+ font-medium text-white hover:bg-primary-focus focus:bg-primary-focus active:bg-primary-focus/90 dark:bg-accent dark:hover:bg-accent-focus dark:focus:bg-accent-focus dark:active:bg-accent/90"
+                class="btn bg-warning font-medium text-white hover:bg-warning-focus focus:bg-warning-focus active:bg-warning-focus/90"
               >
                 Add Wallet
               </a>
