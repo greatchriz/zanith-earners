@@ -234,12 +234,16 @@
 
         {foreach from=$ps item=p}
         <div class="card rounded-sm shadow-lg p-4 sm:px-5">
-          {if $p.available > 0}
-            {if $p.status > 0 || $p.available > 0}
+          
               <div class="flex items-center justify-between space-x-2">
                 <div class="flex items-center space-x-3">
                   <label class="inline-flex items-center space-x-2">
+                    {if $p.available > 0}
+                      {if $p.status > 0 || $p.available > 0}
                     <input class="form-radio is-basic h-5 w-5 rounded-full border-slate-400/70 checked:!border-success checked:bg-success hover:!border-success focus:!border-success dark:border-navy-400" type="radio" name="ec" value="{$p.id}" {if $frm.ec == $p.id}checked{/if}>
+                  {/if}
+                {/if}
+      
 
                     <div class="avatar">
                       <img
@@ -249,7 +253,7 @@
                       >
                     </div>
                     <div style="margin-left: 20px;">
-                      <p class="font-medium text-slate-700 line-clamp-1 dark:text-navy-100">
+                      <p class="font-medium text-slate-700 line-clamp-2 dark:text-navy-100">
                         {$p.name|escape:html}
                       </p>
                
@@ -260,9 +264,8 @@
                 </div>
     
               </div>
-            {/if}
-          {/if}
-
+              <div class="my-4 h-px  bg-slate-200 dark:bg-navy-500"></div>
+         
           <div class="flex justify-between items-center">
             <p class="font-semibold text-slate-600">Available </p>
             <p style="color: green;">{$currency_sign}{$p.available}</p>
