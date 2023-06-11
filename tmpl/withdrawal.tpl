@@ -334,25 +334,46 @@
       </tr>
       {/foreach}
       </table> *}
+      <div class="grid grid-cols-1 gap-4 sm:gap-5">
+        <div class="card rounded-sm shadow-lg px-4 py-4 sm:px-5">
 
-      {if $have_available}
-      <table cellspacing=0 cellpadding=2 border=0 width=200>
-      <tr>
-      <td colspan=2>&nbsp;</td>
-      </tr>
-      <tr>
-      <td>Withdrawal ({$currency_sign}):</td>
-      <td><input type=text name=amount value="{$frm.amount|amount_format|default:"10.00"}" class=inpts size=15></td>
-      </tr><tr>
-      <td colspan=2><textarea name=comment class=inpts cols=45 rows=4>Your comment</textarea>
-      </tr>
-      <tr>
-      <td>&nbsp;</td>
-      <td><input type=submit value="Request" class=sbmt></td>
-      </tr></table>
+          <label class="block">
+            <span>Withdrawal ({$currency_sign})</span>
+            <input
+              class="form-input mt-1.5 w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 placeholder:text-slate-400/70 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
+              placeholder="Amount"
+              type="text"
+              name=amount value="{$frm.amount|amount_format|default:"10.00"}"
+            />
+          </label>
+
+          <label class="block mt-4">
+            <span>Comment</span>
+            <textarea
+              class="form-textarea mt-1.5 w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 placeholder:text-slate-400/70 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
+              placeholder="Comment"
+              name=comment
+              cols=45 rows=4
+            >{$frm.comment}</textarea>
+          </label>
+
+          <div class="mt-6">
+            <button
+              type=submit
+              class="btn btn--primary w-full"
+            >
+              Request
+            </button>
+          </div>
+
+        </div>
+
+
+      </div>
       {else}
-      <br><br>
-      You have no funds to withdraw.
+      <div class="card rounded-sm shadow-lg px-4 py-4 sm:px-5">
+        <p class="text-xl text-center">You have no funds to withdraw.</p>
+      </div>
       {/if}
       </form>
     </div>
