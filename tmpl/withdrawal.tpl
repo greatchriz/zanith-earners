@@ -303,73 +303,44 @@
         {/foreach}
 
       </div>
-{* 
-      <table cellspacing=0 cellpadding=2 border=0>
-      <tr>
-      <th></th>
-      <th>Processing</th>
-      <th>Available</th>
-      {if $have_hold}
-      <th>On Hold</th>
-      {/if}
-      <th>Pending</th>
-      <th>Account</th>
-      </tr>
-      {foreach from=$ps item=p}
-      <tr>
-      <td>
-        {if $p.available > 0}
-          {if $p.status > 0 || $p.available > 0}
-            <input type="radio" name="ec" value="{$p.id}" {if $frm.ec == $p.id}checked{/if}>
-          {/if}
-        {/if}
-      </td>
-      <td><img src="images/{$p.id}.gif" width=44 height=17 align=absmiddle> {$p.name|escape:html}</td>
-      <td><b style="color:green">{$currency_sign}{$p.available}</b></td>
-      {if $have_hold}
-      <td><b style="color:gray">{$currency_sign}{$p.hold}</b></td>
-      {/if}
-      <td><b style="color:red">{$currency_sign}{$p.pending}</b></td>
-      <td>{if $p.account != ''}{$p.account|escape:html}{else}<a href="{"?a=edit_account"|encurl}"><i>not set</i></a>{/if}</td>
-      </tr>
-      {/foreach}
-      </table> *}
-      <div class="grid grid-cols-1 gap-4 sm:gap-5">
-        <div class="card rounded-sm shadow-lg px-4 py-4 sm:px-5">
 
-          <label class="block">
-            <span>Withdrawal ({$currency_sign})</span>
-            <input
-              class="form-input mt-1.5 w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 placeholder:text-slate-400/70 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
-              placeholder="Amount"
-              type="text"
-              name=amount value="{$frm.amount|amount_format|default:"10.00"}"
-            />
-          </label>
+      {if $have_available}
+        <div class="grid grid-cols-1 gap-4 sm:gap-5">
+          <div class="card rounded-sm shadow-lg px-4 py-4 sm:px-5">
 
-          <label class="block mt-4">
-            <span>Comment</span>
-            <textarea
-              class="form-textarea mt-1.5 w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 placeholder:text-slate-400/70 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
-              placeholder="Comment"
-              name=comment
-              cols=45 rows=4
-            >{$frm.comment}</textarea>
-          </label>
+            <label class="block">
+              <span>Withdrawal ({$currency_sign})</span>
+              <input
+                class="form-input mt-1.5 w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 placeholder:text-slate-400/70 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
+                placeholder="Amount"
+                type="text"
+                name=amount value="{$frm.amount|amount_format|default:"10.00"}"
+              />
+            </label>
 
-          <div class="mt-6">
-            <button
-              type=submit
-              class="btn btn--primary w-full"
-            >
-              Request
-            </button>
+            <label class="block mt-4">
+              <span>Comment</span>
+              <textarea
+                class="form-textarea mt-1.5 w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 placeholder:text-slate-400/70 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
+                placeholder="Comment"
+                name=comment
+                cols=45 rows=4
+              >{$frm.comment}</textarea>
+            </label>
+
+            <div class="mt-6">
+              <button
+                type=submit
+                class="btn btn--primary w-full"
+              >
+                Request
+              </button>
+            </div>
+
           </div>
 
+
         </div>
-
-
-      </div>
       {else}
       <div class="card rounded-sm shadow-lg px-4 py-4 sm:px-5">
         <p class="text-xl text-center">You have no funds to withdraw.</p>
