@@ -223,7 +223,7 @@
       <div class="my-4 h-px  bg-slate-200 dark:bg-navy-500"></div>
 
 
-      <div class="grid grid-cols-2 gap-4 sm:gap-5 lg:grid-cols-4 lg:gap-6">
+      <div class="grid grid-cols-1 gap-4 sm:gap-5 lg:grid-cols-4 lg:gap-6">
 
         {foreach from=$ps item=p}
         <div class="card rounded-sm shadow-lg p-4 sm:px-5">
