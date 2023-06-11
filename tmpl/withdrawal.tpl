@@ -1,4 +1,4 @@
-{include file="header.tpl"}
+{include file="header.tpl" pagetitle="Withdrwal" pageurl="withdraw"}
 
 <h3>Ask for withdrawal:</h3><br>
 
