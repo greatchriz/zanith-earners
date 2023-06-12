@@ -65,7 +65,7 @@
           Referral ins/signups
         </h2>
 
-        <div class="card rounded-sm shadow-sm px-2 py-4 sm:px-2 mt-4">
+        <div class="card rounded-sm border border-slate-150 px-4 py-4 shadow-none dark:border-navy-600 sm:px-5">
           <table
             cellspacing=0
             cellpadding=1
@@ -168,7 +168,7 @@
           </table>
         </div>
 
-        <div class="card rounded-sm shadow-sm px-2 py-4 sm:px-2 mt-4">
+        <div class="card rounded-sm border border-slate-150 px-4 py-4 shadow-none dark:border-navy-600 sm:px-5">
           <table
             width=300
             celspacing=1
