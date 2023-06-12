@@ -68,7 +68,7 @@
                         {include 
                             'navigation_item.tpl' 
                             link='deposit_history'
-                            icon='images/svg/signup-icon.svg'
+                            icon='images/svg/history-icon.svg'
                             title='Deposit History'
                         }
 
@@ -76,21 +76,16 @@
                         {include 
                             'navigation_item.tpl' 
                             link='history&type=earning'
-                            icon='images/svg/signup-icon.svg'
+                            icon='images/svg/history-icon.svg'
                             title='Earning History'
                         }
 
-                        {include 
-                            'navigation_item.tpl' 
-                            link='history&type=commissions'
-                            icon='images/svg/signup-icon.svg'
-                            title='Referrals History'
-                        }
+                        
 
                         {include 
                             'navigation_item.tpl' 
                             link='withdraw'
-                            icon='images/svg/signup-icon.svg'
+                            icon='images/svg/withdraw-icon.svg'
                             title='Withdraw'
                         }
 
@@ -101,11 +96,25 @@
                             title='Withdraw History'
                         }
 
+                        {* referrals *}
+                        {include 
+                            'navigation_item.tpl' 
+                            link='referals'
+                            icon='images/svg/referal-icon.svg'
+                            title='Referrals'
+                        }
+                        {include 
+                            'navigation_item.tpl' 
+                            link='history&type=commissions'
+                            icon='images/svg/history-icon.svg'
+                            title='Referrals History'
+                        }
+
                         <!--edit_account-->
                         {include 
                             'navigation_item.tpl' 
                             link='edit_account'
-                            icon='images/svg/signup-icon.svg'
+                            icon='images/svg/user-icon.svg'
                             title='Edit Account'
                         }
                         
@@ -113,7 +122,7 @@
                         {include 
                             'navigation_item.tpl' 
                             link='logout'
-                            icon='images/svg/signup-icon.svg'
+                            icon='images/svg/logout-icon.svg'
                             title='Logout'
                         }
 
