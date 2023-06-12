@@ -87,6 +87,15 @@
           </table>
         </div>
 
+        <div
+          class="flex flex-col justify-between space-y-4 px-4 py-4 sm:flex-row sm:items-center sm:space-y-0 sm:px-5"
+        >
+          <div class="flex items-center space-x-2 text-xs+">
+
+            {paginator col=$paginator.col cur=$paginator.cur url="javascript:go('%s')"}
+          </div>
+        </div>
+
         {* <div
           class="flex flex-col justify-between space-y-4 px-4 py-4 sm:flex-row sm:items-center sm:space-y-0 sm:px-5"
         >
