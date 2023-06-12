@@ -182,7 +182,7 @@
             </tr>
             {if $show_refstat}
               {section name=s loop=$refstat}
-                <tr>
+                <tr class="mt-4">
                   <td
                     class=item
                     align=center
@@ -198,7 +198,7 @@
                 </tr>
               {/section}
             {else}
-              <tr>
+              <tr class="mt-4">
                 <td
                   class=item
                   align=center
@@ -216,7 +216,7 @@
       {if $show_referals}
         <div class="card rounded-sm shadow-sm px-4 py-4 sm:px-5">
           <h2 class="text-xl font-medium text-slate-800 dark:text-navy-50 lg:text-2xl">
-            Referral ins/signups
+            Your referrals
           </h2>
           <table
             cellspacing=1
@@ -229,13 +229,13 @@
               <td class=inheader>Status</td>
             </tr>
             {section name=s loop=$referals}
-              <tr>
+              <tr class="mt-4">
                 <td class=item><b>{$referals[s].username}</b></td>
                 <td class=item><a href=mailto:{$referals[s].email}>{$referals[s].email}</a></td>
                 <td class=item>{if $referals[s].q_deposits > 0}Deposited{else}No deposit yet{/if}</td>
               </tr>
               {if $referals[s].ref_stats}
-                <tr>
+                <tr class="mt-4">
                   <td colspan=3>
                     User referrals:
                     {section name=l loop=$referals[s].ref_stats}
@@ -246,7 +246,7 @@
                 </tr>
               {/if}
               {if $referals[s].came_from}
-                <tr>
+                <tr class="mt-4">
                   <td colspan=3>
                     <a
                       href="{$referals[s].came_from}"
