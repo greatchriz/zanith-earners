@@ -131,7 +131,7 @@
             <input
               class="form-input w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 placeholder:text-slate-400/70 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
               type="text"
-              name="full_name"
+              name="fullname"
               value="{$userinfo.name}"
             />
           </label>  
@@ -193,18 +193,17 @@
                 {else}
                   <input
                     class="form-input peer w-full rounded-full border border-slate-300 bg-transparent px-3 py-2 pl-9 placeholder:text-slate-400/70 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
-                    placeholder="Enter email address"
                     type="text"
                     name="pay_account[{$p.id}][{$ps.name|escape:html}]"
                     value="{$frm.pay_account[$p.id][$ps.name]|default:$ps.value|escape:html}"
                   />
                 {/if}
 
-                <span
+                {* <span
                   class="pointer-events-none absolute flex h-full w-10 items-center justify-center text-slate-400 peer-focus:text-primary dark:text-navy-300 dark:peer-focus:text-accent"
                 >
                   <i class="fa-regular fa-envelope text-base"></i>
-                </span>
+                </span> *}
               </span>
             </label>                      
           {/foreach}
