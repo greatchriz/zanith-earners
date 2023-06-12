@@ -54,7 +54,7 @@
                         {include 
                             'navigation_item.tpl' 
                             link='deposit'
-                            icon='images/svg/login-icon.svg'
+                            icon='images/svg/deposit-icon.svg'
                             title='Deposit'
                         }
 
