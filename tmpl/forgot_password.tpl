@@ -3,11 +3,13 @@
 
   <div class="flex w-full max-w-sm grow flex-col justify-center p-5">
     <div class="text-center">
-      <img
-        class="mx-auto h-16 w-16 lg:hidden"
-        src="images/app-logo.svg"
-        alt="logo"
-      />
+      <a href="?a=home">
+        <img
+          class="mx-auto h-16 w-16 lg:hidden"
+          src="images/app-logo.svg"
+          alt="logo"
+        />
+      </a>
       <div class="mt-4">
         <h2 class="text-2xl font-semibold text-slate-600 dark:text-navy-100">
           Reset Your Password
@@ -51,8 +53,6 @@
           <div class="card rounded-sm shadow-sm px-4 py-4 sm:px-5">
             <p class="font-semibold">Request was confirmed. Login and password was sent to your email address.</p>
           </div>
-          
-          <br><br>
         {/if}
 
         <form

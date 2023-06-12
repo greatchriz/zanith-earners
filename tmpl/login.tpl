@@ -3,11 +3,13 @@
 
     <div class="flex w-full max-w-sm grow flex-col justify-center p-5">
       <div class="text-center">
-        <img
-          class="mx-auto h-16 w-16 lg:hidden"
-          src="images/app-logo.svg"
-          alt="logo"
-        />
+        <a href="?a=home">
+          <img
+            class="mx-auto h-16 w-16 lg:hidden"
+            src="images/app-logo.svg"
+            alt="logo"
+          />
+        </a>
         <div class="mt-4">
           <h2 class="text-2xl font-semibold text-slate-600 dark:text-navy-100">
             Welcome Back
@@ -38,8 +40,6 @@
         {/literal}
 
         {if $frm.say eq 'invalid_login'}
-          <h3>Login error:</h3><br><br>
-
           Your login or password or turing image code is wrong. Please check this information.
         {/if}
         <form
