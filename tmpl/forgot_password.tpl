@@ -31,7 +31,6 @@
           }
         </script>
       {/literal}
-      <h3>Forgot your password:</h3><br>
 
       {if $errors.turing_image}
         Invalid turing image<br><br>
@@ -39,15 +38,20 @@
 
 
       {if $found_records == 2}
-        Your accound was found. Please check your e-mail address and follow confirm URL to reset your password.
-        <br><br>
+        <div class="card rounded-sm shadow-sm px-4 py-4 sm:px-5">
+          <p class="font-semibold">Your accound was found. Please check your e-mail address and follow confirm URL to reset your password.</p>
+        </div>
       {else}
 
         {if $found_records == 0}
-          No accounts found for provided info.
-          <br><br>
+          <div class="card rounded-sm shadow-sm px-4 py-4 sm:px-5">
+            <p class="font-semibold">No accounts found for provided info.</p>
+          </div>
         {elseif $found_records == 1}
-          Request was confirmed. Login and password was sent to your email address.
+          <div class="card rounded-sm shadow-sm px-4 py-4 sm:px-5">
+            <p class="font-semibold">Request was confirmed. Login and password was sent to your email address.</p>
+          </div>
+          
           <br><br>
         {/if}
 
