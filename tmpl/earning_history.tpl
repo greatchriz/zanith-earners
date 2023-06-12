@@ -1,4 +1,4 @@
-{include file="header.tpl" pagetitle="Deposit History" pageurl="history&type=commissions"}
+{include file="header.tpl" pagetitle="Earning History" pageurl="history&type=commissions"}
 
   <div class="grid grid-cols-1 gap-4 sm:gap-5 lg:gap-6">
     <!-- Users Table -->
