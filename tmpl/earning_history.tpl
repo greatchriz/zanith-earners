@@ -87,7 +87,7 @@
           </table>
         </div>
 
-        <div
+        {* <div
           class="flex flex-col justify-between space-y-4 px-4 py-4 sm:flex-row sm:items-center sm:space-y-0 sm:px-5"
         >
           <div class="flex items-center space-x-2 text-xs+">
@@ -185,7 +185,7 @@
           </ol>
 
           <div class="text-xs+">1 - 10 of 10 entries</div>
-        </div>
+        </div> *}
       </div>
     </div>
   </div>
