@@ -92,7 +92,7 @@
                         {include 
                             'navigation_item.tpl' 
                             link='withdraw_history'
-                            icon='images/svg/signup-icon.svg'
+                            icon='images/svg/history-icon.svg'
                             title='Withdraw History'
                         }
 
