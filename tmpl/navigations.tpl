@@ -61,7 +61,7 @@
                         {include 
                             'navigation_item.tpl' 
                             link='deposit_list'
-                            icon='images/svg/signup-icon.svg'
+                            icon='images/svg/depositlist-icon.svg'
                             title='Deposit List'
                         }
 
