@@ -151,47 +151,7 @@
             />
           </label>
         </div>
-          
-        {* Password *}
-
-        <label class="relative flex">
-          <span>Password</span>
-            <span class="relative mt-1.5 flex">
-          <input
-            class="form-input peer w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 pr-9 placeholder:text-slate-400/70 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
-            type="password"
-            name="password"
-            value="{$userinfo.password}"
-          />
-          <div
-            class="pointer-events-none absolute right-0 flex h-full w-10 items-center justify-center text-slate-400 peer-focus:text-primary dark:text-navy-300 dark:peer-focus:text-accent"
-          >
-            <svg fill="currentColor" class="h-4.5 w-4.5" viewBox="0 0 20 20">
-              <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
-              <path
-                fill-rule="evenodd"
-                d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </div>
-        </label>
-
-        {* Retype Password *}
-
-        <div>
-          <label class="block">
-            <span>Retype Password</span>
-            <span class="relative mt-1.5 flex">
-            <input
-              class="form-input w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 placeholder:text-slate-400/70 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
-              type="password"
-              name="password2"
-              value=""
-            />
-          </label>
-        </div>
-
+ 
         {* Wallet Address *}
         {foreach item=p from=$mpay_accounts}
           {foreach item=ps from=$p.accounts}
