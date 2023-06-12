@@ -11,11 +11,11 @@
 <div class="grid grid-cols-1 gap-4 sm:gap-5">
   {if $upline.email != ""}
     <div class="card rounded-sm shadow-sm px-4 py-4 sm:px-5 flex items-center justify-between">
-      <p class="font-bold text-lg">
+      <p class="font-bold text-sm">
         Your upline
       </p>
 
-      <p class="text-sm">
+      <p class="text-xs">
         <a href=mailto:{$upline.email}>{$upline.name}</a>
       </p>
     </div>
@@ -24,33 +24,33 @@
 
   <div class="card rounded-sm shadow-sm px-4 py-4 sm:px-5">
     <div class="flex items-center justify-between">
-      <p class="font-bold text-lg">
+      <p class="font-bold text-sm">
         Referrals
       </p>
 
-      <p class="text-sm">
+      <p class="text-xs">
         {$total_ref}
       </p>
     </div>
     <div class="my-4 h-px  bg-slate-200 dark:bg-navy-500"></div>
 
     <div class="flex items-center justify-between">
-      <p class="font-bold text-lg">
+      <p class="font-bold text-sm">
         Active referrals
       </p>
 
-      <p class="text-sm">
+      <p class="text-xs">
         {$active_ref}
       </p>
     </div>
     <div class="my-4 h-px  bg-slate-200 dark:bg-navy-500"></div>
 
     <div class="flex items-center justify-between">
-      <p class="font-bold text-lg">
+      <p class="font-bold text-sm">
         Total referral commission
       </p>
 
-      <p class="text-sm">
+      <p class="text-xs">
         {$currency_sign}{$commissions}
       </p>
     </div>
@@ -61,150 +61,153 @@
   </div>
     {if $settings.show_refstat}
       <div class="card rounded-sm shadow-sm px-4 py-4 sm:px-5">
-        <h2 class="text-xl font-medium text-slate-800 dark:text-navy-50 lg:text-2xl">
+        <h2 class="text-lg font-medium text-slate-800 dark:text-navy-50 lg:text-2xl">
           Referral ins/signups
         </h2>
 
-        <table
-          cellspacing=0
-          cellpadding=1
-          border=0
-        >
-          <form
-            method=post
-            name=opts
+        <div class="card rounded-sm shadow-sm px-2 py-4 sm:px-2 mt-4">
+          <table
+            cellspacing=0
+            cellpadding=1
+            border=0
           >
-            <input
-              type=hidden
-              name=a
-              value=referals
+            <form
+              method=post
+              name=opts
             >
-            <td align=right>
-              From: </td>
-            <td>
-              <select
-                name=month_from
-                class=inpts
+              <input
+                type=hidden
+                name=a
+                value=referals
               >
-                {section name=month_from loop=$month}
-                  <option
-                    value={$smarty.section.month_from.index+1}
-                    {if $smarty.section.month_from.index+1 == $frm.month_from}selected{/if}
-                  >{$month[month_from]}
-                  {/section}
-              </select> &nbsp;
-              <select
-                name=day_from
-                class=inpts
-              >
-                {section name=day_from loop=$day}
-                  <option
-                    value={$smarty.section.day_from.index+1}
-                    {if $smarty.section.day_from.index+1 == $frm.day_from}selected{/if}
-                  >{$day[day_from]}
-                  {/section}
-              </select> &nbsp;
-              <select
-                name=year_from
-                class=inpts
-              >
-                {section name=year_from loop=$year}
-                  <option
-                    value={$year[year_from]}
-                    {if $year[year_from] == $frm.year_from}selected{/if}
-                  >{$year[year_from]}
-                  {/section}
-              </select>
-            </td>
-            <td rowspan=2>
-              &nbsp; <input
-                type=submit
-                value="Go"
-                class=sbmt
-              >
-            </td>
-            </tr>
-            <tr>
-              <td align=right>To:</td>
-              <td> <select
-                  name=month_to
+              <td align=right>
+                From: </td>
+              <td>
+                <select
+                  name=month_from
                   class=inpts
                 >
-                  {section name=month_to loop=$month}
+                  {section name=month_from loop=$month}
                     <option
-                      value={$smarty.section.month_to.index+1}
-                      {if $smarty.section.month_to.index+1 == $frm.month_to}selected{/if}
-                    >{$month[month_to]}
+                      value={$smarty.section.month_from.index+1}
+                      {if $smarty.section.month_from.index+1 == $frm.month_from}selected{/if}
+                    >{$month[month_from]}
                     {/section}
                 </select> &nbsp;
                 <select
-                  name=day_to
+                  name=day_from
                   class=inpts
                 >
-                  {section name=day_to loop=$day}
+                  {section name=day_from loop=$day}
                     <option
-                      value={$smarty.section.day_to.index+1}
-                      {if $smarty.section.day_to.index+1 == $frm.day_to}selected{/if}
-                    >{$day[day_to]}
+                      value={$smarty.section.day_from.index+1}
+                      {if $smarty.section.day_from.index+1 == $frm.day_from}selected{/if}
+                    >{$day[day_from]}
                     {/section}
                 </select> &nbsp;
-
                 <select
-                  name=year_to
+                  name=year_from
                   class=inpts
                 >
-                  {section name=year_to loop=$year}
+                  {section name=year_from loop=$year}
                     <option
-                      value={$year[year_to]}
-                      {if $year[year_to] == $frm.year_to}selected{/if}
-                    >{$year[year_to]}
+                      value={$year[year_from]}
+                      {if $year[year_from] == $frm.year_from}selected{/if}
+                    >{$year[year_from]}
                     {/section}
                 </select>
-
               </td>
+              <td rowspan=2>
+                &nbsp; <input
+                  type=submit
+                  value="Go"
+                  class=sbmt
+                >
+              </td>
+              </tr>
+              <tr>
+                <td align=right>To:</td>
+                <td> <select
+                    name=month_to
+                    class=inpts
+                  >
+                    {section name=month_to loop=$month}
+                      <option
+                        value={$smarty.section.month_to.index+1}
+                        {if $smarty.section.month_to.index+1 == $frm.month_to}selected{/if}
+                      >{$month[month_to]}
+                      {/section}
+                  </select> &nbsp;
+                  <select
+                    name=day_to
+                    class=inpts
+                  >
+                    {section name=day_to loop=$day}
+                      <option
+                        value={$smarty.section.day_to.index+1}
+                        {if $smarty.section.day_to.index+1 == $frm.day_to}selected{/if}
+                      >{$day[day_to]}
+                      {/section}
+                  </select> &nbsp;
+
+                  <select
+                    name=year_to
+                    class=inpts
+                  >
+                    {section name=year_to loop=$year}
+                      <option
+                        value={$year[year_to]}
+                        {if $year[year_to] == $frm.year_to}selected{/if}
+                      >{$year[year_to]}
+                      {/section}
+                  </select>
+
+                </td>
+              </tr>
+            </form>
+          </table>
+        </div>
+
+        <div class="card rounded-sm shadow-sm px-2 py-4 sm:px-2 mt-4">
+          <table
+            width=300
+            celspacing=1
+            cellpadding=1
+            border=0
+          >
+            <tr>
+              <td class=inheader>Date</td>
+              <td class=inheader>Ins</td>
+              <td class=inheader>Signups</td>
             </tr>
-          </form>
-        </table>
-
-
-        <table
-          width=300
-          celspacing=1
-          cellpadding=1
-          border=0
-        >
-          <tr>
-            <td class=inheader>Date</td>
-            <td class=inheader>Ins</td>
-            <td class=inheader>Signups</td>
-          </tr>
-          {if $show_refstat}
-            {section name=s loop=$refstat}
+            {if $show_refstat}
+              {section name=s loop=$refstat}
+                <tr>
+                  <td
+                    class=item
+                    align=center
+                  ><b>{$refstat[s].date}</b></td>
+                  <td
+                    class=item
+                    align=right
+                  >{$refstat[s].income}</td>
+                  <td
+                    class=item
+                    align=right
+                  >{$refstat[s].reg}</td>
+                </tr>
+              {/section}
+            {else}
               <tr>
                 <td
                   class=item
                   align=center
-                ><b>{$refstat[s].date}</b></td>
-                <td
-                  class=item
-                  align=right
-                >{$refstat[s].income}</td>
-                <td
-                  class=item
-                  align=right
-                >{$refstat[s].reg}</td>
+                  colspan=3
+                >No statistics found for this period.</td>
               </tr>
-            {/section}
-          {else}
-            <tr>
-              <td
-                class=item
-                align=center
-                colspan=3
-              >No statistics found for this period.</td>
-            </tr>
-          {/if}
-        </table>
+            {/if}
+          </table>
+        </div>
       </div>
     {/if}
 
