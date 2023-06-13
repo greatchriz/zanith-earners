@@ -15,13 +15,13 @@
 
                     {* Stocks *}
 
-                    {include file="tradeit.tpl" link="stocks" title="Stocks" subheading="Enjoy commission-free* equities trading with our award-winning trading technology"}
+                    {include file="front/home/tradeit.tpl" link="stocks" title="Stocks" subheading="Enjoy commission-free* equities trading with our award-winning trading technology"}
 
-                    {include file="tradeit.tpl" link="stocks" title="Stocks" subheading="Enjoy commission-free* equities trading with our award-winning trading technology"}
+                    {include file="front/home/tradeit.tpl" link="stocks" title="Stocks" subheading="Enjoy commission-free* equities trading with our award-winning trading technology"}
 
-                    {include file="tradeit.tpl" link="stocks" title="Stocks" subheading="Enjoy commission-free* equities trading with our award-winning trading technology"}
+                    {include file="front/home/tradeit.tpl" link="stocks" title="Stocks" subheading="Enjoy commission-free* equities trading with our award-winning trading technology"}
 
-                    {include file="tradeit.tpl" link="stocks" title="Stocks" subheading="Enjoy commission-free* equities trading with our award-winning trading technology"}
+                    {include file="front/home/tradeit.tpl" link="stocks" title="Stocks" subheading="Enjoy commission-free* equities trading with our award-winning trading technology"}
                 </div>
             </div>
 
