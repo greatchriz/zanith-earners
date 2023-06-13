@@ -59,7 +59,7 @@
   </div>
   {if $settings.show_refstat}
     <div class="card rounded-sm shadow-sm px-4 py-4 sm:px-5">
-      <h2 class="text-lg font-medium text-slate-800 dark:text-navy-50 lg:text-2xl">
+      <h2 class="text-lg font-medium text-slate-800 dark:text-navy-50 lg:text-2xl my-4">
         Referral ins/signups
       </h2>
 
@@ -75,10 +75,11 @@
             value=referals
           >
 
+          <p class="block text-sm font-semibold">
+            From
+          </p>
           <div class="grid grid-cols-3 gap-4">
-            <p class="block text-sm font-semibold">
-              From
-            </p>
+           
             <label class="block">
               <select
                 class="form-select mt-1.5 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:bg-navy-700 dark:hover:border-navy-400 dark:focus:border-accent"
@@ -130,10 +131,11 @@
           <div class="my-4 h-px  bg-slate-200 dark:bg-navy-500"></div>
 
 
+          <p class="block text-sm font-semibold">
+            To
+          </p>
           <div class="grid grid-cols-3 gap-4">
-            <p class="block text-sm font-semibold">
-              To
-            </p>
+            
             <label class="block">
               <select
                 class="form-select mt-1.5 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:bg-navy-700 dark:hover:border-navy-400 dark:focus:border-accent"
