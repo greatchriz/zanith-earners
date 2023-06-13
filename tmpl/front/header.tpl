@@ -112,9 +112,10 @@
                             alt=""
                         >
                         <img
-                            src="assets/images/logo-light.png"
+                            src="assets/images/logo-light.svg"
                             class="l-light"
                             height="24"
+                            width="138"
                             alt=""
                         >
                     </span>
