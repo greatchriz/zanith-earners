@@ -104,7 +104,7 @@
 {include file="front/home/tradeits.tpl"}
 
 <!-- Start Section-->
-<section class="relative md:py-24 py-16">
+{* <section class="relative md:py-24 py-16">
     <div class="container">
         <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
             <div class="lg:col-span-5">
@@ -204,7 +204,7 @@
     </div>
     <!--end container-->
     <!-- Partners End -->
-</section>
+</section> *}
 <!--end section-->
 <!-- End Section-->
 

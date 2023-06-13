@@ -4,11 +4,9 @@
         <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px] relative">
             <div class="lg:col-span-8 md:col-span-12">
                 <div class="grid grid-cols-1 pb-8">
-                    <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Instant Smart
-                        Solutions <br> With Techwind</h3>
+                    <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Powerful Investment Solutions for Stocks, Options, Futures,  <br> and Crypto</h3>
 
-                    <p class="text-slate-400 max-w-xl">Launch your campaign and benefit from our expertise on designing
-                        and managing conversion centered Tailwind CSS v3.x html page.</p>
+                    <p class="text-slate-400 max-w-xl">Diversify Your Portfolio and Maximize Your Returns with Zenith Earners</p>
                 </div>
                 <!--end grid-->
 
@@ -57,17 +55,17 @@
 
             <div class="md:col-span-6 mt-8 md:mt-0">
                 <div class="lg:ms-5">
-                    <h6 class="text-indigo-600 text-sm font-bold uppercase mb-2">Fast & Effective</h6>
-                    <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Powerful
-                        Digitalization <br> With Techwind</h3>
+                    <h6 class="text-indigo-600 text-sm font-bold uppercase mb-2">Who We Are
+                    </h6>
+                    <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">How it all started.</h3>
 
-                    <p class="text-slate-400 max-w-xl mb-6">Get instant helpful resources about anything on the go,
-                        easily implement secure money transfer solutions, boost your daily efficiency, connect to other
-                        app users and create your own Techwind network, and much more with just a few taps. commodo
-                        consequat. Duis aute irure.</p>
+                    <p class="text-slate-400 max-w-xl mb-2">It all started in 2017, when a group of cryptocurrency enthusiasts came together to explore the potential of digital assets. At the time, the digital asset market was still in its infancy, and many people were skeptical of its potential. But we saw something different: we saw an opportunity.</p>
+                    <p class="text-slate-400 max-w-xl mb-2">Over the next few years, we worked tirelessly to build a platform that could help people invest in digital assets. We focused on developing a user-friendly trading platform that could provide our clients with access to a wide range of digital assets, as well as the tools and resources they needed to make informed investment decisions.</p>
+                    <p class="text-slate-400 max-w-xl mb-2">Our efforts paid off, and by 2020, we had become a trusted name in the digital asset market. That year, we launched our investment management services, which were designed to help our clients build diversified portfolios of digital assets that aligned with their investment goals and risk tolerance.</p>
+                    
 
                     <a
-                        href="#"
+                        href="?a=login"
                         class="btn bg-indigo-600/5 hover:bg-indigo-600 border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white rounded-full"
                     >Get Started</a>
                 </div>
@@ -76,43 +74,6 @@
     </div>
     <!--end container-->
 
-    <div class="container md:mt-24 mt-16">
-        <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
-            <div class="md:col-span-6 order-1 md:order-2">
-                <div class="lg:ms-8">
-                    <img
-                        src="assets/images/illustrator/SEO_SVG.svg"
-                        alt=""
-                    >
-                </div>
-            </div>
-
-            <div class="md:col-span-6 mt-8 md:mt-0 order2 md:order-1">
-                <div class="lg:me-5">
-                    <h6 class="text-indigo-600 text-sm font-bold uppercase mb-2">Easy To Track</h6>
-                    <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Techwind
-                        Marketing <br> Analytics For All Expenses</h3>
-
-                    <p class="text-slate-400 max-w-xl">You can combine all the Techwind templates into a single one, you
-                        can take a component from the Application theme and use it in the Website.</p>
-
-                    <ul class="list-none text-slate-400 my-6">
-                        <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl me-2"></i> Digital
-                            Marketing Solutions for Tomorrow</li>
-                        <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl me-2"></i> Our
-                            Talented & Experienced Marketing Agency</li>
-                        <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl me-2"></i> Create
-                            your own skin to match your brand</li>
-                    </ul>
-
-                    <a
-                        href="#"
-                        class="btn bg-indigo-600/5 hover:bg-indigo-600 border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white rounded-full"
-                    >Get Started</a>
-                </div>
-            </div>
-        </div>
-    </div>
     <!--end container-->
 </section>
 <!--end section-->
