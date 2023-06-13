@@ -190,7 +190,10 @@
                     <!-- Navigation Menu-->
                     <ul class="navigation-menu nav-light">
                         {include file="front/nav_item.tpl" link="?a=home" title="Home"}
+
                         {include file="front/nav_item.tpl" link="?a=about" title="About Us"}
+
+                        {include file="front/nav_item.tpl" link="?a=services" title="Services"}
                     </ul>
                     <!--end navigation menu-->
                 </div>
