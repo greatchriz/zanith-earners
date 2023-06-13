@@ -106,22 +106,24 @@
                 >
                     <span class="inline-block dark:hidden">
                         <img
-                            src="assets/images/logo-dark.png"
-                            class="l-dark"
-                            height="24"
+                            src="assets/images/logo-light.svg"
+                            class="l-light"
+                            height="24px"
+                            width="138px"
                             alt=""
                         >
                         <img
                             src="assets/images/logo-light.svg"
                             class="l-light"
-                            height="24"
-                            width="138"
+                            height="24px"
+                            width="138px"
                             alt=""
                         >
                     </span>
                     <img
-                        src="assets/images/logo-light.png"
-                        height="24"
+                    src="assets/images/logo-light.svg"
+                    height="24px"
+                    width="138px"
                         class="hidden dark:inline-block"
                         alt=""
                     >
