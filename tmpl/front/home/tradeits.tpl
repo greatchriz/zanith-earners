@@ -121,7 +121,7 @@
                     </div><!--end grid-->
                 
                     <div class="grid md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
-                        images\icons\crypto.png
+                       
                         {include file="front/home/tradeit.tpl" link="stocks" title="Stocks" subheading="Enjoy commission-free* equities trading with our award-winning trading technology" icon="images/icons/stocks.png"}
 
                         {include file="front/home/tradeit.tpl" link="etfs" title="Etfs" subheading="Enjoy commission-free* equities trading with our award-winning trading technology" icon="images/icons/etfs.png"}
