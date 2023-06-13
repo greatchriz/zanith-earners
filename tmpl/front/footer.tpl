@@ -72,25 +72,25 @@
                             <h5 class="tracking-[1px] text-gray-100 font-semibold">Usefull Links</h5>
                             <ul class="list-none footer-list mt-6">
                                 <li><a
-                                        href="page-terms.html"
+                                        href="?a=rules"
                                         class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"
                                     ><i class="uil uil-angle-right-b"></i> Terms of Services</a></li>
                                 <li class="mt-[10px]"><a
-                                        href="page-privacy.html"
+                                    href="?a=support"
                                         class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"
-                                    ><i class="uil uil-angle-right-b"></i> Privacy Policy</a></li>
+                                    ><i class="uil uil-angle-right-b"></i> Contact Us</a></li>
                                 <li class="mt-[10px]"><a
-                                        href="documentation.html"
+                                    href="?a=plans"
                                         class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"
-                                    ><i class="uil uil-angle-right-b"></i> Documentation</a></li>
+                                    ><i class="uil uil-angle-right-b"></i> Investment Plans</a></li>
                                 <li class="mt-[10px]"><a
-                                        href="changelog.html"
+                                    href="?a=services"
                                         class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"
-                                    ><i class="uil uil-angle-right-b"></i> Changelog</a></li>
+                                    ><i class="uil uil-angle-right-b"></i> Services</a></li>
                                 <li class="mt-[10px]"><a
-                                        href="widget.html"
+                                    href="?a=login"
                                         class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"
-                                    ><i class="uil uil-angle-right-b"></i> Widget</a></li>
+                                    ><i class="uil uil-angle-right-b"></i> Get Started</a></li>
                             </ul>
                         </div>
                         <!--end col-->
