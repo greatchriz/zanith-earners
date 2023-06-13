@@ -48,6 +48,7 @@
                 file="front/home/why_us_item.tpl"
                 title="Dedicated Customer Support"
                 description="Your satisfaction is our priority, and that's why we offer dedicated customer support. Our friendly and knowledgeable support team is readily available to address your questions, provide guidance, and assist you throughout your investment journey. Count on us to be there for you every step of the way"
+                icon="uil uil-analytics text-4xl text-white"
             }
         </div>
         <!--end grid-->
