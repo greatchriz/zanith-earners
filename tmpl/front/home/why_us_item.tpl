@@ -6,7 +6,7 @@
             href="/"
             class="text-lg font-medium text-white font-semibold"
         >{$title}</a>
-        <p class="text-white/70 mt-3">
+        <p class="text-white/70 mt-3 text-sm">
             {$description}
         </p>
 
