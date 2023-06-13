@@ -219,36 +219,33 @@
                         </a>
                     </li>
 
-                    <li class="inline"><a href=""><img
-                                src="assets/images/payments/american-ex.png"
-                                class="max-h-6 inline"
-                                title="American Express"
-                                alt=""
-                            ></a></li>
-                    <li class="inline"><a href=""><img
-                                src="assets/images/payments/discover.png"
-                                class="max-h-6 inline"
-                                title="Discover"
-                                alt=""
-                            ></a></li>
-                    <li class="inline"><a href=""><img
-                                src="assets/images/payments/master-card.png"
-                                class="max-h-6 inline"
-                                title="Master Card"
-                                alt=""
-                            ></a></li>
-                    <li class="inline"><a href=""><img
-                                src="assets/images/payments/paypal.png"
-                                class="max-h-6 inline"
-                                title="Paypal"
-                                alt=""
-                            ></a></li>
-                    <li class="inline"><a href=""><img
-                                src="assets/images/payments/visa.png"
-                                class="max-h-6 inline"
-                                title="Visa"
-                                alt=""
-                            ></a></li>
+                    <li class="inline">
+                        <a href="/">
+                            
+                            {include file="assets/images/payments/bnb.svg"}
+                        </a>
+                    </li>
+
+                    <li class="inline">
+                        <a href="/">
+                            
+                            {include file="assets/images/payments/etherum.svg"}
+                        </a>
+                    </li>
+
+                    <li class="inline">
+                        <a href="/">
+                            
+                            {include file="assets/images/payments/litecoin.svg"}
+                        </a>
+                    </li>
+
+                    <li class="inline">
+                        <a href="/">
+                            
+                            {include file="assets/images/payments/tether.svg"}
+                        </a>
+                    </li>
                 </ul>
             </div>
             <!--end grid-->
