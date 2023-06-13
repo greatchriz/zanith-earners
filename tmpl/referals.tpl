@@ -76,8 +76,10 @@
           >
 
           <div class="grid grid-cols-3 gap-4">
+            <p class="block text-sm font-semibold">
+              From
+            </p>
             <label class="block">
-              <span>From</span>
               <select
                 class="form-select mt-1.5 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:bg-navy-700 dark:hover:border-navy-400 dark:focus:border-accent"
                 name=month_from
@@ -129,8 +131,10 @@
 
 
           <div class="grid grid-cols-3 gap-4">
+            <p class="block text-sm font-semibold">
+              To
+            </p>
             <label class="block">
-              <span>To</span>
               <select
                 class="form-select mt-1.5 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:bg-navy-700 dark:hover:border-navy-400 dark:focus:border-accent"
                 name=month_to
