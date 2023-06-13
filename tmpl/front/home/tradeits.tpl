@@ -121,22 +121,22 @@
                     </div><!--end grid-->
                 
                     <div class="grid md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
-                        
-                        {include file="front/home/tradeit.tpl" link="stocks" title="Stocks" subheading="Enjoy commission-free* equities trading with our award-winning trading technology" icon="front/home/icons/stocks.png"}
+                        images\icons\crypto.png
+                        {include file="front/home/tradeit.tpl" link="stocks" title="Stocks" subheading="Enjoy commission-free* equities trading with our award-winning trading technology" icon="images/icons/stocks.png"}
 
-                        {include file="front/home/tradeit.tpl" link="etfs" title="Etfs" subheading="Enjoy commission-free* equities trading with our award-winning trading technology" icon="front/home/icons/etfs.png"}
+                        {include file="front/home/tradeit.tpl" link="etfs" title="Etfs" subheading="Enjoy commission-free* equities trading with our award-winning trading technology" icon="images/icons/etfs.png"}
 
-                        {include file="front/home/tradeit.tpl" link="futures" title="Futures" subheading="Enjoy commission-free* equities trading with our award-winning trading technology" icon="front/home/icons/futures.png"}
+                        {include file="front/home/tradeit.tpl" link="futures" title="Futures" subheading="Enjoy commission-free* equities trading with our award-winning trading technology" icon="images/icons/futures.png"}
 
-                        {include file="front/home/tradeit.tpl" link="crypto" title="Crypto" subheading="Enjoy commission-free* equities trading with our award-winning trading technology" icon="front/home/icons/crypto.png"}
+                        {include file="front/home/tradeit.tpl" link="crypto" title="Crypto" subheading="Enjoy commission-free* equities trading with our award-winning trading technology" icon="images/icons/crypto.png"}
                     </div>
                 </div>
 
                 <div class="lg:col-span-4 md:col-span-12">
                     <div class="grid lg:grid-cols-1 md:grid-cols-2 grid-cols-1 gap-[30px]">
-                        {include file="front/home/tradeit.tpl" link="options" title="Options" subheading="Enjoy commission-free* equities trading with our award-winning trading technology" icon="front/home/icons/options.png"}
+                        {include file="front/home/tradeit.tpl" link="options" title="Options" subheading="Enjoy commission-free* equities trading with our award-winning trading technology" icon="images/icons/options.png"}
 
-                        {include file="front/home/tradeit.tpl" link="futures_options" title="Futures Options" subheading="Enjoy commission-free* equities trading with our award-winning trading technology" icon="front/home/icons/futures_options.png"}
+                        {include file="front/home/tradeit.tpl" link="futures_options" title="Futures Options" subheading="Enjoy commission-free* equities trading with our award-winning trading technology" icon="images/icons/futures_options.png"}
 
                     </div>
                 </div>
