@@ -11,8 +11,8 @@
                                 class="text-[22px] focus:outline-none"
                             >
                             <svg
-                            height="30px"
-                            width="130px"
+                            height="60px"
+                            width="160px"
                             data-v-423bf9ae=""
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 658 93"
