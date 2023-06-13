@@ -47,81 +47,22 @@
                                     <!---->
                                 </svg>
                             </a>
-                            <p class="mt-6 text-gray-300">Start working with Tailwind CSS that can provide
-                                everything you need to generate awareness, drive traffic, connect.</p>
-                            <ul class="list-none mt-6">
-                                <li class="inline"><a
-                                        href="https://1.envato.market/techwind"
-                                        target="_blank"
-                                        class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
-                                    ><i
-                                            class="uil uil-shopping-cart align-middle"
-                                            title="Buy Now"
-                                        ></i></a></li>
-                                <li class="inline"><a
-                                        href="https://dribbble.com/shreethemes"
-                                        target="_blank"
-                                        class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
-                                    ><i
-                                            class="uil uil-dribbble align-middle"
-                                            title="dribbble"
-                                        ></i></a></li>
-                                <li class="inline"><a
-                                        href="https://www.behance.net/shreethemes"
-                                        target="_blank"
-                                        class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
-                                    ><i
-                                            class="uil uil-behance"
-                                            title="Behance"
-                                        ></i></a></li>
-                                <li class="inline"><a
-                                        href="http://linkedin.com/company/shreethemes"
-                                        target="_blank"
-                                        class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
-                                    ><i
-                                            class="uil uil-linkedin"
-                                            title="Linkedin"
-                                        ></i></a></li>
-                                <li class="inline"><a
-                                        href="https://www.facebook.com/shreethemes"
-                                        target="_blank"
-                                        class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
-                                    ><i
-                                            class="uil uil-facebook-f align-middle"
-                                            title="facebook"
-                                        ></i></a></li>
-                                <li class="inline"><a
-                                        href="https://www.instagram.com/shreethemes/"
-                                        target="_blank"
-                                        class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
-                                    ><i
-                                            class="uil uil-instagram align-middle"
-                                            title="instagram"
-                                        ></i></a></li>
-                                <li class="inline"><a
-                                        href="https://twitter.com/shreethemes"
-                                        target="_blank"
-                                        class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
-                                    ><i
-                                            class="uil uil-twitter align-middle"
-                                            title="twitter"
-                                        ></i></a></li>
-                                <li class="inline"><a
-                                        href="mailto:support@shreethemes.in"
-                                        class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
-                                    ><i
-                                            class="uil uil-envelope align-middle"
-                                            title="email"
-                                        ></i></a></li>
-                                <li class="inline"><a
-                                        href="https://forms.gle/QkTueCikDGqJnbky9"
-                                        target="_blank"
-                                        class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
-                                    ><i
-                                            class="uil uil-file align-middle"
-                                            title="customization"
-                                        ></i></a></li>
-                            </ul>
+                            <p class="mt-6 text-gray-300">
+                                Past performance, whether actual or indicated by historical tests of strategies, is no guarantee of future performance or success. There is a possibility that you may sustain a loss equal to or greater than your entire investment regardless of which asset class you trade (equities, options, futures or cryptocurrencies); therefore, you should not invest or risk money that you cannot afford to lose. Online trading is not suitable for all investors. View the document titled Characteristics and Risks of Standardized Options. Before trading any asset class, customers must read the relevant risk disclosure statements on our Other Information page. System access and trade placement and execution may be delayed or fail due to market volatility and volume, quote delays, system and software errors, Internet traffic, outages and other factors.
+                            </p>
+
+                            <p class="mt-6 text-gray-300">
+                                Securities and futures trading is offered to self-directed customers by TradeStation Securities, Inc., a broker-dealer registered with the Securities and Exchange Commission (SEC) and a futures commission merchant licensed with the Commodity Futures Trading Commission (CFTC). TradeStation Securities is a member of the Financial Industry Regulatory Authority (FINRA), the National Futures Association (NFA), and the following exchanges: Cboe BYX Exchange, Inc., Cboe BZX Exchange, Inc., Cboe EDGA Exchange, Inc., Cboe EDGX Exchange, Inc., the Chicago Board of Trade (CBOT), the Chicago Mercantile Exchange, Inc. (CME), the Commodity Exchange, Inc. (COMEX), Eurex, ICE Futures U.S., ICE Futures Europe, the Investors Exchange LLC (IEX), the New York Mercantile Exchange, Inc. (NYMEX), Nasdaq BX, Inc., the Nasdaq Stock Market, the New York Stock Exchange (NYSE), NYSE Arca Equities, and NYSE American LLC.
+                            </p>
+
+                            <p class="mt-6 text-gray-300">
+                                TradeStation Securities is a member of SIPC, which protects securities customers of its members up to $500,000 (including $250,000 for claims for cash). TradeStation Securities’ SIPC coverage is available only for securities and for cash held in connection with the purchase or sale of securities, in equities and equities options accounts. Explanatory brochure available upon request or at www.sipc.org. SIPC coverage is not available for TradeStation Crypto accounts.
+                            </p>
+
+                            <p class="mt-6 text-gray-300">
+                                TradeStation Securities, Inc., TradeStation Crypto, Inc., and TradeStation Technologies, Inc. are each wholly owned subsidiaries of TradeStation Group, Inc., all operating, and providing products and services, under the TradeStation brand and trademark. TradeStation Crypto, Inc. offers to self-directed investors and traders cryptocurrency brokerage services. It is neither licensed with the SEC or the CFTC nor is it a Member of NFA. When applying for, or purchasing, accounts, subscriptions, products and services, it is important that you know which company you will be dealing with. Please click here for further important information explaining what this means.
+                            </p>
+                           
                             <!--end icon-->
                         </div>
                         <!--end col-->
