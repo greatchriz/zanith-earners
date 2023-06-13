@@ -195,53 +195,52 @@
 
       </div>
 
-      <div class="card rounded-sm border border-slate-150 px-4 py-4 shadow-none dark:border-navy-600 sm:px-5 mt-4">
-        <table
-          width=300
-          celspacing=1
-          cellpadding=1
-          border=0
-        >
-          <tr>
-            <td class=inheader>Date</td>
-            <td class=inheader>Ins</td>
-            <td class=inheader>Signups</td>
-          </tr>
+      {if $show_refstat}
+        {section name=s loop=$refstat}
+          <div class="card rounded-sm border border-slate-150 px-4 py-4 shadow-none dark:border-navy-600 sm:px-5 mt-4">
+            <div class="flex items-center justify-between">
+              <p class="font-bold text-sm">
+                Date
+              </p>
+        
+              <p class="text-xs">
+                {$refstat[s].date}
+              </p>
+            </div>
+            <div class="my-2 h-px  bg-slate-200 dark:bg-navy-500"></div>
 
+            <div class="flex items-center justify-between">
+              <p class="font-bold text-sm">
+                Earnings
+              </p>
+        
+              <p class="text-xs">
+                {$refstat[s].income}
+              </p>
+            </div>
+            <div class="my-2 h-px  bg-slate-200 dark:bg-navy-500"></div>
 
+            <div class="flex items-center justify-between">
+              <p class="font-bold text-sm">
+                Sign Ups
+              </p>
+        
+              <p class="text-xs">
+                {$refstat[s].reg}
+              </p>
+            </div>
+            <div class="my-2 h-px  bg-slate-200 dark:bg-navy-500"></div>
 
-          {if $show_refstat}
-            {section name=s loop=$refstat}
-              <div class="my-4 h-px  bg-slate-200 dark:bg-navy-500"></div>
+          </div>
+        {/section}
+      {else}
+        <div class="card rounded-sm border border-slate-150 px-4 py-4 shadow-none dark:border-navy-600 sm:px-5 mt-4">
+          <p class="font-bold text-sm">
+            No statistics found for this period
+          </p>
+        </div>
+      {/if}
 
-              <tr>
-                <td
-                  class=item
-                  align=center
-                ><b>{$refstat[s].date}</b></td>
-                <td
-                  class=item
-                  align=right
-                >{$refstat[s].income}</td>
-                <td
-                  class=item
-                  align=right
-                >{$refstat[s].reg}</td>
-              </tr>
-            {/section}
-          {else}
-            <div class="my-4 h-px  bg-slate-200 dark:bg-navy-500"></div>
-
-            <tr>
-              <td
-                class=item
-                align=center
-                colspan=3
-              >No statistics found for this period.</td>
-            </tr>
-          {/if}
-        </table>
-      </div>
     </div>
   {/if}
 
