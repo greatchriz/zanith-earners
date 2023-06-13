@@ -11,130 +11,44 @@
         <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
             {include 
                 file="front/home/why_us_item.tpl"
-                title="TradeStation Crypto"
-                description="TradeStation Crypto allows you to buy, sell, and trade Bitcoin, Litecoin, Ethereum, Bitcoin Cash and XRP. TradeStation Crypto caters to both institutional and recreational clients."
-                icon="uil uil-file-contract-dollar text-4xl text-white"
+                title="Expertise and Experience"
+                description="Our team at Zenith Earners brings a wealth of expertise and experience to the table. With years of industry knowledge and a deep understanding of crypto, stocks, bonds, and futures, we are equipped to provide you with sound investment advice and strategies that can help you achieve your financial goals."
+                icon="uil uil-bitcoin-circle text-4xl text-white"
             }
 
-            <div class="border border-dashed border-white/30 rounded-md p-6 text-center">
-                <i class="uil uil-file-contract-dollar text-4xl text-white"></i>
+            {include 
+                file="front/home/why_us_item.tpl"
+                title="Personalized Approach"
+                description="We believe in a personalized approach to investing. Our dedicated team takes the time to understand your unique investment objectives, risk tolerance, and financial situation. With this information, we tailor our recommendations and strategies specifically to you, ensuring that your investment journey aligns with your individual needs."
+                icon="uil uil-analytics text-4xl text-white"
+            }
 
-                <div class="content mt-7">
-                    <a
-                        href=""
-                        class="text-lg font-medium text-white"
-                    >Support</a>
-                    <p class="text-white/70 mt-3">The phrasal sequence of the is now so that many campaign and
-                        benefit</p>
+            {include 
+                file="front/home/why_us_item.tpl"
+                title="Comprehensive Research and Analysis"
+                description="At Zenith Earners, we leave no stone unturned when it comes to research and analysis. Our team conducts in-depth market research, analyzes trends, and examines financial indicators to identify the most promising investment opportunities. You can trust that our recommendations are backed by thorough research and data-driven insights."
+                icon="uil uil-analytics text-4xl text-white"
+            }
 
-                    <div class="mt-5">
-                        <a
-                            href=""
-                            class="btn btn-link text-white hover:text-white after:bg-white duration-500 ease-in-out"
-                        >Read More <i class="uil uil-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
+            {include 
+                file="front/home/why_us_item.tpl"
+                title="Transparent and Ethical Practices"
+                description="Transparency and ethical practices are at the core of our business. We believe in fostering trust and maintaining open lines of communication with our clients. From transparent fee structures to providing regular updates on your investments, we strive to ensure that you have a clear understanding of our processes and can make informed decisions."
+                icon="uil uil-analytics text-4xl text-white"
+            }
 
-            <div class="border border-dashed border-white/30 rounded-md p-6 text-center">
-                <i class="uil uil-analytics text-4xl text-white"></i>
+            {include 
+                file="front/home/why_us_item.tpl"
+                title="Cutting-Edge Technology"
+                description="We leverage cutting-edge technology to enhance your investment experience. Our platform is built with advanced tools and features that enable seamless trading, real-time market data, and secure transactions. With our technology-driven approach, you can stay ahead of the curve and execute trades with confidence."
+                icon="uil uil-analytics text-4xl text-white"
+            }
 
-                <div class="content mt-7">
-                    <a
-                        href=""
-                        class="text-lg font-medium text-white"
-                    >Service Level</a>
-                    <p class="text-white/70 mt-3">The phrasal sequence of the is now so that many campaign and
-                        benefit</p>
-
-                    <div class="mt-5">
-                        <a
-                            href=""
-                            class="btn btn-link text-white hover:text-white after:bg-white duration-500 ease-in-out"
-                        >Read More <i class="uil uil-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="border border-dashed border-white/30 rounded-md p-6 text-center">
-                <i class="uil uil-dashboard text-4xl text-white"></i>
-
-                <div class="content mt-7">
-                    <a
-                        href=""
-                        class="text-lg font-medium text-white"
-                    >Take profit / Stoploss</a>
-                    <p class="text-white/70 mt-3">The phrasal sequence of the is now so that many campaign and
-                        benefit</p>
-
-                    <div class="mt-5">
-                        <a
-                            href=""
-                            class="btn btn-link text-white hover:text-white after:bg-white duration-500 ease-in-out"
-                        >Read More <i class="uil uil-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="border border-dashed border-white/30 rounded-md p-6 text-center">
-                <i class="uil uil-swatchbook text-4xl text-white"></i>
-
-                <div class="content mt-7">
-                    <a
-                        href=""
-                        class="text-lg font-medium text-white"
-                    >Trailing Stop</a>
-                    <p class="text-white/70 mt-3">The phrasal sequence of the is now so that many campaign and
-                        benefit</p>
-
-                    <div class="mt-5">
-                        <a
-                            href=""
-                            class="btn btn-link text-white hover:text-white after:bg-white duration-500 ease-in-out"
-                        >Read More <i class="uil uil-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="border border-dashed border-white/30 rounded-md p-6 text-center">
-                <i class="uil uil-exchange text-4xl text-white"></i>
-
-                <div class="content mt-7">
-                    <a
-                        href=""
-                        class="text-lg font-medium text-white"
-                    >Pending Orders</a>
-                    <p class="text-white/70 mt-3">The phrasal sequence of the is now so that many campaign and
-                        benefit</p>
-
-                    <div class="mt-5">
-                        <a
-                            href=""
-                            class="btn btn-link text-white hover:text-white after:bg-white duration-500 ease-in-out"
-                        >Read More <i class="uil uil-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="border border-dashed border-white/30 rounded-md p-6 text-center">
-                <i class="uil uil-lock-alt text-4xl text-white"></i>
-
-                <div class="content mt-7">
-                    <a
-                        href=""
-                        class="text-lg font-medium text-white"
-                    >Platform Fees</a>
-                    <p class="text-white/70 mt-3">The phrasal sequence of the is now so that many campaign and
-                        benefit</p>
-
-                    <div class="mt-5">
-                        <a
-                            href=""
-                            class="btn btn-link text-white hover:text-white after:bg-white duration-500 ease-in-out"
-                        >Read More <i class="uil uil-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
+            {include 
+                file="front/home/why_us_item.tpl"
+                title="Dedicated Customer Support"
+                description="Your satisfaction is our priority, and that's why we offer dedicated customer support. Our friendly and knowledgeable support team is readily available to address your questions, provide guidance, and assist you throughout your investment journey. Count on us to be there for you every step of the way"
+            }
         </div>
         <!--end grid-->
     </div>
