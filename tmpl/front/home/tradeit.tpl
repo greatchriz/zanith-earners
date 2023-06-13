@@ -2,7 +2,7 @@
     class="px-6 py-10 shadow hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
     
    
-    {include file="front/home/icons/{$link}.svg"}
+    {include file="{$icon}"}
 
     <div class="content mt-7">
         <a
