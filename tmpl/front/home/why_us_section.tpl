@@ -13,7 +13,7 @@
                 file="front/home/why_us_item.tpl"
                 title="TradeStation Crypto"
                 description="TradeStation Crypto allows you to buy, sell, and trade Bitcoin, Litecoin, Ethereum, Bitcoin Cash and XRP. TradeStation Crypto caters to both institutional and recreational clients."
-                icon="<i class="uil uil-file-contract-dollar text-4xl text-white"></i>"
+                icon="uil uil-file-contract-dollar text-4xl text-white"
             }
 
             <div class="border border-dashed border-white/30 rounded-md p-6 text-center">

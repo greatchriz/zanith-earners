@@ -1,5 +1,6 @@
 <div class="border border-dashed border-white/30 rounded-md p-6 text-center">
-    {$icon|escape}
+    <i class="{$icon}"></i>
+
     <div class="content mt-7">
         <a
             href="/"
