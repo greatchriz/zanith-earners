@@ -59,9 +59,9 @@
                     </h6>
                     <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">How it all started.</h3>
 
-                    <p class="text-slate-400 max-w-xl mb-2">It all started in 2017, when a group of cryptocurrency enthusiasts came together to explore the potential of digital assets. At the time, the digital asset market was still in its infancy, and many people were skeptical of its potential. But we saw something different: we saw an opportunity.</p>
-                    <p class="text-slate-400 max-w-xl mb-2">Over the next few years, we worked tirelessly to build a platform that could help people invest in digital assets. We focused on developing a user-friendly trading platform that could provide our clients with access to a wide range of digital assets, as well as the tools and resources they needed to make informed investment decisions.</p>
-                    <p class="text-slate-400 max-w-xl mb-2">Our efforts paid off, and by 2020, we had become a trusted name in the digital asset market. That year, we launched our investment management services, which were designed to help our clients build diversified portfolios of digital assets that aligned with their investment goals and risk tolerance.</p>
+                    <p class="font-semibold text-slate-400 text-sm max-w-xl mb-2">It all started in 2017, when a group of cryptocurrency enthusiasts came together to explore the potential of digital assets. At the time, the digital asset market was still in its infancy, and many people were skeptical of its potential. But we saw something different: we saw an opportunity.</p>
+                    <p class="font-semibold text-slate-400 text-sm max-w-xl mb-2">Over the next few years, we worked tirelessly to build a platform that could help people invest in digital assets. We focused on developing a user-friendly trading platform that could provide our clients with access to a wide range of digital assets, as well as the tools and resources they needed to make informed investment decisions.</p>
+                    <p class="font-semibold text-slate-400 text-sm max-w-xl mb-2">Our efforts paid off, and by 2020, we had become a trusted name in the digital asset market. That year, we launched our investment management services, which were designed to help our clients build diversified portfolios of digital assets that aligned with their investment goals and risk tolerance.</p>
                     
 
                     <a
