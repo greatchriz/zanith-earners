@@ -4,9 +4,9 @@
     <div class="content mt-7">
         <a
             href="/"
-            class="text-lg font-medium text-white"
+            class="text-lg font-medium text-white font-semibold"
         >{$title}</a>
-        <p class="text-white/70 mt-3">
+        <p class="text-white/70 mt-3 line-clamp-3 text-sm">
             {$description}
         </p>
 
