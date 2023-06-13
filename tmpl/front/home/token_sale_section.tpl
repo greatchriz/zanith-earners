@@ -82,7 +82,7 @@
                 <div class="lg:ms-10">
                     <span class="bg-indigo-600/5 text-indigo-600 text-xs font-bold px-2.5 py-0.5 rounded h-5">ZET
                         tokens</span>
-                    <h4 class="my-4 md:text-2xl md:leading-normal text-xl leading-normal font-semibold">Introducing Zenith Earners Token (ZET): Powering the Future of Digital Investing
+                    <h4 class="my-4 md:text-2xl md:leading-normal text-xl leading-normal font-semibold">Introducing Zenith Earners Token (ZET), Powering the Future of Digital Investing
 
                     </h4>
                     <p class="text-slate-400 para-desc mx-auto mb-3">
@@ -103,7 +103,7 @@
                         <a
                             href="/?a=login"
                             class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md"
-                        >Token sale</a>
+                        >Buy Token</a>
                     </div>
                 </div>
             </div>
@@ -114,7 +114,7 @@
 
     <div class="container md:mt-24 mt-16">
         <div class="grid grid-cols-1 pb-8 text-center">
-            <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Embrace the Future of Payments: We Accept All Cryptocurrencies
+            <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Embrace the Future of Payments, We Accept All Cryptocurrencies
 
             </h3>
 
