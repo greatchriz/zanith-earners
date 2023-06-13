@@ -145,11 +145,7 @@
                 <div class="md:text-start text-center">
                     <p class="mb-0">© <script>
                             document.write(new Date().getFullYear())
-                        </script> Zenith Earners. Design with <i class="mdi mdi-heart text-red-600"></i> by <a
-                            href="https://zenith-earners.com/"
-                            target="_blank"
-                            class="text-reset"
-                        >Zenith Earners Tech Team</a>.</p>
+                        </script> Zenith Earners. Design with <i class="mdi mdi-heart text-red-600"></i> by Zenith Earners Tech Team.</p>
                 </div>
 
                 <ul class="list-none md:text-end text-center mt-6 md:mt-0">
