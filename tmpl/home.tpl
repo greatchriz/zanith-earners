@@ -101,6 +101,8 @@
 </div>
 <!-- End Hero -->
 
+{include file="front/home/tradeits.tpl"}
+
 <!-- Start Section-->
 <section class="relative md:py-24 py-16">
     <div class="container">
