@@ -7,35 +7,32 @@
 
     <head>
         <meta charset="UTF-8" />
-        <title>Techwind - Tailwind CSS Multipurpose Landing Page Template</title>
+        <title>Zenith Earners - Unlocking the Potential of Crypto and Stock Investments</title>
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <meta
             name="description"
-            content="Tailwind CSS Saas & Software Landing Page Template"
+            content="Invest in cryptocurrencies and stocks with Zenith Earners - a secure and reliable investment platform. Maximize your profits with our expert guidance and innovative investment strategies"
         />
         <meta
             name="keywords"
-            content="agency, application, business, clean, creative, cryptocurrency, it solutions, modern, multipurpose, nft marketplace, portfolio, saas, software, tailwind css"
+            content="Zenith Earners, crypto investment, stock investment, secure platform, expert guidance, innovative strategies"
         />
         <meta
             name="author"
-            content="Shreethemes"
+            content="Zenith Earners"
         />
         <meta
             name="website"
-            content="https://shreethemes.in"
+            content="https://zenith-earners.com/"
         />
         <meta
             name="email"
-            content="support@shreethemes.in"
+            content="support@zenith-earners.com"
         />
-        <meta
-            name="version"
-            content="1.8.0"
-        />
+     
         <meta
             http-equiv="X-UA-Compatible"
             content="IE=edge"
@@ -102,7 +99,7 @@
                 <!-- Logo container-->
                 <a
                     class="logo"
-                    href="index.html"
+                    href="/"
                 >
                     <span class="inline-block dark:hidden">
                         <img
