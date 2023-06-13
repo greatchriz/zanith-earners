@@ -17,11 +17,11 @@
 
                     {include file="front/home/tradeit.tpl" link="stocks" title="Stocks" subheading="Enjoy commission-free* equities trading with our award-winning trading technology" icon="front/home/icons/stocks.svg"}
 
-                    {include file="front/home/tradeit.tpl" link="stocks" title="Stocks" subheading="Enjoy commission-free* equities trading with our award-winning trading technology" icon="front/home/icons/stocks.svg"}
+                    {include file="front/home/tradeit.tpl" link="etfs" title="Etfs" subheading="Enjoy commission-free* equities trading with our award-winning trading technology" icon="front/home/icons/etfs.svg"}
 
-                    {include file="front/home/tradeit.tpl" link="stocks" title="Stocks" subheading="Enjoy commission-free* equities trading with our award-winning trading technology" icon="front/home/icons/stocks.svg"}
+                    {include file="front/home/tradeit.tpl" link="futures" title="Futures" subheading="Enjoy commission-free* equities trading with our award-winning trading technology" icon="front/home/icons/futures.svg"}
 
-                    {include file="front/home/tradeit.tpl" link="stocks" title="Stocks" subheading="Enjoy commission-free* equities trading with our award-winning trading technology" icon="front/home/icons/stocks.svg"}
+                    {include file="front/home/tradeit.tpl" link="crypto" title="Crypto" subheading="Enjoy commission-free* equities trading with our award-winning trading technology" icon="front/home/icons/crypto.svg"}
                 </div>
             </div>
 
