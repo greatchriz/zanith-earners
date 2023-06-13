@@ -108,17 +108,23 @@
                         <img
                             src="assets/images/logo-light.svg"
                             class="l-light"
+                            height="200px"
+                            width="200px"
                             alt=""
                         >
                         <img
                             src="assets/images/logo-light.svg"
                             class="l-light"
+                            height="200px"
+                            width="200px"
                             alt=""
                         >
                     </span>
                     <img
                     src="assets/images/logo-light.svg"
                         class="hidden dark:inline-block"
+                        height="200px"
+                        width="200px"
                         alt=""
                     >
                 </a>
