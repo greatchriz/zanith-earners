@@ -54,11 +54,12 @@
             rel="stylesheet"
         >
         <!-- Main Css -->
+            
         <link
+            href="assets/libs/@iconscout/unicons/css/line.css"
+            type="text/css"
             rel="stylesheet"
-            href="https://unicons.iconscout.com/release/v4.0.0/css/unicons.css"
         />
-       
         <link
             rel="stylesheet"
             href="assets/css/icons.css"
