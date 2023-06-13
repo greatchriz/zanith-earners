@@ -145,57 +145,26 @@
                     </div>
                 </div>
 
-                <!--Login button Start-->
-                <ul class="buy-button list-none mb-0">
-                    <li class="inline mb-0">
-                        <a href="">
-                            <span class="login-btn-primary"><span
-                                    class="btn btn-icon rounded-full bg-indigo-600/5 hover:bg-indigo-600 border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white"
-                                ><i
-                                        data-feather="settings"
-                                        class="h-4 w-4"
-                                    ></i></span></span>
-                            <span class="login-btn-light"><span
-                                    class="btn btn-icon rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700"
-                                ><i
-                                        data-feather="settings"
-                                        class="h-4 w-4"
-                                    ></i></span></span>
-                        </a>
-                    </li>
-
-                    <li class="inline ps-1 mb-0">
-                        <a
-                            href="https://1.envato.market/techwind"
-                            target="_blank"
-                        >
-                            <div class="login-btn-primary"><span
-                                    class="btn btn-icon rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"
-                                ><i
-                                        data-feather="shopping-cart"
-                                        class="h-4 w-4"
-                                    ></i></span></div>
-                            <div class="login-btn-light"><span
-                                    class="btn btn-icon rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700"
-                                ><i
-                                        data-feather="shopping-cart"
-                                        class="h-4 w-4"
-                                    ></i></span></div>
-                        </a>
-                    </li>
-                </ul>
-                <!--Login button End-->
-
                 <div id="navigation">
-                    <!-- Navigation Menu-->
-                    <ul class="navigation-menu nav-light">
-                        {include file="front/nav_item.tpl" link="?a=home" title="Home"}
+                    <div class="block lg:flex items-center justify-between">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu nav-light">
+                            {include file="front/nav_item.tpl" link="?a=home" title="Home"}
 
-                        {include file="front/nav_item.tpl" link="?a=about" title="About Us"}
+                            {include file="front/nav_item.tpl" link="?a=about" title="About Us"}
 
-                        {include file="front/nav_item.tpl" link="?a=services" title="Services"}
-                    </ul>
-                    <!--end navigation menu-->
+                            {include file="front/nav_item.tpl" link="?a=services" title="Services"}
+
+                            {include file="front/nav_item.tpl" link="?a=plans" title="Investment Plans"}
+
+                        </ul>
+                        <!--end navigation menu-->
+
+                        <div class="mx-4 my-4">
+                            <a href="?a=signup" class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Sign Up</a>
+                            <a href="?a=login" class="btn bg-transparent hover:bg-indigo-600 border-indigo-600 text-indigo-600 hover:text-white rounded-md ms-2">Login</a>
+                        </div>
+                    </div>
                 </div>
                 <!--end navigation-->
             </div>

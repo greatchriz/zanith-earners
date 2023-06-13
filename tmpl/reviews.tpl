@@ -1,4 +1,4 @@
-{include file="header.tpl"}
+{include file="front/header.tpl"}
 
 {if $userinfo.logged}
 
@@ -62,4 +62,4 @@
 </center>
 
 
-{include file="footer.tpl"}
+{include file="front/footer.tpl"}

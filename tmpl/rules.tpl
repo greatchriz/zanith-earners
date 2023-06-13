@@ -1,4 +1,5 @@
-{include file="header.tpl"}
+{include file="front/header.tpl"}
+
 <h3>Rules & Agreements.</h3>
 <br>
 
@@ -47,4 +48,4 @@ If you do not agree with the above disclaimer, please do not go any further.
 
 
 </p>
-{include file="footer.tpl"}
+{include file="front/footer.tpl"}
