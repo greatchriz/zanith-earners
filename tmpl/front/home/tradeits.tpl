@@ -1,7 +1,7 @@
 <section class="relative md:py-24 py-16">
     <div class="container relative">
         <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px] relative">
-            <div class="lg:col-span-8 md:col-span-12">
+            <div class="lg:col-span-12 md:col-span-12">
                 <div class="grid grid-cols-1 pb-8">
                     <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Instant Smart
                         Solutions <br> With Techwind</h3>
@@ -24,88 +24,7 @@
                     {include file="front/home/tradeit.tpl" link="crypto" title="Crypto" subheading="Enjoy commission-free* equities trading with our award-winning trading technology" icon="front/home/icons/crypto.svg"}
                 </div>
             </div>
-
-            <div class="lg:col-span-4 md:col-span-12">
-                <div class="grid lg:grid-cols-1 md:grid-cols-2 grid-cols-1 gap-[30px]">
-                    <div
-                        class="px-6 py-10 shadow hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="feather feather-users h-12 w-12 stroke-1 text-indigo-600"
-                        >
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle
-                                cx="9"
-                                cy="7"
-                                r="4"
-                            ></circle>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-
-                        <div class="content mt-7">
-                            <a
-                                href="page-services.html"
-                                class="title h5 text-lg font-medium hover:text-indigo-600"
-                            >User Forum Forum</a>
-                            <p class="text-slate-400 mt-3">The phrasal sequence of the is now so that many campaign and
-                                benefit</p>
-
-                            <div class="mt-5">
-                                <a
-                                    href="page-services.html"
-                                    class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out"
-                                >Read More <i class="uil uil-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div
-                        class="px-6 py-10 shadow hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="feather feather-message-circle h-12 w-12 stroke-1 text-indigo-600"
-                        >
-                            <path
-                                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
-                            ></path>
-                        </svg>
-
-                        <div class="content mt-7">
-                            <a
-                                href="page-services.html"
-                                class="title h5 text-lg font-medium hover:text-indigo-600"
-                            >24/7 Support</a>
-                            <p class="text-slate-400 mt-3">The phrasal sequence of the is now so that many campaign and
-                                benefit</p>
-
-                            <div class="mt-5">
-                                <a
-                                    href="page-services.html"
-                                    class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out"
-                                >Read More <i class="uil uil-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            
             <div
                 class="overflow-hidden after:content-[''] after:absolute after:h-40 after:w-40 after:bg-red-600/5 after:top-2/4 after:start-0 after:-z-1 after:rounded-3xl after:animate-[spin_10s_linear_infinite]">
             </div>
