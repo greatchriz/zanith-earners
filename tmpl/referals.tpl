@@ -207,9 +207,14 @@
             <td class=inheader>Ins</td>
             <td class=inheader>Signups</td>
           </tr>
+
+
+
           {if $show_refstat}
             {section name=s loop=$refstat}
-              <tr class="mt-4">
+              <div class="my-4 h-px  bg-slate-200 dark:bg-navy-500"></div>
+
+              <tr>
                 <td
                   class=item
                   align=center
@@ -225,7 +230,9 @@
               </tr>
             {/section}
           {else}
-            <tr class="mt-4">
+            <div class="my-4 h-px  bg-slate-200 dark:bg-navy-500"></div>
+
+            <tr>
               <td
                 class=item
                 align=center
@@ -250,19 +257,25 @@
           cellpadding=1
           border=0
         >
+        <div class="my-4 h-px  bg-slate-200 dark:bg-navy-500"></div>
+
           <tr>
             <td class=inheader>Nickname</td>
             <td class=inheader>E-mail</td>
             <td class=inheader>Status</td>
           </tr>
           {section name=s loop=$referals}
-            <tr class="mt-4">
+            <div class="my-4 h-px  bg-slate-200 dark:bg-navy-500"></div>
+
+            <tr>
               <td class=item><b>{$referals[s].username}</b></td>
               <td class=item><a href=mailto:{$referals[s].email}>{$referals[s].email}</a></td>
               <td class=item>{if $referals[s].q_deposits > 0}Deposited{else}No deposit yet{/if}</td>
             </tr>
             {if $referals[s].ref_stats}
-              <tr class="mt-4">
+              <div class="my-4 h-px  bg-slate-200 dark:bg-navy-500"></div>
+
+              <tr>
                 <td colspan=3>
                   User referrals:
                   {section name=l loop=$referals[s].ref_stats}
@@ -273,7 +286,9 @@
               </tr>
             {/if}
             {if $referals[s].came_from}
-              <tr class="mt-4">
+              <div class="my-4 h-px  bg-slate-200 dark:bg-navy-500"></div>
+
+              <tr>
                 <td colspan=3>
                   <a
                     href="{$referals[s].came_from}"
