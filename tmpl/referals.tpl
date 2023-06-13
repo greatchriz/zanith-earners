@@ -181,6 +181,8 @@
             </label>
           </div>
 
+          <div class="my-4 h-px  bg-slate-200 dark:bg-navy-500"></div>
+
           <button
             type="submit"
             class="btn bg-gradient-to-br from-purple-500 to-indigo-600 font-medium text-white"
