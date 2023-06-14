@@ -57,6 +57,8 @@
 {* our_story_section *}
 {include file="front/about/our_story_section.tpl"}
 
+{include file="front/about/our_vision_section.tpl"}
+
 <!-- Start -->
 <section class="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800">
     <div class="container relative">
