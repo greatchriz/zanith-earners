@@ -62,7 +62,7 @@
 
 {include file="front/about/our_team_section.tpl"}
 
-
+{include file="front/about/security_section.tpl"}
 
 {include file="front/about/testimonials_section.tpl"}
                 
