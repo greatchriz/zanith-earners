@@ -2,9 +2,9 @@
     <div class="absolute inset-0 bg-indigo-600/90"></div>
     <div class="container">
         <div class="grid grid-cols-1 pb-8 text-center">
-            <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-medium text-white">Why TradeStation</h3>
+            <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-medium text-white">Ensuring Your Peace of Mind: Our Commitment to Security</h3>
 
-            <p class="text-white/70 max-w-xl mx-auto">New traders or seasoned professionals can experience the full suite of powerful trading technology, online brokerage services, and trading education all under one roof..</p>
+            <p class="text-white/70 max-w-xl mx-auto">Protecting Your Investments and Confidential Information.</p>
         </div>
         <!--end grid-->
 
