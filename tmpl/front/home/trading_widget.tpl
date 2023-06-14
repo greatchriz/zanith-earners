@@ -1,7 +1,7 @@
 <section class="relative md:py-24 py-16">
     <div class="container">
         <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px] relative">
-            <div class="col-span-12 max-h-full">
+            <div class="col-span-12">
 
                 {literal}
                     <!-- TradingView Widget BEGIN -->
@@ -19,7 +19,7 @@
                         >
                             {
                                 "width": "100%",
-                                "height": "1000px",
+                                "height": "1000",
                                 "defaultColumn": "overview",
                                 "screener_type": "crypto_mkt",
                                 "displayCurrency": "USD",
