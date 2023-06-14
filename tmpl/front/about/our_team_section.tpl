@@ -1,5 +1,13 @@
 <section class="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800">
     <div class="container relative">
+
+        <div class="grid grid-cols-1 pb-8 text-center">
+            <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Meet Our Dedicated Team of Experts
+            </h3>
+
+            <p class="text-slate-400 max-w-xl mx-auto">Driven by Passion, Expertise, and a Commitment to Your Success.</p>
+        </div>
+
         <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-[30px]">
             {include 
                 file="front/about/our_team_item.tpl" 
