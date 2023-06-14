@@ -8,7 +8,7 @@
             <p class="text-slate-400 max-w-xl mx-auto">Driven by Passion, Expertise, and a Commitment to Your Success.</p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-[30px]">
+        <div class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-[30px]">
             {include 
                 file="front/about/our_team_item.tpl" 
                 image="https://s29.q4cdn.com/355597545/files/images/exec/portrait-john-bartleman.png" 
