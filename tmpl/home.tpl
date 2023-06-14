@@ -260,5 +260,6 @@
 
 {include file="front/home/referral.tpl"}
 
+{include file="front/home/trading_widget.tpl"}
 
 {include file="front/footer.tpl"}
