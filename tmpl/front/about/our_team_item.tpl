@@ -1,7 +1,7 @@
 <div class="team p-6 rounded-md border border-gray-100 dark:border-gray-700 group bg-white dark:bg-slate-900">
     <div class="flex align-middle justify-center items-center mx-auto">
         <img
-            src="https://s29.q4cdn.com/355597545/files/images/exec/portrait-john-bartleman.png"
+            src="{$image}"
             class="w-48 h-48"
         >
     </div>
