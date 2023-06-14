@@ -1,8 +1,7 @@
 <section class="relative md:py-24 py-16">
-    <div class="container relative md:mt-24 mt-16">
+    <div class="container relative md:mt-24 mt-16 dark:bg-slate-800 p-6 rounded-lg">
         
         <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
-            <div class="dark:bg-slate-800 p-6 rounded-lg">
                 <div class="md:col-span-5">
                     <div class="relative">
                         <img src="assets/images/about/about2.png" class="mx-auto" alt="">
@@ -17,7 +16,6 @@
                         <a href="" class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md mt-3">Buy Now <i class="mdi mdi-chevron-right align-middle"></i></a>
                     </div>
                 </div><!--end col-->
-            </div>
         </div><!--end grid-->
     </div><!--end container-->
 </section>
