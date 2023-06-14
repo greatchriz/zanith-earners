@@ -8,10 +8,12 @@
 
     <div class="content mt-7">
         <a
-            href="page-services.html"
-            class="title h5 text-lg font-medium hover:text-indigo-600"
+            href="#"
+            class="title h5 text-lg font-mediumfont-bold hover:text-indigo-600 text-indigo-400"
         >UX / UI Design</a>
-        <p class="text-slate-400 mt-3">The phrasal sequence of the is now so that many campaign and benefit</p>
+        <p class="text-slate-400 mt-3 font-sm font-semibold">{$position}</p>
+
+        <p class="text-slate-400 mt-3 font-xs font-semibold">{$intro}</p>
 
 
     </div>
