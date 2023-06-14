@@ -259,29 +259,6 @@
 <!-- Counter End -->
 
 {include file="front/home/referral.tpl"}
-<!-- Start -->
-<section class="relative md:py-24 py-16">
-    {*Referal CTA  *}
-    <div class="container md:mt-24 mt-16">
-        <div class="grid grid-cols-1 text-center">
-            <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Have Question ?
-                Get in touch!</h3>
 
-            <p class="text-slate-400 max-w-xl mx-auto">Start working with Tailwind CSS that can provide
-                everything you need to generate awareness, drive traffic, connect.</p>
-
-            <div class="mt-6">
-                <a
-                    href="contact-one.html"
-                    class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md mt-4"
-                ><i class="uil uil-phone"></i> Contact us</a>
-            </div>
-        </div>
-        <!--end grid-->
-    </div>
-    <!--end container-->
-</section>
-<!--end section-->
-<!-- End -->
 
 {include file="front/footer.tpl"}
