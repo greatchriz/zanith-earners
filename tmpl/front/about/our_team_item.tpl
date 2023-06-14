@@ -9,11 +9,11 @@
     <div class="content mt-7">
         <a
             href="#"
-            class="title h5 text-lg font-mediumfont-bold hover:text-indigo-600 text-indigo-400"
-        >UX / UI Design</a>
-        <p class="text-slate-400 mt-3 font-sm font-semibold">{$position}</p>
+            class="title h5 text-sm font-bold hover:text-indigo-600 text-indigo-600"
+        >{$name}</a>
+        <p class="text-slate-500 mt-3 text-xs font-semibold">{$position}</p>
 
-        <p class="text-slate-400 mt-3 font-xs font-semibold">{$intro}</p>
+        <p class="text-slate-400 mt-3 text-xxs font-semibold">{$intro}</p>
 
 
     </div>
