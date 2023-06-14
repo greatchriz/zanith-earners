@@ -1,7 +1,7 @@
 <section class="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800 md:pb-0 pb-0">
     <div class="container relative">
         <div class="grid grid-cols-1 pb-8 text-center">
-            <h3 class="mb-6 md:text-2xl md:leading-normal text-xl leading-normal font-semibold">Our Client Success Stories
+            <h3 class="mb-6 md:text-2xl md:leading-normal text-xl leading-normal font-semibold">Our Clients
                 <br>
                     Success Stories</h3>
 
@@ -32,7 +32,7 @@
                                 class="h-14 w-14 rounded-full shadow-md mx-auto"
                                 alt=""
                             >
-                            <h6 class="mt-2 font-semibold">John D.</h6>
+                            <h6 class="mt-2 font-semibold">Samantha Davis</h6>
                             
                         </div>
                     </div>
@@ -59,7 +59,7 @@
                                 class="h-14 w-14 rounded-full shadow-md mx-auto"
                                 alt=""
                             >
-                            <h6 class="mt-2 font-semibold">Christa Smith</h6>
+                            <h6 class="mt-2 font-semibold">Benjamin Lee</h6>
                             
                         </div>
                     </div>
@@ -86,7 +86,7 @@
                                 class="h-14 w-14 rounded-full shadow-md mx-auto"
                                 alt=""
                             >
-                            <h6 class="mt-2 font-semibold">Jemina CLone</h6>
+                            <h6 class="mt-2 font-semibold">Zhang Wei</h6>
                             
                         </div>
                     </div>
@@ -113,7 +113,7 @@
                                 class="h-14 w-14 rounded-full shadow-md mx-auto"
                                 alt=""
                             >
-                            <h6 class="mt-2 font-semibold">Smith Vodka</h6>
+                            <h6 class="mt-2 font-semibold">Alejandro Rodriguez</h6>
                             
                         </div>
                     </div>
@@ -140,7 +140,7 @@
                                 class="h-14 w-14 rounded-full shadow-md mx-auto"
                                 alt=""
                             >
-                            <h6 class="mt-2 font-semibold">Cristino Murfi</h6>
+                            <h6 class="mt-2 font-semibold">Zephyr Evergreen</h6>
                             
                         </div>
                     </div>
@@ -167,7 +167,8 @@
                                 class="h-14 w-14 rounded-full shadow-md mx-auto"
                                 alt=""
                             >
-                            <h6 class="mt-2 font-semibold">Cristino Murfi</h6>
+                            <h6 class="mt-2 font-semibold">Esmeralda Cruz
+                            </h6>
                             
                         </div>
                     </div>
