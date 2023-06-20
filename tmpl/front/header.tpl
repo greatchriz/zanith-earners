@@ -7,18 +7,18 @@
 
     <head>
         <meta charset="UTF-8" />
-        <title>Zenith Earners - Unlocking the Potential of Crypto and Stock Investments</title>
+        <title>{$title}</title>
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <meta
             name="description"
-            content="Invest in cryptocurrencies and stocks with Zenith Earners - a secure and reliable investment platform. Maximize your profits with our expert guidance and innovative investment strategies"
+            content="{$description}"
         />
         <meta
             name="keywords"
-            content="Zenith Earners, crypto investment, stock investment, secure platform, expert guidance, innovative strategies"
+            content="{$keywords}"
         />
         <meta
             name="author"
@@ -179,6 +179,8 @@
                             {include file="front/nav_item.tpl" link="?a=home" title="Home"}
 
                             {include file="front/nav_item.tpl" link="?a=about" title="About Us"}
+
+                            {include file="front/nav_item.tpl" link="?a=awards" title="Awards"}
 
                             {include file="front/nav_item.tpl" link="?a=services" title="Services"}
 
