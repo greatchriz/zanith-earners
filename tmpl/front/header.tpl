@@ -88,6 +88,11 @@
         </div>
         <!-- Loader End -->
 
+<div class="is-sticky bg-white">
+	<div id="google_translate_element"></div>
+</div>
+
+
 
 
 
