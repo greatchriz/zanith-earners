@@ -7,7 +7,8 @@
 
     <!-- Start Hero -->
     <section
-        class="relative table w-full py-36 lg:py-44 bg-[url('../../assets/images/awards/awards-bg.jpg')] bg-no-repeat bg-center bg-cover"
+        class="relative table w-full py-36 lg:py-44 bg-no-repeat bg-center bg-cover"
+        style="background-image: url(assets/images/awards/awards-bg.jpg);"
     >
         <div class="absolute inset-0 bg-black opacity-75"></div>
         <div class="container relative">
