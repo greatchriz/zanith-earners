@@ -204,9 +204,8 @@
             </div>
             <!--end container-->
 
-				<div class="m-4 p-6 block max-w-full bg-slate-800">
+
 	<div id="google_translate_element"></div>
-</div>
 
         </nav>
         <!--end header-->
