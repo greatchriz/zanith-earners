@@ -1,6 +1,5 @@
-<div class="lg:col-span-4">
     <!-- Content -->
-    <div class="px-6 py-10 shadow hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
+    <div class="lg:col-span-4 p-6 rounded-md border border-gray-100 dark:border-gray-700 group bg-white dark:bg-slate-900">
         <i data-feather="codesandbox" class="h-12 w-12 stroke-1 text-indigo-600"></i>
 
         <div class="content mt-7">
@@ -13,4 +12,3 @@
         </div>
     </div>
     <!-- Content -->
-</div>
