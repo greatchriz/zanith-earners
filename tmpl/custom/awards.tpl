@@ -17,7 +17,7 @@
         <div class="absolute inset-0 bg-white"></div>
         <div class="container">
             <div class="grid grid-cols-1">
-                <h5 class="text-2xl font-semibold">Awards</h5>
+                <h5 class="text-xl font-semibold text-slate-900">Awards</h5>
             </div>
 
             <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 gap-[30px] mt-10">
