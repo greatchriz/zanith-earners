@@ -99,7 +99,7 @@
         <!-- Start Navbar -->
         <nav
             id="topnav"
-            class="defaultscroll is-sticky"
+            class="defaultscroll is-sticky mt-16"
         >
             <div class="container relative">
                 <!-- Logo container-->
