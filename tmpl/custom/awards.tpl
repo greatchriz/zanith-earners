@@ -23,57 +23,14 @@
                 <p class="text-slate-400 max-w-xl mx-auto">Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, connect.</p>
             </div><!--end grid-->
 
-            <div class="p-6 rounded-md border border-gray-100 dark:border-gray-700 group bg-white dark:bg-slate-900">
-                <div class="grid grid-cols-1">
-                    <h5 class="text-xl font-semibold text-slate">Awards</h5>
-                </div>
+            {include file="front/awards/award_section.tpl"}
 
-                <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 gap-[30px] mt-10">
-                    {include file="front/awards/award.tpl"}
-                    {include file="front/awards/award.tpl"}
-                    {include file="front/awards/award.tpl"}
-                    {include file="front/awards/award.tpl"}
-                </div>
-            </div>
+            {include file="front/awards/award_section.tpl"}
 
-            <div class="p-6 rounded-md border border-gray-100 dark:border-gray-700 group bg-white dark:bg-slate-900">
-                <div class="grid grid-cols-1">
-                    <h5 class="text-xl font-semibold text-slate">Awards</h5>
-                </div>
+            {include file="front/awards/award_section.tpl"}
 
-                <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 gap-[30px] mt-10">
-                    {include file="front/awards/award.tpl"}
-                    {include file="front/awards/award.tpl"}
-                    {include file="front/awards/award.tpl"}
-                    {include file="front/awards/award.tpl"}
-                </div>
-            </div>
+            {include file="front/awards/award_section.tpl"}
 
-            <div class="p-6 rounded-md border border-gray-100 dark:border-gray-700 group bg-white dark:bg-slate-900">
-                <div class="grid grid-cols-1">
-                    <h5 class="text-xl font-semibold text-slate">Awards</h5>
-                </div>
-
-                <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 gap-[30px] mt-10">
-                    {include file="front/awards/award.tpl"}
-                    {include file="front/awards/award.tpl"}
-                    {include file="front/awards/award.tpl"}
-                    {include file="front/awards/award.tpl"}
-                </div>
-            </div>
-
-            <div class="p-6 rounded-md border border-gray-100 dark:border-gray-700 group bg-white dark:bg-slate-900">
-                <div class="grid grid-cols-1">
-                    <h5 class="text-xl font-semibold text-slate">Awards</h5>
-                </div>
-
-                <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 gap-[30px] mt-10">
-                    {include file="front/awards/award.tpl"}
-                    {include file="front/awards/award.tpl"}
-                    {include file="front/awards/award.tpl"}
-                    {include file="front/awards/award.tpl"}
-                </div>
-            </div>
         </div>
     </section>
 
