@@ -219,6 +219,12 @@
 <script src="assets/js/plugins.init.js"></script>
 <script src="assets/js/app.js"></script>
 <!-- JAVASCRIPTS -->
+
+<script src="//code.tidio.co/njnxvjoh2bdtwhyqnqhoxjsprwfkxdgo.js" async></script>
+
+<!-- tidio  -->
+
+
 </body>
 
 </html>
