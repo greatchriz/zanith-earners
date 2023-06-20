@@ -14,6 +14,7 @@
 
 <!-- Start Section-->
     <section class="relative md:py-24 py-16">
+        <div class="absolute inset-0 bg-light"></div>
         <div class="container">
             <div class="grid grid-cols-1">
                 <h5 class="text-2xl font-semibold">Awards</h5>
