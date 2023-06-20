@@ -12,6 +12,21 @@
     paragragh="Embrace the pride as we showcase the recognition and accolades that have solidified Zenith Earners as a leader in the investment industry." 
 }
 
+<!-- Start Section-->
+    <section class="relative md:py-24 py-16">
+        <div class="container">
+            <div class="grid grid-cols-1">
+                <h5 class="text-2xl font-semibold">Awards</h5>
+            </div>
+
+            <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 gap-[30px] mt-10">
+                {include file="front/awards/award.tpl"}
+                {include file="front/awards/award.tpl"}
+                {include file="front/awards/award.tpl"}
+                {include file="front/awards/award.tpl"}
+            </div>
+        </div>
+    </section>
 
 
 {include file="front/footer.tpl"}
