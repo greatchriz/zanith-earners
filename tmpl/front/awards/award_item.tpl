@@ -1,7 +1,6 @@
 <div class="lg:col-span-4 p-6 rounded-md border border-gray-100 dark:border-gray-700 group bg-white dark:bg-slate-900">
         
 
-    <div class="md:mt-24 mt-16">
         <div class="grid grid-cols-1 items-center gap-[30px]">
             <div class="relative order-1 md:order-2">
                 
@@ -22,7 +21,6 @@
                 </div>
             </div>
         </div>
-    </div><!--end container-->
 
     <div class="content mt-7">
         <div class="mt-5">
