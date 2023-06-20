@@ -23,13 +23,57 @@
                 <p class="text-slate-400 max-w-xl mx-auto">Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, connect.</p>
             </div><!--end grid-->
 
-            {include file="front/awards/award_section.tpl"}
+            <div class="p-6 rounded-md border border-gray-100 dark:border-gray-700 group bg-white dark:bg-slate-900 my-4">
+                <div class="grid grid-cols-1">
+                    <h5 class="text-xl font-semibold text-slate">2023</h5>
+                </div>
+            
+                <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 gap-[30px] mt-10">
+                    {include 
+                        file="front/awards/award_item.tpl"
+                        img="assets/images/awards/2020-Benzinga-Winner-Badge.png"
+                        title="TradeStation Crypto Wins “#1 Crypto Technology” for the 3rd consecutive Year in StockBrokers.com 2023 Online Broker Review1"
+                        subtitle="TradeStation Crypto, Inc. (TradeStation Crypto), a subsidiary of TradeStation Group, Inc., was ranked “#1 Crypto Technology” for the third consecutive year in the 2021 Online Broker Review conducted by StockBrokers.com, a leading online brokerage comparison site. TradeStation Crypto also received the highest overall ranking of 4.5 stars out of 5 in the review."
+                        
+                    }
+            
+                </div>
+            </div>
 
-            {include file="front/awards/award_section.tpl"}
+            <div class="p-6 rounded-md border border-gray-100 dark:border-gray-700 group bg-white dark:bg-slate-900 my-4">
+                <div class="grid grid-cols-1">
+                    <h5 class="text-xl font-semibold text-slate">2022</h5>
+                </div>
+            
+                <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 gap-[30px] mt-10">
+                    {include 
+                        file="front/awards/award_item.tpl"
+                        img="assets/images/awards/2020-Benzinga-Winner-Badge.png"
+                        title="TradeStation Crypto Wins “#1 Crypto Technology” for the 3rd consecutive Year in StockBrokers.com 2023 Online Broker Review1"
+                        subtitle="TradeStation Crypto, Inc. (TradeStation Crypto), a subsidiary of TradeStation Group, Inc., was ranked “#1 Crypto Technology” for the third consecutive year in the 2021 Online Broker Review conducted by StockBrokers.com, a leading online brokerage comparison site. TradeStation Crypto also received the highest overall ranking of 4.5 stars out of 5 in the review."
+                        
+                    }
 
-            {include file="front/awards/award_section.tpl"}
+                    {include 
+                        file="front/awards/award_item.tpl"
+                        img="assets/images/awards/2020-Benzinga-Winner-Badge.png"
+                        title="TradeStation Crypto Wins “#1 Crypto Technology” for the 3rd consecutive Year in StockBrokers.com 2023 Online Broker Review1"
+                        subtitle="TradeStation Crypto, Inc. (TradeStation Crypto), a subsidiary of TradeStation Group, Inc., was ranked “#1 Crypto Technology” for the third consecutive year in the 2021 Online Broker Review conducted by StockBrokers.com, a leading online brokerage comparison site. TradeStation Crypto also received the highest overall ranking of 4.5 stars out of 5 in the review."
+                        
+                    }
 
-            {include file="front/awards/award_section.tpl"}
+                    {include 
+                        file="front/awards/award_item.tpl"
+                        img="assets/images/awards/2020-Benzinga-Winner-Badge.png"
+                        title="TradeStation Crypto Wins “#1 Crypto Technology” for the 3rd consecutive Year in StockBrokers.com 2023 Online Broker Review1"
+                        subtitle="TradeStation Crypto, Inc. (TradeStation Crypto), a subsidiary of TradeStation Group, Inc., was ranked “#1 Crypto Technology” for the third consecutive year in the 2021 Online Broker Review conducted by StockBrokers.com, a leading online brokerage comparison site. TradeStation Crypto also received the highest overall ranking of 4.5 stars out of 5 in the review."
+                        
+                    }
+            
+                </div>
+            </div>
+
+
 
         </div>
     </section>
