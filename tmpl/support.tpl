@@ -92,41 +92,6 @@ strategies, Zenith Earners"
          <p class="bg-green-600 text-white text-sm font-semibold mb-4"> Message has been successfully sent. We will back to you in next 24 hours. Thank you.</p>
       {else}
 
-        {* <script language=javascript>
-          {if $userinfo.logged == 1}
-            {literal}
-              function checkform() {
-                if (document.mainform.message.value == '') {
-                  alert("Please type your message!");
-                  document.mainform.message.focus();
-                  return false;
-                }
-                return true;
-              }
-            {/literal}
-          {else}
-            {literal}
-              function checkform() {
-                if (document.mainform.name.value == '') {
-                  alert("Please type your full name!");
-                  document.mainform.name.focus();
-                  return false;
-                }
-                if (document.mainform.email.value == '') {
-                  alert("Please enter your e-mail address!");
-                  document.mainform.email.focus();
-                  return false;
-                }
-                if (document.mainform.message.value == '') {
-                  alert("Please type your message!");
-                  document.mainform.message.focus();
-                  return false;
-                }
-                return true;
-              }
-            {/literal}
-          {/if}
-        </script> *}
 
         <div class="mt-8 md:mt-0">
           <div class="lg:ms-5">
@@ -187,6 +152,7 @@ strategies, Zenith Earners"
                                 type="text"
                                 class="form-input ps-11"
                                 placeholder="Name :" />
+                              {/if}
                             </div>
                           </div>
                         </div>
@@ -211,6 +177,7 @@ strategies, Zenith Earners"
                                 type="text"
                                 class="form-input ps-11"
                                 placeholder="Email :" />
+                              {/if}
                             </div>
                           </div>
                         </div>
