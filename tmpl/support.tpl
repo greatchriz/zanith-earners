@@ -89,10 +89,10 @@ strategies, Zenith Earners"
     <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
 
       {if $say eq 'send'}
-        Message has been successfully sent. We will back to you in next 24 hours. Thank you.<br><br>
+         <p class="bg-green-600 text-white text-sm font-semibold mb-4"> Message has been successfully sent. We will back to you in next 24 hours. Thank you.</p>
       {else}
 
-        <script language=javascript>
+        {* <script language=javascript>
           {if $userinfo.logged == 1}
             {literal}
               function checkform() {
@@ -126,7 +126,7 @@ strategies, Zenith Earners"
               }
             {/literal}
           {/if}
-        </script>
+        </script> *}
 
         <div class="mt-8 md:mt-0">
           <div class="lg:ms-5">
@@ -136,81 +136,134 @@ strategies, Zenith Earners"
                   <form
                     method=post
                     name=mainform
-                    onsubmit="return checkform()"
+                    id="mainform"
+                    onsubmit="return validateForm()"
                   >
-                    <input
-                      type=hidden
-                      name=a
-                      value=support
-                    >
-                    <input
-                      type=hidden
-                      name=action
-                      value=send
-                    >
+                      <p class="mb-0" id="error-msg"></p>
+                      <div id="simple-msg"></div>
 
-                    {if $errors}
-                      <ul style="color:red">
-                        {if $errors.turing_image == 1}
-                          <li>Invalid turing image</li>
-                        {/if}
-                        {if $errors.invalid_email == 1}
-                          <li>Invalid email address</li>
-                        {/if}
-                      </ul>
-                    {/if}
+                      <div class="grid lg:grid-cols-12 lg:gap-6">
 
-                    <table
-                      cellspacing=0
-                      cellpadding=2
-                      border=0
-                    >
-                      <tr>
-                        <td>Your Name:</td>
-                        {if $userinfo.logged}
-                          <td><b>{$userinfo.name}</b></td>
-                        {else}
-                          <td><input
-                              type="text"
-                              name="name"
-                              value="{$frm.name|escape:htmlall}"
-                              size=30
-                              class=inpts
-                            ></td>
+                        <input
+                          type=hidden
+                          name=a
+                          value=support
+                        >
+                        <input
+                          type=hidden
+                          name=action
+                          value=send
+                        >
+
+                        {if $errors}
+                          <ul style="color:red">
+                            {if $errors.turing_image == 1}
+                              <li>Invalid turing image</li>
+                            {/if}
+                            {if $errors.invalid_email == 1}
+                              <li>Invalid email address</li>
+                            {/if}
+                          </ul>
                         {/if}
-                      </tr>
-                      <tr>
-                        <td>Your Email:</td>
-                        {if $userinfo.logged}
-                          <td><b>{$userinfo.email}</b></td>
-                        {else}
-                          <td><input
-                              type="text"
-                              name="email"
-                              value="{$frm.email|escape:htmlall}"
-                              size=30
-                              class=inpts
-                            ></td>
-                        {/if}
-                      </tr>
-                      <tr>
-                        <td colspan=2>Message:<br><br><textarea
-                            name=message
-                            class=inpts
-                            cols=45
-                            rows=4
-                          >{$frm.message|escape:htmlall}</textarea>
-                      </tr>
-                      {include file="captcha.tpl" action="support"}
-                      <tr>
-                        <td>&nbsp;</td>
-                        <td><input
-                            type=submit
-                            value="Send"
-                            class=sbmt
-                          ></td>
-                      </tr>
-                    </table>
+
+                        {* name *}
+                        <div class="lg:col-span-6 mb-5">
+                          <div class="ltr:text-left rtl:text-right">
+                            <label for="name" class="font-semibold"
+                              >Your Name:</label
+                            >
+                            <div class="form-icon relative mt-2">
+                              <i
+                                data-feather="user"
+                                class="w-4 h-4 absolute top-3 start-4"></i>
+                              <input
+                              {if $userinfo.logged}
+                                value="{$userinfo.name}"
+                                readonly
+                              {else}
+                                value="{$frm.name|escape:htmlall}"
+                                name="name"
+                                id="name"
+                                type="text"
+                                class="form-input ps-11"
+                                placeholder="Name :" />
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="lg:col-span-6 mb-5">
+                          <div class="ltr:text-left rtl:text-right">
+                            <label for="email" class="font-semibold"
+                              >Your Email:</label
+                            >
+                            <div class="form-icon relative mt-2">
+                              <i
+                                data-feather="mail"
+                                class="w-4 h-4 absolute top-3 start-4"></i>
+                              <input
+                              {if $userinfo.logged}
+                                value="{$userinfo.email}"
+                                readonly
+                              {else}
+                                value="{$frm.email|escape:htmlall}"
+                                name="email"
+                                id="email"
+                                type="text"
+                                class="form-input ps-11"
+                                placeholder="Email :" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="grid grid-cols-1">
+
+                        <div class="mb-5">
+                          <div class="ltr:text-left rtl:text-right">
+                            <label for="subject" class="font-semibold"
+                              >Your Question:</label
+                            >
+                            <div class="form-icon relative mt-2">
+                              <i
+                                data-feather="book"
+                                class="w-4 h-4 absolute top-3 start-4"></i>
+                              <input
+                                id="subject"
+                                class="form-input ps-11"
+                                placeholder="Subject :" />
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="mb-5">
+                          <div class="ltr:text-left rtl:text-right">
+                            <label for="comments" class="font-semibold"
+                              >Message:</label
+                            >
+                            <div class="form-icon relative mt-2">
+                              <i
+                                data-feather="message-circle"
+                                class="w-4 h-4 absolute top-3 start-4"></i>
+                              <textarea
+                                name="message"
+                                id="comments"
+                                class="form-input ps-11 h-28"
+                                placeholder="Message :">
+                                {$frm.message|escape:htmlall}
+                              </textarea>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <button
+                        type="submit"
+                        id="submit"
+                        name="send"
+                        class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md justify-center flex items-center">
+                        Send
+                      </button>
+                      
                   </form>
               </div>
             </div>
