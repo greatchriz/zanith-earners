@@ -5,106 +5,343 @@
     keywords="FAQ, frequently asked questions, Zenith Earners, investment platform, financial journey, solutions, informed decisions"
 }
 
-<h3>FAQ.</h3><br>
-<p align=justify> <b>How can I invest with {$site_name} ?</b><br>
-  To make a investment you must first become a member of {$site_name} hyip. Once 
-  you are signed up, you can make your first deposit. All deposits must be made 
-  through the Members Area. You can login using the member username and password 
-  you receive when signup. <br>
-  <br>
-  <b>I wish to invest with {$site_name} but I don't have an any ecurrency account. What 
-  should I do?</b><br>
-  You can open a free PM account here: <a href="http://www.perfectmoney.is/">www.perfectmoney.is</a><br>
-  <br>
-  <br>
-  <b>How do I open my {$site_name} HYIP Account?</b><br>
-  It's quite easy and convenient. Follow this <a href="{"?a=signup"|encurl}">link</a>, fill 
-  in the registration form and then press "Register". <br>
-  <br>
-  <b>Which e-currencies do you accept?</b><br>
-  We accept
-   {if $settings.def_payee_account_evowallet}EvoWallet, {/if}
-   {if $settings.def_payee_account_ecumoney}Ecumoney, {/if}
-   {if $settings.def_payee_account_solidtrustpay}SolidTrustPay, {/if}
-   {if $settings.def_payee_account_strictpay}StrictPay, {/if}
-   {if $settings.def_payee_account_webmoney}Webmoney, {/if}
-   {if $settings.def_payee_account_perfectmoney}PerfectMoney, {/if}
-   {if $settings.def_payee_account_altergold}AlterGold, {/if}
-   {if $settings.def_payee_account_alertpay}Alertpay, {/if}
-   {if $settings.def_payee_account_pecunix}Pecunix, {/if}
-   
-   {if $settings.def_payee_account_evocash}Evocash, {/if}
-   {if $settings.def_payee_account_stormpay}StormPay, {/if}
-   {if $settings.def_payee_account_paypal}PayPal, {/if}
-   {if $settings.def_payee_account_goldmoney}GoldMoney, {/if}
-   e-currencies. <br>
-  <br>
-  <b>How can I withdraw funds?</b><br>
-  Login to your account using your username and password and check the Withdraw 
-  section. <br>
-  <br>
-  <b>How long does it take for my deposit to be added to my account?</b><br>
-  Your account will be updated as fast, as you deposit. <br>
-  <br>
-  <b>How can I change my e-mail address or password?</b><br>
-  Log into your {$site_name} account and click on the "Account Information". You 
-  can change your e-mail address and password there. <br>
-  <br>
-  <b>What if I can't log into my account because I forgot my password?</b><br>
-  Click <a href="{"?a=forgot_password"|encurl}">forgot password</a> link, type your username 
-  or e-mail and you'll receive your account information. <br>
-  <br>
-  <b>Does a daily profit paid directly to my currency account?</b><br>
-  No, profits are gathered on your {$site_name} account and you can withdraw them 
-  anytime. <br>
-  <br>
-  <b>How do you calculate the interest on my account?</b><br>
-  Depending on each plan. Interest on your {$site_name} HYIP account is acquired 
-  Daily, Weekly, Bi-Weekly, Monthly and Yearly and credited to your available 
-  balance at the end of each day. <br>
-  <br>
-  <b>Can I do a direct deposit from my account balance?</b><br>
-  Yes! To make a deposit from your {$site_name} HYIP account balance. Simply login 
-  into your members account and click on Make Deposit ans select the Deposit from 
-  Account Balance Radio button. <br>
-  <br>
-  <b>Can I make an additional deposit to {$site_name} HYIP account once it has 
-  been opened?</b><br>
-  Yes, you can but all transactions are handled separately. <br>
-  <br>
-  <b>After I make a withdrawal request, when will the funds be available on my 
-  ecurrency account?</b><br>
-  Funds are usually available within 12 business hours. <br>
-  <br>
-  <b>How can I change my password?</b><br>
-  You can change your password directly from your members area by editing it in 
-  your personal profile. <br>
-  <br>
-  <b>Can I lose money?</b><br>
-  There is a risk involved with investing in all high yield investment programs. However, 
-  there are a few simple ways that can help you to reduce the risk of losing more than 
-  you can afford to. First, align your investments with your financial goals, 
-  in other words, keep the money you may need for the short-term out of more aggressive 
-  investments, reserving those investment funds for the money you intend to raise 
-  over the long-term. It's very important for you to know that we are real traders 
-  and that we invest members' funds on major investments. <br>
-  <br>
-  <b>How can I check my account balances?</b><br>
-  You can access the account information 24 hours, seven days a week over the Internet. 
-  <br>
-  <br>
-  <b>May I open several accounts in your program?</b><br>
-  No. If we find that one member has more than one account, the entire funds will 
-  be frozen. <br>
-  <br>
-  <b>How can I make a spend?</b><br>
-  To make a spend you must first become a member of {$site_name} HYIP. Once you 
-  are signed up, you can make your first spend. All spends must be made through 
-  the Member Area. You can login using the member username and password you received 
-  when signup. <br>
-  <br>
-  <b>Who manages the funds?</b><br>
-  These funds are managed by a team of {$site_name} HYIP investment experts. <br>
-  <br>
-</p>
+<!-- Start Hero -->
+  <section class="relative table w-full py-36 bg-[url('../../assets/images/helpcenter.jpg')] bg-center bg-no-repeat bg-cover">
+  <div class="absolute inset-0 bg-black opacity-80"></div>
+  <div class="container relative">
+      <div class="grid grid-cols-1 pb-8 text-center mt-10">
+          <h3 class="md:text-4xl text-3xl md:leading-normal tracking-wide leading-normal font-medium text-white">Frequently Asked Questions</h3>
+
+      </div><!--end grid-->
+  </div><!--end container-->
+  
+  <div class="absolute text-center z-10 bottom-5 start-0 end-0 mx-3">
+      <ul class="breadcrumb tracking-[0.5px] breadcrumb-light mb-0 inline-block">
+         <li class="inline breadcrumb-item uppercase text-[13px] font-bold duration-500 ease-in-out text-white/50 hover:text-white"><a href="index.html">Techwind</a></li>
+         <li class="inline breadcrumb-item uppercase text-[13px] font-bold duration-500 ease-in-out text-white/50 hover:text-white"><a href="helpcenter.html">Helpcenter</a></li>
+          <li class="inline breadcrumb-item uppercase text-[13px] font-bold duration-500 ease-in-out text-white" aria-current="page">FAQs</li>
+      </ul>
+  </div>
+</section><!--end section-->
+<div class="relative">
+  <div class="shape absolute sm:-bottom-px -bottom-[2px] start-0 end-0 overflow-hidden z-1 text-white dark:text-slate-900">
+      <svg class="w-full h-auto" viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+      </svg>
+  </div>
+</div>
+<!-- End Hero -->
+
+<!-- Start Section-->
+<section class="relative md:py-24 py-16">
+  <div class="container relative">
+      <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
+          <div class="lg:col-span-4 md:col-span-5">
+              <div class="rounded-md shadow dark:shadow-gray-800 p-6 sticky top-20">
+                  <ul class="list-none sidebar-nav mb-0 py-0" id="navmenu-nav">
+                      <li class="navbar-item p-0"><a href="#tech" class="text-base font-medium navbar-link">Buying Questions</a></li>
+                      <li class="navbar-item mt-3 p-0"><a href="#general" class="text-base font-medium navbar-link">General Questions</a></li>
+                      <li class="navbar-item mt-3 p-0"><a href="#payment" class="text-base font-medium navbar-link">Payments Questions</a></li>
+                      <li class="navbar-item mt-3 p-0"><a href="#support" class="text-base font-medium navbar-link">Support Questions</a></li>
+                  </ul>
+              </div>
+          </div>
+
+          <div class="lg:col-span-8 md:col-span-7">
+              <div id="tech">
+                  <h5 class="text-2xl font-semibold">Buying Product</h5>
+
+                  <div id="accordion-collapseone" data-accordion="collapse" class="mt-6">
+                      <div class="relative shadow dark:shadow-gray-800 rounded-md overflow-hidden">
+                          <h2 class="text-base font-semibold" id="accordion-collapse-heading-1">
+                              <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-start" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                                  <span>How does it work ?</span>
+                                  <svg data-accordion-icon class="w-4 h-4 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                  </svg>
+                              </button>
+                          </h2>
+                          <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                              <div class="p-5">
+                                  <p class="text-slate-400 dark:text-gray-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="relative shadow dark:shadow-gray-800 rounded-md overflow-hidden mt-4">
+                          <h2 class="text-base font-semibold" id="accordion-collapse-heading-2">
+                              <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-start" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+                                  <span>Do I need a designer to use Techwind ?</span>
+                                  <svg data-accordion-icon class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                  </svg>
+                              </button>
+                          </h2>
+                          <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                              <div class="p-5">
+                                  <p class="text-slate-400 dark:text-gray-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="relative shadow dark:shadow-gray-800 rounded-md overflow-hidden mt-4">
+                          <h2 class="text-base font-semibold" id="accordion-collapse-heading-3">
+                              <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-start" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+                                  <span>What do I need to do to start selling ?</span>
+                                  <svg data-accordion-icon class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                  </svg>
+                              </button>
+                          </h2>
+                          <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+                              <div class="p-5">
+                                  <p class="text-slate-400 dark:text-gray-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="relative shadow dark:shadow-gray-800 rounded-md overflow-hidden mt-4">
+                          <h2 class="text-base font-semibold" id="accordion-collapse-heading-4">
+                              <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-start" data-accordion-target="#accordion-collapse-body-4" aria-expanded="false" aria-controls="accordion-collapse-body-4">
+                                  <span>What happens when I receive an order ?</span>
+                                  <svg data-accordion-icon class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                  </svg>
+                              </button>
+                          </h2>
+                          <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-4">
+                              <div class="p-5">
+                                  <p class="text-slate-400 dark:text-gray-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div id="general" class="mt-8">
+                  <h5 class="text-2xl font-semibold">General Questions</h5>
+
+                  <div id="accordion-collapsetwo" data-accordion="collapse" class="mt-6">
+                      <div class="relative shadow dark:shadow-gray-800 rounded-md overflow-hidden">
+                          <h2 class="text-base font-semibold" id="accordion-collapse-heading-5">
+                              <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-start" data-accordion-target="#accordion-collapse-body-5" aria-expanded="true" aria-controls="accordion-collapse-body-5">
+                                  <span>How does it work ?</span>
+                                  <svg data-accordion-icon class="w-4 h-4 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                  </svg>
+                              </button>
+                          </h2>
+                          <div id="accordion-collapse-body-5" class="hidden" aria-labelledby="accordion-collapse-heading-5">
+                              <div class="p-5">
+                                  <p class="text-slate-400 dark:text-gray-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="relative shadow dark:shadow-gray-800 rounded-md overflow-hidden mt-4">
+                          <h2 class="text-base font-semibold" id="accordion-collapse-heading-6">
+                              <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-start" data-accordion-target="#accordion-collapse-body-6" aria-expanded="false" aria-controls="accordion-collapse-body-6">
+                                  <span>Do I need a designer to use Techwind ?</span>
+                                  <svg data-accordion-icon class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                  </svg>
+                              </button>
+                          </h2>
+                          <div id="accordion-collapse-body-6" class="hidden" aria-labelledby="accordion-collapse-heading-6">
+                              <div class="p-5">
+                                  <p class="text-slate-400 dark:text-gray-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="relative shadow dark:shadow-gray-800 rounded-md overflow-hidden mt-4">
+                          <h2 class="text-base font-semibold" id="accordion-collapse-heading-7">
+                              <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-start" data-accordion-target="#accordion-collapse-body-7" aria-expanded="false" aria-controls="accordion-collapse-body-7">
+                                  <span>What do I need to do to start selling ?</span>
+                                  <svg data-accordion-icon class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                  </svg>
+                              </button>
+                          </h2>
+                          <div id="accordion-collapse-body-7" class="hidden" aria-labelledby="accordion-collapse-heading-7">
+                              <div class="p-5">
+                                  <p class="text-slate-400 dark:text-gray-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="relative shadow dark:shadow-gray-800 rounded-md overflow-hidden mt-4">
+                          <h2 class="text-base font-semibold" id="accordion-collapse-heading-8">
+                              <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-start" data-accordion-target="#accordion-collapse-body-8" aria-expanded="false" aria-controls="accordion-collapse-body-8">
+                                  <span>What happens when I receive an order ?</span>
+                                  <svg data-accordion-icon class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                  </svg>
+                              </button>
+                          </h2>
+                          <div id="accordion-collapse-body-8" class="hidden" aria-labelledby="accordion-collapse-heading-8">
+                              <div class="p-5">
+                                  <p class="text-slate-400 dark:text-gray-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div id="payment" class="mt-8">
+                  <h5 class="text-2xl font-semibold">Payments Questions</h5>
+
+                  <div id="accordion-collapsethree" data-accordion="collapse" class="mt-6">
+                      <div class="relative shadow dark:shadow-gray-800 rounded-md overflow-hidden">
+                          <h2 class="text-base font-semibold" id="accordion-collapse-heading-9">
+                              <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-start" data-accordion-target="#accordion-collapse-body-9" aria-expanded="true" aria-controls="accordion-collapse-body-9">
+                                  <span>How does it work ?</span>
+                                  <svg data-accordion-icon class="w-4 h-4 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                  </svg>
+                              </button>
+                          </h2>
+                          <div id="accordion-collapse-body-9" class="hidden" aria-labelledby="accordion-collapse-heading-9">
+                              <div class="p-5">
+                                  <p class="text-slate-400 dark:text-gray-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="relative shadow dark:shadow-gray-800 rounded-md overflow-hidden mt-4">
+                          <h2 class="text-base font-semibold" id="accordion-collapse-heading-10">
+                              <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-start" data-accordion-target="#accordion-collapse-body-10" aria-expanded="false" aria-controls="accordion-collapse-body-10">
+                                  <span>Do I need a designer to use Techwind ?</span>
+                                  <svg data-accordion-icon class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                  </svg>
+                              </button>
+                          </h2>
+                          <div id="accordion-collapse-body-10" class="hidden" aria-labelledby="accordion-collapse-heading-10">
+                              <div class="p-5">
+                                  <p class="text-slate-400 dark:text-gray-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="relative shadow dark:shadow-gray-800 rounded-md overflow-hidden mt-4">
+                          <h2 class="text-base font-semibold" id="accordion-collapse-heading-11">
+                              <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-start" data-accordion-target="#accordion-collapse-body-11" aria-expanded="false" aria-controls="accordion-collapse-body-11">
+                                  <span>What do I need to do to start selling ?</span>
+                                  <svg data-accordion-icon class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                  </svg>
+                              </button>
+                          </h2>
+                          <div id="accordion-collapse-body-11" class="hidden" aria-labelledby="accordion-collapse-heading-11">
+                              <div class="p-5">
+                                  <p class="text-slate-400 dark:text-gray-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="relative shadow dark:shadow-gray-800 rounded-md overflow-hidden mt-4">
+                          <h2 class="text-base font-semibold" id="accordion-collapse-heading-12">
+                              <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-start" data-accordion-target="#accordion-collapse-body-12" aria-expanded="false" aria-controls="accordion-collapse-body-12">
+                                  <span>What happens when I receive an order ?</span>
+                                  <svg data-accordion-icon class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                  </svg>
+                              </button>
+                          </h2>
+                          <div id="accordion-collapse-body-12" class="hidden" aria-labelledby="accordion-collapse-heading-12">
+                              <div class="p-5">
+                                  <p class="text-slate-400 dark:text-gray-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div id="support" class="mt-8">
+                  <h5 class="text-2xl font-semibold">Support Questions</h5>
+
+                  <div id="accordion-collapsefour" data-accordion="collapse" class="mt-6">
+                      <div class="relative shadow dark:shadow-gray-800 rounded-md overflow-hidden">
+                          <h2 class="text-base font-semibold" id="accordion-collapse-heading-13">
+                              <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-start" data-accordion-target="#accordion-collapse-body-13" aria-expanded="true" aria-controls="accordion-collapse-body-13">
+                                  <span>How does it work ?</span>
+                                  <svg data-accordion-icon class="w-4 h-4 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                  </svg>
+                              </button>
+                          </h2>
+                          <div id="accordion-collapse-body-13" class="hidden" aria-labelledby="accordion-collapse-heading-13">
+                              <div class="p-5">
+                                  <p class="text-slate-400 dark:text-gray-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="relative shadow dark:shadow-gray-800 rounded-md overflow-hidden mt-4">
+                          <h2 class="text-base font-semibold" id="accordion-collapse-heading-14">
+                              <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-start" data-accordion-target="#accordion-collapse-body-14" aria-expanded="false" aria-controls="accordion-collapse-body-14">
+                                  <span>Do I need a designer to use Techwind ?</span>
+                                  <svg data-accordion-icon class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                  </svg>
+                              </button>
+                          </h2>
+                          <div id="accordion-collapse-body-14" class="hidden" aria-labelledby="accordion-collapse-heading-14">
+                              <div class="p-5">
+                                  <p class="text-slate-400 dark:text-gray-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="relative shadow dark:shadow-gray-800 rounded-md overflow-hidden mt-4">
+                          <h2 class="text-base font-semibold" id="accordion-collapse-heading-15">
+                              <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-start" data-accordion-target="#accordion-collapse-body-15" aria-expanded="false" aria-controls="accordion-collapse-body-15">
+                                  <span>What do I need to do to start selling ?</span>
+                                  <svg data-accordion-icon class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                  </svg>
+                              </button>
+                          </h2>
+                          <div id="accordion-collapse-body-15" class="hidden" aria-labelledby="accordion-collapse-heading-15">
+                              <div class="p-5">
+                                  <p class="text-slate-400 dark:text-gray-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="relative shadow dark:shadow-gray-800 rounded-md overflow-hidden mt-4">
+                          <h2 class="text-base font-semibold" id="accordion-collapse-heading-16">
+                              <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-start" data-accordion-target="#accordion-collapse-body-16" aria-expanded="false" aria-controls="accordion-collapse-body-16">
+                                  <span>What happens when I receive an order ?</span>
+                                  <svg data-accordion-icon class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                  </svg>
+                              </button>
+                          </h2>
+                          <div id="accordion-collapse-body-16" class="hidden" aria-labelledby="accordion-collapse-heading-16">
+                              <div class="p-5">
+                                  <p class="text-slate-400 dark:text-gray-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div><!--end grid-->
+  </div><!--end container-->
+
+  <div class="container relative md:mt-24 mt-16">
+      <div class="grid grid-cols-1 text-center">
+          <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Have Question ? Get in touch!</h3>
+
+          <p class="text-slate-400 max-w-xl mx-auto">Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, connect.</p>
+      
+          <div class="mt-6">
+              <a href="helpcenter-support.html" class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md me-2 mt-2"><i class="uil uil-phone"></i> Contact us</a>
+          </div>
+      </div><!--end grid-->
+  </div><!--end container-->
+</section><!--end section-->
+<!-- End Section-->
 {include file="front/footer.tpl"}
