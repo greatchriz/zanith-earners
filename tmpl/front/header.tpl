@@ -194,9 +194,11 @@
                         </ul>
                         <!--end navigation menu-->
 
-	<div id="google_translate_element"></div>
+
 
                         <div class="mx-4 my-4">
+
+	<div id="google_translate_element"></div>
                             <a href="?a=signup" class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Sign Up</a>
                             <a href="?a=login" class="btn bg-transparent hover:bg-indigo-600 border-indigo-600 text-indigo-600 hover:text-white rounded-md ms-2">Login</a>
                         </div>
