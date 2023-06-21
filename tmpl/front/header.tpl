@@ -92,7 +92,7 @@
         <!-- Start Navbar -->
         <nav
             id="topnav"
-            class="defaultscroll is-sticky mt-4"
+            class="defaultscroll is-sticky mt-4 pt-4"
         >
             <div class="container relative">
                 <!-- Logo container-->
@@ -191,9 +191,7 @@
 
                         <div class="mx-4 my-4">
 
-                            <div class="block lg:hidden">
-                                <div id="google_translate_element"></div>
-                            </div>
+                            <div class="block md:hidden" id="google_translate_element"></div>
                             <a
                                 href="?a=signup"
                                 class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md"
