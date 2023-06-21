@@ -23,7 +23,7 @@
 
                 <div class="content ms-6">
                     <a href="" class="text-lg font-medium hover:text-indigo-600">24/7 Support</a>
-                    <p class="text-slate-400 mt-3">The phrasal sequence of the is now so that many campaign and benefit</p>
+                    <p class="text-slate-400 mt-3">Experience unparalleled support with our 24/7 customer service team, ready to assist you every step of the way</p>
                 </div>
             </div>
             <!--end feature content-->
@@ -35,7 +35,7 @@
 
                 <div class="content ms-6">
                     <a href="" class="text-lg font-medium hover:text-indigo-600">Take Ownership</a>
-                    <p class="text-slate-400 mt-3">The phrasal sequence of the is now so that many campaign and benefit</p>
+                    <p class="text-slate-400 mt-3">Empower yourself to seize control of your financial future and make informed investment decisions with Zenith Earners</p>
                 </div>
             </div>
             <!--end feature content-->
@@ -47,7 +47,7 @@
 
                 <div class="content ms-6">
                     <a href="" class="text-lg font-medium hover:text-indigo-600">Team Work</a>
-                    <p class="text-slate-400 mt-3">The phrasal sequence of the is now so that many campaign and benefit</p>
+                    <p class="text-slate-400 mt-3">We believe in the power of collaboration, synergy, and collective efforts to achieve remarkable results</p>
                 </div>
             </div>
             <!--end feature content-->
@@ -59,9 +59,9 @@
     <section class="relative md:py-24 py-16">
         <div class="container relative">
             <div class="grid grid-cols-1 pb-8 text-center">
-                <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Choose Pricing Plan</h3>
+                <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Tailored Solutions for Your Financial Goals</h3>
 
-                <p class="text-slate-400 max-w-xl mx-auto">Start working with Techwind that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                <p class="text-slate-400 max-w-xl mx-auto">Discover the Perfect Investment Plan to Maximize Your Returns.</p>
             </div><!--end grid-->
 
             <div class="grid grid-cols-1">
