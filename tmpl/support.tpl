@@ -89,8 +89,8 @@ strategies, Zenith Earners"
     <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
 
       {if $say eq 'send'}
-         <p class="bg-green-600 text-white text-sm font-semibold mb-4"> Message has been successfully sent. We will back to you in next 24 hours. Thank you.</p>
-      {else}
+         <p class="bg-green-600 text-white text-sm font-semibold mb-4"> Message has been successfully sent. We will get back to you in less than 24 hours. Thank you.</p>
+      {/if}
 
 
         <div class="mt-8 md:mt-0">
@@ -236,7 +236,6 @@ strategies, Zenith Earners"
             </div>
         </div>
 
-      {/if}
     </div>
   </div>
   <!--end container-->
