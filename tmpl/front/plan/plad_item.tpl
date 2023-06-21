@@ -16,8 +16,8 @@
 
 
         <div
-            id="RUBY PLAN"
-            class="mt-6"
+            id="{$plan_name}"
+            class="mt-2"
         >
 
             <div class="flex justify-center">
@@ -29,7 +29,7 @@
 
     </div>
 
-    <div class="p-6 border-b border-gray-100 dark:border-gray-700 ltr:text-left rtl:text-right">
+    <div class="px-4 py-2 border-b border-gray-100 dark:border-gray-700 ltr:text-left rtl:text-right">
         <ul class="list-none">
             <li class="text-slate-400 my-1"><i class="mdi mdi-check me-2 text-emerald-600"></i><b
                     class="text-black dark:text-white"
