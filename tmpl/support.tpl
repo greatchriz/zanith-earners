@@ -86,7 +86,7 @@ strategies, Zenith Earners"
   <!--end container-->
 
   <div class="container md:mt-24 mt-16">
-    <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
+    <div class="grid grid-cols-1 items-center gap-[30px]">
 
       {if $say eq 'send'}
          <p class="bg-green-600 text-white text-xl font-semibold mb-4 p-6"> Message has been successfully sent. We will get back to you in less than 24 hours. Thank you.</p>
