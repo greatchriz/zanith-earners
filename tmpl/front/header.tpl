@@ -179,11 +179,12 @@
 
                             {include file="front/nav_item.tpl" link="?a=about" title="About Us"}
 
-                            {include file="front/nav_item.tpl" link="?a=awards" title="Awards"}
-
-                            {include file="front/nav_item.tpl" link="?a=services" title="Services"}
-
                             {include file="front/nav_item.tpl" link="?a=plans" title="Investment Plans"}
+
+                            {include file="front/nav_item.tpl" link="?a=faq" title="F.A.Q"}
+
+                            {include file="front/nav_item.tpl" link="?a=support" title="Contact Us"}
+
 
                         </ul>
                         <!--end navigation menu-->
@@ -191,8 +192,6 @@
 
 
                         <div class="mx-4 my-4">
-
-                            <div class="block md:hidden" id="google_translate_element"></div>
                             <a
                                 href="?a=signup"
                                 class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md"
