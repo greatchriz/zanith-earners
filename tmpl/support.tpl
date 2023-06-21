@@ -1,4 +1,16 @@
-{include file="front/header.tpl"}
+{include 
+    file="front/header.tpl" 
+    title="Contact Us | {$settings.site_name}" 
+    description="Explore the diverse investment plans and options available at Zenith Earners. Discover how our platform can help you grow your wealth and achieve your financial goals through strategic and personalized investment strategies"
+    keywords="Investment plans, investment options, wealth growth, financial goals, strategic investments, personalized strategies, Zenith Earners"
+}
+
+{include 
+    file="front/hero_section.tpl" 
+    bg="assets/images/contact-us.jpg" 
+    title="Contact Us" 
+    paragragh="Explore our Diverse Range of Investment Options Tailored to Your Financial Goals." 
+}
 
 
 <h3>Support Form:</h3><br>
