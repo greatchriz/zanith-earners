@@ -60,7 +60,7 @@ decisions"
           >
                   
           {include 
-          file="sections/faq/faq-detail.tpl" 
+          file="front/faq/faq-detail.tpl" 
           accordionHeading="accordion-collapse-heading-1" 
           accordionBody="accordion-collapse-body-1" 
           title="Do you charge any commission for opening an account?" 
@@ -68,7 +68,7 @@ decisions"
       }
 
       {include 
-          file="sections/faq/faq-detail.tpl" 
+          file="front/faq/faq-detail.tpl" 
           accordionHeading="accordion-collapse-heading-2" 
           accordionBody="accordion-collapse-body-2" 
           title="How do I create my puinvestment Account?" 
@@ -76,7 +76,7 @@ decisions"
       }
 
       {include 
-          file="sections/faq/faq-detail.tpl" 
+          file="front/faq/faq-detail.tpl" 
           accordionHeading="accordion-collapse-heading-3" 
           accordionBody="accordion-collapse-body-3" 
           title="Which e-currencies do you accept?" 
@@ -84,7 +84,7 @@ decisions"
       }
 
       {include 
-          file="sections/faq/faq-detail.tpl" 
+          file="front/faq/faq-detail.tpl" 
           accordionHeading="accordion-collapse-heading-4" 
           accordionBody="accordion-collapse-body-4" 
           title="How can I withdraw funds?" 
@@ -92,7 +92,7 @@ decisions"
       }
 
       {include 
-          file="sections/faq/faq-detail.tpl" 
+          file="front/faq/faq-detail.tpl" 
           accordionHeading="accordion-collapse-heading-5" 
           accordionBody="accordion-collapse-body-5" 
           title="What is the minimum amount to withdraw?" 
@@ -100,7 +100,7 @@ decisions"
       }
 
       {include 
-          file="sections/faq/faq-detail.tpl" 
+          file="front/faq/faq-detail.tpl" 
           accordionHeading="accordion-collapse-heading-6" 
           accordionBody="accordion-collapse-body-6" 
           title="Do you charge any fees from withdrawals?" 
@@ -108,7 +108,7 @@ decisions"
       }
 
       {include 
-          file="sections/faq/faq-detail.tpl" 
+          file="front/faq/faq-detail.tpl" 
           accordionHeading="accordion-collapse-heading-7" 
           accordionBody="accordion-collapse-body-7" 
           title="How long does it take for my deposit to be added to my puinvestment account?" 
@@ -116,7 +116,7 @@ decisions"
       }
 
       {include 
-          file="sections/faq/faq-detail.tpl" 
+          file="front/faq/faq-detail.tpl" 
           accordionHeading="accordion-collapse-heading-8" 
           accordionBody="accordion-collapse-body-8" 
           title="How can I change my e-mail address or password?" 
@@ -124,7 +124,7 @@ decisions"
       }
 
       {include 
-          file="sections/faq/faq-detail.tpl" 
+          file="front/faq/faq-detail.tpl" 
           accordionHeading="accordion-collapse-heading-9" 
           accordionBody="accordion-collapse-body-9" 
           title="What if I can't log into my account because I forgot my password?" 
@@ -132,7 +132,7 @@ decisions"
       }
 
       {include 
-          file="sections/faq/faq-detail.tpl" 
+          file="front/faq/faq-detail.tpl" 
           accordionHeading="accordion-collapse-heading-10" 
           accordionBody="accordion-collapse-body-10" 
           title="Does a daily profit paid directly to my currency account?" 
@@ -140,7 +140,7 @@ decisions"
       }
 
       {include 
-      file="sections/faq/faq-detail.tpl" 
+      file="front/faq/faq-detail.tpl" 
       accordionHeading="accordion-collapse-heading-11" 
       accordionBody="accordion-collapse-body-11" 
       title="How do you calculate the interest on my account?" 
@@ -148,7 +148,7 @@ decisions"
       }
 
       {include 
-      file="sections/faq/faq-detail.tpl" 
+      file="front/faq/faq-detail.tpl" 
       accordionHeading="accordion-collapse-heading-12" 
       accordionBody="accordion-collapse-body-12" 
       title="Can I do a direct deposit from my account balance?" 
@@ -156,7 +156,7 @@ decisions"
       }
 
       {include 
-      file="sections/faq/faq-detail.tpl" 
+      file="front/faq/faq-detail.tpl" 
       accordionHeading="accordion-collapse-heading-13" 
       accordionBody="accordion-collapse-body-13" 
       title="Can I add funds to a investment that's already running?" 
@@ -164,7 +164,7 @@ decisions"
       }
 
       {include 
-      file="sections/faq/faq-detail.tpl" 
+      file="front/faq/faq-detail.tpl" 
       accordionHeading="accordion-collapse-heading-14" 
       accordionBody="accordion-collapse-body-14" 
       title="Can I make an additional deposit to Puinvestment account once it has been opened?" 
@@ -172,7 +172,7 @@ decisions"
       }
 
       {include 
-      file="sections/faq/faq-detail.tpl" 
+      file="front/faq/faq-detail.tpl" 
       accordionHeading="accordion-collapse-heading-15" 
       accordionBody="accordion-collapse-body-15" 
       title="After I make a withdrawal request, when will the funds be available on my ecurrency account?" 
@@ -180,7 +180,7 @@ decisions"
       }
 
       {include 
-      file="sections/faq/faq-detail.tpl" 
+      file="front/faq/faq-detail.tpl" 
       accordionHeading="accordion-collapse-heading-16" 
       accordionBody="accordion-collapse-body-16" 
       title="How can I change my password?" 
@@ -188,7 +188,7 @@ decisions"
       }
 
       {include 
-      file="sections/faq/faq-detail.tpl" 
+      file="front/faq/faq-detail.tpl" 
       accordionHeading="accordion-collapse-heading-17" 
       accordionBody="accordion-collapse-body-17" 
       title="How can I check my account balances?" 
@@ -196,7 +196,7 @@ decisions"
       }
 
       {include 
-      file="sections/faq/faq-detail.tpl" 
+      file="front/faq/faq-detail.tpl" 
       accordionHeading="accordion-collapse-heading-18" 
       accordionBody="accordion-collapse-body-18" 
       title="How do I close my account?" 
@@ -204,7 +204,7 @@ decisions"
       }
 
       {include 
-                  file="sections/faq/faq-detail.tpl" 
+                  file="front/faq/faq-detail.tpl" 
                   accordionHeading="accordion-collapse-heading-19" 
                   accordionBody="accordion-collapse-body-19" 
                   title="Are there fees for closing an account?" 
@@ -212,7 +212,7 @@ decisions"
               }
 
       {include 
-                  file="sections/faq/faq-detail.tpl" 
+                  file="front/faq/faq-detail.tpl" 
                   accordionHeading="accordion-collapse-heading-20" 
                   accordionBody="accordion-collapse-body-20" 
                   title="What is Puinvestment referral program?" 
@@ -220,7 +220,7 @@ decisions"
               }
 
       {include 
-                  file="sections/faq/faq-detail.tpl" 
+                  file="front/faq/faq-detail.tpl" 
                   accordionHeading="accordion-collapse-heading-21" 
                   accordionBody="accordion-collapse-body-21" 
                   title="Do I need active investment to earn referral Commissions?" 
@@ -228,7 +228,7 @@ decisions"
               }
 
       {include 
-                  file="sections/faq/faq-detail.tpl" 
+                  file="front/faq/faq-detail.tpl" 
                   accordionHeading="accordion-collapse-heading-22" 
                   accordionBody="accordion-collapse-body-22" 
                   title="How does the Puinvestment referral program work?" 
@@ -236,7 +236,7 @@ decisions"
               }
 
       {include 
-                  file="sections/faq/faq-detail.tpl" 
+                  file="front/faq/faq-detail.tpl" 
                   accordionHeading="accordion-collapse-heading-23" 
                   accordionBody="accordion-collapse-body-23" 
                   title="How much does the Puinvestment referral program offer?" 
@@ -244,7 +244,7 @@ decisions"
               }
 
       {include 
-                  file="sections/faq/faq-detail.tpl" 
+                  file="front/faq/faq-detail.tpl" 
                   accordionHeading="accordion-collapse-heading-24" 
                   accordionBody="accordion-collapse-body-24" 
                   title="What should I do if I can't find the answer to my question?" 
