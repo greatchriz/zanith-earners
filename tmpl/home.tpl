@@ -263,14 +263,4 @@
 
 {include file="front/home/trading_widget.tpl"}
 
-{literal}
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-}
-</script>
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-{/literal}
-
 {include file="front/footer.tpl"}
