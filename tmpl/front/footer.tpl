@@ -44,21 +44,51 @@
                         </svg>
                     </a>
                     <p class="mt-6 text-gray-300 text-xs">
-                        Past performance, whether actual or indicated by historical tests of strategies, is no guarantee of future performance or success. There is a possibility that you may sustain a loss equal to or greater than your entire investment regardless of which asset class you trade (equities, options, futures or cryptocurrencies); therefore, you should not invest or risk money that you cannot afford to lose. Online trading is not suitable for all investors. View the document titled Characteristics and Risks of Standardized Options. Before trading any asset class, customers must read the relevant risk disclosure statements on our Other Information page. System access and trade placement and execution may be delayed or fail due to market volatility and volume, quote delays, system and software errors, Internet traffic, outages and other factors.
+                        Past performance, whether actual or indicated by historical tests of strategies, is no guarantee
+                        of future performance or success. There is a possibility that you may sustain a loss equal to or
+                        greater than your entire investment regardless of which asset class you trade (equities,
+                        options, futures or cryptocurrencies); therefore, you should not invest or risk money that you
+                        cannot afford to lose. Online trading is not suitable for all investors. View the document
+                        titled Characteristics and Risks of Standardized Options. Before trading any asset class,
+                        customers must read the relevant risk disclosure statements on our Other Information page.
+                        System access and trade placement and execution may be delayed or fail due to market volatility
+                        and volume, quote delays, system and software errors, Internet traffic, outages and other
+                        factors.
                     </p>
 
                     <p class="mt-2 text-gray-300 text-xs">
-                        Securities and futures trading is offered to self-directed customers by Zenith Earners Securities, Inc., a broker-dealer registered with the Securities and Exchange Commission (SEC) and a futures commission merchant licensed with the Commodity Futures Trading Commission (CFTC). Zenith Earners Securities is a member of the Financial Industry Regulatory Authority (FINRA), the National Futures Association (NFA), and the following exchanges: Cboe BYX Exchange, Inc., Cboe BZX Exchange, Inc., Cboe EDGA Exchange, Inc., Cboe EDGX Exchange, Inc., the Chicago Board of Trade (CBOT), the Chicago Mercantile Exchange, Inc. (CME), the Commodity Exchange, Inc. (COMEX), Eurex, ICE Futures U.S., ICE Futures Europe, the Investors Exchange LLC (IEX), the New York Mercantile Exchange, Inc. (NYMEX), Nasdaq BX, Inc., the Nasdaq Stock Market, the New York Stock Exchange (NYSE), NYSE Arca Equities, and NYSE American LLC.
+                        Securities and futures trading is offered to self-directed customers by Zenith Earners
+                        Securities, Inc., a broker-dealer registered with the Securities and Exchange Commission (SEC)
+                        and a futures commission merchant licensed with the Commodity Futures Trading Commission (CFTC).
+                        Zenith Earners Securities is a member of the Financial Industry Regulatory Authority (FINRA),
+                        the National Futures Association (NFA), and the following exchanges: Cboe BYX Exchange, Inc.,
+                        Cboe BZX Exchange, Inc., Cboe EDGA Exchange, Inc., Cboe EDGX Exchange, Inc., the Chicago Board
+                        of Trade (CBOT), the Chicago Mercantile Exchange, Inc. (CME), the Commodity Exchange, Inc.
+                        (COMEX), Eurex, ICE Futures U.S., ICE Futures Europe, the Investors Exchange LLC (IEX), the New
+                        York Mercantile Exchange, Inc. (NYMEX), Nasdaq BX, Inc., the Nasdaq Stock Market, the New York
+                        Stock Exchange (NYSE), NYSE Arca Equities, and NYSE American LLC.
                     </p>
 
                     <p class="mt-2 text-gray-300 text-xs">
-                        Zenith Earners Securities is a member of SIPC, which protects securities customers of its members up to $500,000 (including $250,000 for claims for cash). Zenith Earners Securities’ SIPC coverage is available only for securities and for cash held in connection with the purchase or sale of securities, in equities and equities options accounts. Explanatory brochure available upon request or at www.sipc.org. SIPC coverage is not available for Zenith Earners Crypto accounts.
+                        Zenith Earners Securities is a member of SIPC, which protects securities customers of its
+                        members up to $500,000 (including $250,000 for claims for cash). Zenith Earners Securities’ SIPC
+                        coverage is available only for securities and for cash held in connection with the purchase or
+                        sale of securities, in equities and equities options accounts. Explanatory brochure available
+                        upon request or at www.sipc.org. SIPC coverage is not available for Zenith Earners Crypto
+                        accounts.
                     </p>
 
                     <p class="mt-2 text-gray-300 text-xs">
-                        Zenith Earners Securities, Inc., Zenith Earners Crypto, Inc., and Zenith Earners Technologies, Inc. are each wholly owned subsidiaries of Zenith Earners Group, Inc., all operating, and providing products and services, under the Zenith Earners brand and trademark. Zenith Earners Crypto, Inc. offers to self-directed investors and traders cryptocurrency brokerage services. It is neither licensed with the SEC or the CFTC nor is it a Member of NFA. When applying for, or purchasing, accounts, subscriptions, products and services, it is important that you know which company you will be dealing with. Please click here for further important information explaining what this means.
+                        Zenith Earners Securities, Inc., Zenith Earners Crypto, Inc., and Zenith Earners Technologies,
+                        Inc. are each wholly owned subsidiaries of Zenith Earners Group, Inc., all operating, and
+                        providing products and services, under the Zenith Earners brand and trademark. Zenith Earners
+                        Crypto, Inc. offers to self-directed investors and traders cryptocurrency brokerage services. It
+                        is neither licensed with the SEC or the CFTC nor is it a Member of NFA. When applying for, or
+                        purchasing, accounts, subscriptions, products and services, it is important that you know which
+                        company you will be dealing with. Please click here for further important information explaining
+                        what this means.
                     </p>
-                   
+
                     <!--end icon-->
                 </div>
                 <!--end col-->
@@ -74,7 +104,7 @@
                     <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
 
                         {* Footer Text *}
-                        
+
 
                         {* Useful Links *}
                         <div class="lg:col-span-6 md:col-span-6">
@@ -85,25 +115,25 @@
                                         class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"
                                     ><i class="uil uil-angle-right-b"></i> Terms of Services</a></li>
                                 <li class="mt-[10px]"><a
-                                    href="?a=support"
+                                        href="?a=support"
                                         class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"
                                     ><i class="uil uil-angle-right-b"></i> Contact Us</a></li>
                                 <li class="mt-[10px]"><a
-                                    href="?a=plans"
+                                        href="?a=plans"
                                         class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"
                                     ><i class="uil uil-angle-right-b"></i> Investment Plans</a></li>
                                 <li class="mt-[10px]"><a
-                                    href="?a=services"
+                                        href="?a=services"
                                         class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"
                                     ><i class="uil uil-angle-right-b"></i> Services</a></li>
                                 <li class="mt-[10px]"><a
-                                    href="?a=login"
+                                        href="?a=login"
                                         class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"
                                     ><i class="uil uil-angle-right-b"></i> Get Started</a></li>
                             </ul>
                         </div>
                         <!--end col-->
-                        
+
                         {* News Letter *}
                         <div class="lg:col-span-6 md:col-span-6">
                             <h5 class="tracking-[1px] text-gray-100 font-semibold">Newsletter</h5>
@@ -160,35 +190,35 @@
                 <ul class="list-none md:text-end text-center mt-6 md:mt-0">
                     <li class="inline">
                         <a href="/">
-                            
+
                             {include file="assets/images/payments/bitcoin.svg"}
                         </a>
                     </li>
 
                     <li class="inline">
                         <a href="/">
-                            
+
                             {include file="assets/images/payments/bnb.svg"}
                         </a>
                     </li>
 
                     <li class="inline">
                         <a href="/">
-                            
+
                             {include file="assets/images/payments/etherum.svg"}
                         </a>
                     </li>
 
                     <li class="inline">
                         <a href="/">
-                            
+
                             {include file="assets/images/payments/litecoin.svg"}
                         </a>
                     </li>
 
                     <li class="inline">
                         <a href="/">
-                            
+
                             {include file="assets/images/payments/tether.svg"}
                         </a>
                     </li>
@@ -220,11 +250,23 @@
 <script src="assets/js/app.js"></script>
 <!-- JAVASCRIPTS -->
 
-<script src="//code.tidio.co/njnxvjoh2bdtwhyqnqhoxjsprwfkxdgo.js" async></script>
+<script
+    src="//code.tidio.co/njnxvjoh2bdtwhyqnqhoxjsprwfkxdgo.js"
+    async
+></script>
 
 <!-- tidio  -->
 
-
+{literal}
+    <div class="gtranslate_wrapper"></div>
+    <script>
+        window.gtranslateSettings = {"default_language":"en","detect_browser_language":true,"wrapper_selector":".gtranslate_wrapper","switcher_horizontal_position":"right","switcher_vertical_position":"top","alt_flags":{"en":"usa"}}
+    </script>
+    <script
+        src="https://cdn.gtranslate.net/widgets/latest/float.js"
+        defer
+    ></script>
+{/literal}
 
 </body>
 
