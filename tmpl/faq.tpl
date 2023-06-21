@@ -51,7 +51,7 @@ decisions"
         id="general"
         class="mt-8"
       >
-        <h5 class="text-2xl font-semibold">General Questions</h5>
+        <h5 class="text-2xl font-semibold">Frequently Asked Questions</h5>
 
               <div
               id="accordion-collapsetwo"
@@ -71,7 +71,7 @@ decisions"
           file="front/faq/faq-detail.tpl" 
           accordionHeading="accordion-collapse-heading-2" 
           accordionBody="accordion-collapse-body-2" 
-          title="How do I create my puinvestment Account?" 
+          title="How do I create my Zenith Earners Account?" 
           content="To create an account simply click on SIGNUP or on the referral link of your sponsor, fill in the registration form and then press 'Register'."
       }
 
@@ -80,7 +80,7 @@ decisions"
           accordionHeading="accordion-collapse-heading-3" 
           accordionBody="accordion-collapse-body-3" 
           title="Which e-currencies do you accept?" 
-          content="Puinvestment accepts Bitcoin, USDT-Erc20, USDT-Trc20 & TRX as the means of making deposits."
+          content="Zenith Earners accepts Bitcoin, USDT-Erc20, USDT-Trc20 & TRX as the means of making deposits."
       }
 
       {include 
@@ -111,7 +111,7 @@ decisions"
           file="front/faq/faq-detail.tpl" 
           accordionHeading="accordion-collapse-heading-7" 
           accordionBody="accordion-collapse-body-7" 
-          title="How long does it take for my deposit to be added to my puinvestment account?" 
+          title="How long does it take for my deposit to be added to my Zenith Earners account?" 
           content="Deposit activation is after the three block confirmations on the bitcoin network, and this doesn’t exceed 12 hours in which your deposit will be activated."
       }
 
@@ -120,7 +120,7 @@ decisions"
           accordionHeading="accordion-collapse-heading-8" 
           accordionBody="accordion-collapse-body-8" 
           title="How can I change my e-mail address or password?" 
-          content="Log into your Puinvestment account and click on the 'Edit Account Section'. You can change your e-mail address and password there."
+          content="Log into your Zenith Earners account and click on the 'Edit Account Section'. You can change your e-mail address and password there."
       }
 
       {include 
@@ -136,7 +136,7 @@ decisions"
           accordionHeading="accordion-collapse-heading-10" 
           accordionBody="accordion-collapse-body-10" 
           title="Does a daily profit paid directly to my currency account?" 
-          content="No, profits are gathered on your Puinvestment account and you can withdraw them anytime to your attached wallet."
+          content="No, profits are gathered on your Zenith Earners account and you can withdraw them anytime to your attached wallet."
       }
 
       {include 
@@ -144,7 +144,7 @@ decisions"
       accordionHeading="accordion-collapse-heading-11" 
       accordionBody="accordion-collapse-body-11" 
       title="How do you calculate the interest on my account?" 
-      content="Depending on each plan. Interest on your Puinvestment account is acquired Daily and credited to your available balance at the end of each day."
+      content="Depending on each plan. Interest on your Zenith Earners account is acquired Daily and credited to your available balance at the end of each day."
       }
 
       {include 
@@ -152,7 +152,7 @@ decisions"
       accordionHeading="accordion-collapse-heading-12" 
       accordionBody="accordion-collapse-body-12" 
       title="Can I do a direct deposit from my account balance?" 
-      content="Yes! To make a deposit from your Puinvestment account balance. Simply login into your members account and click on Make Deposit and select the Deposit from Account Balance Radio button."
+      content="Yes! To make a deposit from your Zenith Earners account balance. Simply login into your members account and click on Make Deposit and select the Deposit from Account Balance Radio button."
       }
 
       {include 
@@ -167,7 +167,7 @@ decisions"
       file="front/faq/faq-detail.tpl" 
       accordionHeading="accordion-collapse-heading-14" 
       accordionBody="accordion-collapse-body-14" 
-      title="Can I make an additional deposit to Puinvestment account once it has been opened?" 
+      title="Can I make an additional deposit to Zenith Earners account once it has been opened?" 
       content="Yes, you can but all transactions are handled separately."
       }
 
@@ -200,7 +200,7 @@ decisions"
       accordionHeading="accordion-collapse-heading-18" 
       accordionBody="accordion-collapse-body-18" 
       title="How do I close my account?" 
-      content="You can close your East Fortune Investment account anytime you wish. You can easily re-open them if you want to in the future. To close your account, please write to us on Support@puinvestment.org or Speak with an Agent through the customer live support, We strongly recommend you to withdraw all your funds before closing your account. By doing so, your investments will be secured and you'll be ready to leave."
+      content="You can close your East Fortune Investment account anytime you wish. You can easily re-open them if you want to in the future. To close your account, please write to us on support@zenithearners.org or Speak with an Agent through the customer live support, We strongly recommend you to withdraw all your funds before closing your account. By doing so, your investments will be secured and you'll be ready to leave."
       }
 
       {include 
@@ -208,15 +208,15 @@ decisions"
                   accordionHeading="accordion-collapse-heading-19" 
                   accordionBody="accordion-collapse-body-19" 
                   title="Are there fees for closing an account?" 
-                  content="There are no fees or penalties for closing/deleting your Puinvestment account."
+                  content="There are no fees or penalties for closing/deleting your Zenith Earners account."
               }
 
       {include 
                   file="front/faq/faq-detail.tpl" 
                   accordionHeading="accordion-collapse-heading-20" 
                   accordionBody="accordion-collapse-body-20" 
-                  title="What is Puinvestment referral program?" 
-                  content="Puinvestment referral program is an exciting opportunity for Company users to claim earnings by inviting their audience & friends. It is one of the many ways we say thank you for your time and effort to help us expand our family. You are involved in every link in the growing chain. For this reason, we have introduced a gradual reward system for you to earn commissions."
+                  title="What is Zenith Earners referral program?" 
+                  content="Zenith Earners referral program is an exciting opportunity for Company users to claim earnings by inviting their audience & friends. It is one of the many ways we say thank you for your time and effort to help us expand our family. You are involved in every link in the growing chain. For this reason, we have introduced a gradual reward system for you to earn commissions."
               }
 
       {include 
@@ -231,15 +231,15 @@ decisions"
                   file="front/faq/faq-detail.tpl" 
                   accordionHeading="accordion-collapse-heading-22" 
                   accordionBody="accordion-collapse-body-22" 
-                  title="How does the Puinvestment referral program work?" 
-                  content="To share your love of Puinvestment, give your personal referral link to friends and family and encourage them to visit our website. Once they register with your referral link and invest, you will get 10% commission from their Puinvestment deposit."
+                  title="How does the Zenith Earners referral program work?" 
+                  content="To share your love of Zenith Earners, give your personal referral link to friends and family and encourage them to visit our website. Once they register with your referral link and invest, you will get 10% commission from their Zenith Earners deposit."
               }
 
       {include 
                   file="front/faq/faq-detail.tpl" 
                   accordionHeading="accordion-collapse-heading-23" 
                   accordionBody="accordion-collapse-body-23" 
-                  title="How much does the Puinvestment referral program offer?" 
+                  title="How much does the Zenith Earners referral program offer?" 
                   content="You would earn a 10% commission on your active referrals."
               }
 
@@ -248,7 +248,7 @@ decisions"
                   accordionHeading="accordion-collapse-heading-24" 
                   accordionBody="accordion-collapse-body-24" 
                   title="What should I do if I can't find the answer to my question?" 
-                  content="If you can't find the answer to your question, please write to us with the help of the 'CONTACT US' form or email us at support@puinvestment.org"
+                  content="If you can't find the answer to your question, please write to us with the help of the 'CONTACT US' form or email us at support@Zenith Earners.org"
               }
 
 
