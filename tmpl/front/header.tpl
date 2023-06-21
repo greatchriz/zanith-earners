@@ -92,7 +92,7 @@
         <!-- Start Navbar -->
         <nav
             id="topnav"
-            class="defaultscroll is-sticky mt-4 pt-4"
+            class="defaultscroll is-sticky"
         >
             <div class="container relative">
                 <!-- Logo container-->
