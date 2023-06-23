@@ -16,7 +16,6 @@
                 by storing them on your own device.</p>
 
             <div class="subcribe-form mt-6 mb-4">
-                <div class="hidden lg:block p-4 border border-gray-50 rounded my-4" id="google_translate_element"></div>
                 <form class="relative max-w-xl">
                     <input
                         type="email"
