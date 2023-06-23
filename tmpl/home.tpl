@@ -259,6 +259,8 @@
 <!--end section-->
 <!-- Counter End -->
 
+{include file="info_box.tpl"}
+
 {include file="front/home/referral.tpl"}
 
 {include file="front/home/trading_widget.tpl"}
