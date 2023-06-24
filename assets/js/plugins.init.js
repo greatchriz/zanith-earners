@@ -2,7 +2,7 @@
    Author: Shreethemes
    Email: support@shreethemes.in
    Website: https://shreethemes.in
-   Version: 1.8.0
+   Version: 1.9.0
    Created: May 2022
    File Description: Common JS file of the template(plugins.init.js)
 */
@@ -32,6 +32,9 @@
  *          2. Modal             *
  *          3. Carousel          *
  *          4. Accordions        *
+ *     18. Upload Profile        *
+ *     19. Custom Dropdown       * (For Dropdown)
+ *     20. Connect wallet        * (Only For MetaMask)
  ================================*/
          
 //=========================================//
@@ -375,15 +378,15 @@ try {
 /*            06) Countdown                */
 //=========================================//
 try {
-    var setEndDate1 = "December 29, 2022 6:0:0";
-    var setEndDate2 = "January 13, 2023 5:3:1";
-    var setEndDate3 = "January 22, 2023 1:0:1";
-    var setEndDate4 = "February 14, 2023 1:2:1";
-    var setEndDate5 = "March 01, 2023 1:6:6";
-    var setEndDate6 = "March 15, 2023 2:5:5";
-    var setEndDate7 = "April 08, 2023 5:1:4";
-    var setEndDate8 = "April 20, 2023 1:6:3";
-    var setEndDate9 = "May 30, 2023 1:5:2";
+    var setEndDate1 = "December 29, 2023 6:0:0";
+    var setEndDate2 = "January 13, 2024 5:3:1";
+    var setEndDate3 = "January 22, 2024 1:0:1";
+    var setEndDate4 = "February 14, 2024 1:2:1";
+    var setEndDate5 = "March 01, 2024 1:6:6";
+    var setEndDate6 = "March 15, 2024 2:5:5";
+    var setEndDate7 = "April 08, 2024 5:1:4";
+    var setEndDate8 = "April 20, 2024 1:6:3";
+    var setEndDate9 = "May 30, 2024 1:5:2";
 
     function startCountDownDate(dateVal) {
         var countDownDate = new Date(dateVal).getTime();
@@ -1673,3 +1676,118 @@ try {
 } catch (error) {
     
 }
+
+//=========================================//
+/*            19) Custom Dropdown          */
+//=========================================//
+
+document.querySelectorAll(".dropdown").forEach(function (item) {
+    item.querySelectorAll(".dropdown-toggle").forEach(function (subitem) {
+        subitem.addEventListener("click", function (event) {
+            subitem.classList.toggle("block");
+            if (subitem.classList.contains("block") != true) {
+                item.querySelector(".dropdown-menu").classList.remove("block")
+                item.querySelector(".dropdown-menu").classList.add("hidden")
+            } else {
+                dismissDropdownMenu()
+                item.querySelector(".dropdown-menu").classList.add("block")
+                item.querySelector(".dropdown-menu").classList.remove("hidden")
+                if (item.querySelector(".dropdown-menu").classList.contains("block")) {
+                    subitem.classList.add("block")
+                } else {
+                    subitem.classList.remove("block")
+                }
+                event.stopPropagation();
+            }
+        });
+    });
+  });
+  
+  function dismissDropdownMenu() {
+    document.querySelectorAll(".dropdown-menu").forEach(function (item) {
+        item.classList.remove("block")
+        item.classList.add("hidden")
+    });
+    document.querySelectorAll(".dropdown-toggle").forEach(function (item) {
+        item.classList.remove("block")
+    });
+  }
+  
+  window.addEventListener('click', function (e) {
+    dismissDropdownMenu();
+  });
+
+  // dd-menu
+var ddmenu = document.getElementsByClassName("dd-menu");
+for(var i = 0, len = ddmenu.length; i < len; i++) {
+    ddmenu[i].onclick = function (elem) {
+        elem.stopPropagation();
+    }
+}
+
+//=========================================//
+/*            20) Connect wallet           */
+//=========================================//
+;(async function () {
+    try {
+      //Basic Actions Section
+      const onboardButton = document.getElementById('connectWallet')
+  
+      //   metamask modal
+      const modal = document.getElementById('modal-metamask')
+      const closeModalBtn = document.getElementById('close-modal')
+  
+      //   wallet address
+      const myPublicAddress = document.getElementById('myPublicAddress')
+  
+      //Created check function to see if the MetaMask extension is installed
+      const isMetaMaskInstalled = () => {
+        //Have to check the ethereum binding on the window object to see if it's installed
+        const {ethereum} = window
+        return Boolean(ethereum && ethereum.isMetaMask)
+      }
+  
+      const onClickConnect = async () => {
+        if (!isMetaMaskInstalled()) {
+          //meta mask not installed
+          modal.classList.add('show')
+          modal.style.display = 'block'
+          return
+        }
+        try {
+          await ethereum.request({method: 'eth_requestAccounts'})
+          const accounts = await ethereum.request({method: 'eth_accounts'})
+          myPublicAddress.innerHTML =
+            accounts[0].split('').slice(0, 6).join('') +
+            '...' +
+            accounts[0]
+              .split('')
+              .slice(accounts[0].length - 7, accounts[0].length)
+              .join('')
+        } catch (error) {
+          console.error(error)
+        }
+      }
+  
+      const closeModal = () => {
+        modal.classList.remove('show')
+        modal.style.display = 'none'
+      }
+  
+      if (isMetaMaskInstalled()) {
+        const accounts = await ethereum.request({method: 'eth_accounts'})
+        if (!!accounts[0]) {
+          myPublicAddress.innerHTML =
+            accounts[0].split('').slice(0, 6).join('') +
+            '...' +
+            accounts[0]
+              .split('')
+              .slice(accounts[0].length - 7, accounts[0].length)
+              .join('')
+        }
+      }
+  
+      onboardButton.addEventListener('click', onClickConnect)
+      closeModalBtn.addEventListener('click', closeModal)
+    } catch (error) {}
+})()
