@@ -5,23 +5,50 @@
 {/if}
 
 {if $last_deposits}
-<!-- Image Table: Start -->
-<table cellspacing=0 cellpadding=2 border=0 width=100%>
-<tr>
- <th colspan=4><img src=images/q.gif width=1 height=3></th>
-</tr>
-<tr>
-  <th colspan=4 class=title>Last Deposits</th>
-</tr>
-{foreach from=$last_deposits item=s}
-<tr>
- <td class=menutxt><img src="images/{$s.ec}.gif"></td>
- <td class=menutxt>{$currency_sign}{$s.amount}</td>
- <td class=menutxt>{$s.date}</td>
- <td class=menutxt>{$s.username}</td>
- </td>
-</tr>
-{/foreach}
-</table>
+
+  {foreach from=$last_deposits item=s}
+
+    <div class="tiny-slide">
+      <!-- Content -->
+      <div
+          class="team p-6 m-6 rounded-md shadow-md dark:shadow-gray-800 dark:border-gray-700 bg-white dark:bg-slate-900 relative">
+          <div
+              class="absolute inset-0 bg-indigo-600/10 dark:bg-indigo-600/30 rounded-md -mt-[10px] -ms-[10px] h-[98%] w-[98%] -z-1">
+          </div>
+          <img
+              src="images/{$s.ec}.gif"
+              class="h-24 w-24 rounded-full shadow-md dark:shadow-gray-800"
+              alt=""
+          >
+    
+          <div class="content mt-4">
+              <a
+                  href=""
+                  class="text-lg font-medium hover:text-indigo-600 block"
+              >{$currency_sign}{$s.amount}</a>
+              <span class="text-slate-400 block">Amount.</span>
+    
+              <a
+                  href=""
+                  class="text-lg font-medium hover:text-indigo-600 block"
+              >{$s.date}</a>
+              <span class="text-slate-400 block">Date.</span>
+    
+              <a
+                  href=""
+                  class="text-lg font-medium hover:text-indigo-600 block"
+              >{$s.username}</a>
+              <span class="text-slate-400 block">User.</span>
+              
+    
+          </div>
+      </div>
+      <!-- Content -->
+    </div>
+    
+    {/foreach}
+    
 {/if}
 {include file="info_section_footer.tpl"}
+
+

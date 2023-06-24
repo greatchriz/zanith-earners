@@ -8,17 +8,5 @@
 		</div>
 		<!--end grid-->
 
-		<div class="grid grid-cols-1">
-
-
-			<div
-				id="StarterContent"
-				class="mt-6"
-			>
-				<div
-					class=""
-					id="start-month"
-					role="tabpanel"
-					aria-labelledby="start-month-tab"
-				>
-					<div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px]">
+			<div class="grid grid-cols-1 gap-[30px] mt-10">
+				<div class="tiny-three-item">
