@@ -1,3 +1,5 @@
+
+{include file="info_section_header.tpl"}
 {if $top_referrals}
 <!-- Image Table: Start -->
 <table cellspacing=0 cellpadding=2 border=0 width=100%>
@@ -15,3 +17,4 @@
 {/foreach}
 </table>
 {/if}
+{include file="info_section_footer.tpl"}

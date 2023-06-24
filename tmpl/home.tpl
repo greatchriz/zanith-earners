@@ -261,6 +261,16 @@
 
 {include file="info_box.tpl"}
 
+{include file="index_top_referrals.tpl"}
+
+{include file="index_last_add_funds.tpl"}
+
+{include file="index_last_deposits.tpl"}
+
+{include file="index_last_withdrawals.tpl"}
+
+{include file="index_top_referrals.tpl"}
+
 {include file="front/home/referral.tpl"}
 
 {include file="front/home/trading_widget.tpl"}
