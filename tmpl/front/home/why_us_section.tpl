@@ -1,12 +1,12 @@
-<section class="relative md:py-24 py-16 bg-[url('../../assets/images/crypto/bg2.jpg')] bg-center bg-no-repeat bg-cover">
+<!-- Start -->
+    <section class="relative md:py-24 py-16 bg-[url('../../assets/images/crypto/bg2.jpg')] bg-center bg-no-repeat bg-cover">
     <div class="absolute inset-0 bg-indigo-600/90"></div>
-    <div class="container">
+    <div class="container relative">
         <div class="grid grid-cols-1 pb-8 text-center">
             <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-medium text-white">Why TradeStation</h3>
 
-            <p class="text-white/70 max-w-xl mx-auto">New traders or seasoned professionals can experience the full suite of powerful trading technology, online brokerage services, and trading education all under one roof..</p>
-        </div>
-        <!--end grid-->
+            <p class="text-white/70 max-w-xl mx-auto">New traders or seasoned professionals can experience the full suite of powerful trading technology, online brokerage services, and trading education all under one roof.</p>
+        </div><!--end grid-->
 
         <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
             {include 

@@ -3,12 +3,10 @@
 
     <div class="content mt-7">
         <a
-            href="/"
-            class="text-lg font-medium text-white font-semibold"
+            href=""
+            class="text-lg font-medium text-white"
         >{$title}</a>
-        <p class="text-white/70 mt-3 text-sm">
-            {$description}
-        </p>
+        <p class="text-white/70 mt-3">{$description}</p>
 
         <div class="mt-5">
             <a
